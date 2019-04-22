@@ -1,0 +1,104 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f3"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View style="@style/LineItemStyleE0E0E0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_13"
+            android:background="@drawable/shape_feedback_conent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_150"
+                android:background="@null"
+                android:gravity="top|left"
+                android:hint="请留下您的意见，它将是我们前进的动力"
+                android:maxLength="500"
+                android:padding="@dimen/padding_7"
+                android:textCursorDrawable="@drawable/shape_edit_focus"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_aaaaaa"
+                android:textSize="@dimen/text_font_15" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_80"
+                android:layout_marginTop="@dimen/padding_5"
+                android:orientation="horizontal">
+
+                <GridView
+                    android:id="@+id/gvImages"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:numColumns="3"
+                    android:scrollbars="none" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/et_contact_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_13"
+            android:layout_marginRight="@dimen/padding_13"
+            android:background="@drawable/shape_feedback_conent"
+            android:gravity="top|left"
+            android:hint="手机/邮箱(选填)"
+            android:maxLength="40"
+            android:paddingBottom="@dimen/padding_12"
+            android:paddingLeft="@dimen/padding_7"
+            android:paddingRight="@dimen/padding_7"
+            android:paddingTop="@dimen/padding_12"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_aaaaaa"
+            android:textCursorDrawable="@drawable/shape_edit_focus"
+            android:textSize="@dimen/text_font_15" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_13"
+            android:layout_marginRight="@dimen/padding_13"
+            android:layout_marginTop="@dimen/padding_6"
+            android:text="您的联系方式有助于我们沟通和解决问题，仅工作人员可见"
+            android:textColor="@color/color_aaaaaa"
+            android:textSize="@dimen/text_font_12" />
+
+        <TextView
+            android:id="@+id/bt_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_45"
+            android:background="@drawable/selector_btn_style"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onBtnClick"
+            android:padding="@dimen/padding_10"
+            android:layout_marginLeft="@dimen/padding_30"
+            android:layout_marginRight="@dimen/padding_30"
+            android:layout_marginBottom="@dimen/padding_20"
+            android:layout_marginTop="@dimen/padding_40"
+            android:text="提交"
+            android:textColor="@color/color_000000"
+            android:textSize="@dimen/text_font_17" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_mine_withdraw_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f3"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:background="@drawable/bg_wode" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/FontStyleGrey"
+                android:paddingTop="@dimen/padding_10"
+                android:text="@string/width_draw_canuse_balance"
+                android:textSize="@dimen/padding_12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/FontStyleBlack"
+                    android:text="@string/act_check_order_price_sign"
+                    android:textSize="@dimen/text_font_20"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/act_mine_wd_balance"
+                    style="@style/FontStyleBlack"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="0.00"
+                    android:textSize="@dimen/text_font_30" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/activity_mine_withdraw_draw_num"
+                style="@style/FontStyleRed"
+                android:text="您有1笔待提现"
+                android:textSize="@dimen/text_font_12"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_30">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:background="@drawable/bg_wode" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/padding_5"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_5">
+
+                <TextView
+                    style="@style/FontStyleBlack"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:text="@string/width_draw_draw_balance" />
+
+                <com.lzyc.ybtappcal.widget.ClearEditText
+                    android:id="@+id/act_mine_wd_draw_balance"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-4dp"
+                    android:layout_weight="2.5"
+                    android:background="@null"
+                    android:digits="0123456789."
+                    android:gravity="center_vertical"
+                    android:hint="@string/width_draw_input_balance"
+                    android:inputType="numberDecimal"
+                    android:maxLength="6"
+                    android:padding="@dimen/padding_10"
+                    android:singleLine="true"
+                    android:textColor="@color/color_333333"
+                    android:textColorHint="@color/color_cbcbcb"
+                    android:textCursorDrawable="@drawable/shape_edit_focus"
+                    android:textSize="@dimen/text_font_15" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_10"
+                    android:src="@mipmap/icon_ali_cache"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/LineStyleE5E5E5"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_marginRight="@dimen/padding_10" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/padding_5"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_5">
+
+                <TextView
+                    style="@style/FontStyleBlack"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:text="@string/width_draw_zhifubao" />
+
+                <com.lzyc.ybtappcal.widget.ClearEditText
+                    android:id="@+id/act_mine_wd_input_alipay"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-4dp"
+                    android:layout_weight="2.5"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/width_draw_input_zhifubao"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="32"
+                    android:padding="@dimen/padding_10"
+                    android:singleLine="true"
+                    android:textColor="@color/color_333333"
+                    android:textColorHint="@color/color_cbcbcb"
+                    android:textCursorDrawable="@drawable/shape_edit_focus"
+                    android:textSize="@dimen/text_font_15" />
+
+                <ImageView
+                    android:visibility="invisible"
+                    android:id="@+id/img_show_cache"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_10"
+                    android:src="@mipmap/icon_ali_cache" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/LineStyleE5E5E5"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_marginRight="@dimen/padding_10" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/padding_5"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_5">
+
+                <TextView
+                    style="@style/FontStyleBlack"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:text="@string/width_draw_name" />
+
+                <com.lzyc.ybtappcal.widget.ClearEditText
+                    android:id="@+id/act_mine_wd_input_aliname"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-4dp"
+                    android:layout_weight="2.5"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/width_draw_input_name"
+                    android:inputType="text"
+                    android:padding="@dimen/padding_10"
+                    android:singleLine="true"
+                    android:textColor="@color/color_333333"
+                    android:textColorHint="@color/color_cbcbcb"
+                    android:textCursorDrawable="@drawable/shape_edit_focus"
+                    android:textSize="@dimen/text_font_15" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_10"
+                    android:src="@mipmap/icon_ali_cache"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/act_mine_wd_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_45"
+        android:layout_marginTop="@dimen/padding_30"
+        android:layout_marginRight="@dimen/padding_30"
+        android:layout_marginLeft="@dimen/padding_30"
+        android:layout_marginBottom="@dimen/padding_10"
+        android:background="@drawable/shape_bg_btn_long_withdraw_gray"
+        android:clickable="false"
+        android:gravity="center"
+        android:padding="@dimen/padding_8"
+        android:text="@string/width_draw_ask_widthdraw"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/text_font_17" />
+
+    <TextView
+        android:id="@+id/textView20"
+        style="@style/FontStyleGrey"
+        android:layout_marginLeft="@dimen/padding_10"
+        android:drawableLeft="@mipmap/icon_yuding_tish"
+        android:drawablePadding="@dimen/padding_5"
+        android:padding="@dimen/padding_10"
+        android:text="@string/width_draw_notice"
+        android:textColor="@color/color_88000000"
+        android:textSize="@dimen/padding_13" />
+
+    <TextView
+        style="@style/FontStyleGrey"
+        android:layout_marginBottom="@dimen/padding_5"
+        android:layout_marginLeft="@dimen/padding_20"
+        android:layout_marginTop="-7dp"
+        android:text="@string/width_draw_notice1"
+        android:textSize="@dimen/padding_12" />
+
+    <TextView
+        style="@style/FontStyleGrey"
+        android:layout_marginLeft="@dimen/padding_20"
+        android:layout_marginTop="-7dp"
+        android:text="@string/width_draw_notice2"
+        android:textSize="@dimen/padding_12" />
+
+</LinearLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.lzyc.zxing.view.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp"
+                    android:background="@color/color_325ca7" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/padding_0"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/id_tv_top_captrue_under_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_above="@id/tv_top"
+                    android:background="@color/color_325ca7" />
+
+            </LinearLayout>
+
+            <!--后退和帮助的布局-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true">
+
+
+                <TextView
+                    android:id="@+id/title_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="22dp"
+                    android:background="@color/color_ffffff_00"
+                    android:drawableLeft="@mipmap/icon_back_white_left"
+                    android:drawablePadding="@dimen/padding_5"
+                    android:gravity="center"
+                    android:onClick="onBtnClick"
+                    android:padding="10dp"
+                    android:paddingLeft="@dimen/padding_13"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="@dimen/text_font_15" />
+
+
+                <TextView
+                    android:id="@+id/tv_capture_info"
+                    style="@style/Font_Big_White"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="监管码/条形码"
+                    android:visibility="gone" />
+
+
+                <ImageButton
+                    android:id="@+id/title_right"
+                    style="@style/Font_Supper_White"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding_13"
+                    android:layout_marginTop="22dp"
+                    android:background="@color/color_ffffff_00"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:src="@mipmap/image_scan_menu" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/padding_30"
+                android:layout_marginLeft="0.5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9" />
+
+                <TextView
+                    android:id="@+id/tv_open_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/padding_13"
+                    android:drawableTop="@mipmap/icon_scan_flashlight_nor"
+                    android:gravity="center"
+                    android:text="打开闪光灯"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="@dimen/text_font_13" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8" />
+
+                <TextView
+                    android:id="@+id/capture_tv_selected_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/padding_14"
+                    android:drawableTop="@mipmap/icon_scan_picture"
+                    android:gravity="center"
+                    android:text="从相册选取条形码"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="@dimen/text_font_13" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9" />
+
+                <TextView
+                    android:id="@+id/capture_tv_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/padding_13"
+                    android:drawableTop="@mipmap/icon_scan_history"
+                    android:gravity="center"
+                    android:text="扫描记录"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="@dimen/text_font_13" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

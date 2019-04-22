@@ -1,0 +1,321 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear_info"
+    android:background="@color/color_f1f1f3"
+    android:orientation="vertical">
+
+    <View
+        style="@style/LineItemStyleE0E0E0" />
+
+    <TextView
+        style="@style/FontStyleBlack"
+        android:textSize="@dimen/text_font_14"
+        android:layout_gravity="center"
+        android:padding="@dimen/padding_10"
+        android:text="完善医保信息，结果会更准确哦" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff">
+
+        <TextView
+            style="@style/Font_Middle_Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_10"
+            android:text="年龄" />
+
+        <TextView
+            android:id="@+id/tv_age"
+            style="@style/Font_Middle_Black"
+            android:layout_width="@dimen/padding_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:clickable="true"
+            android:drawablePadding="@dimen/padding_10"
+            android:drawableRight="@mipmap/icon_forword_right0"
+            android:gravity="right"
+            android:onClick="onBtnClick"
+            android:padding="@dimen/padding_10"
+            android:text="" />
+    </LinearLayout>
+
+    <View style="@style/LineItemStyleE0E0E0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff">
+
+        <TextView
+            style="@style/Font_Middle_Black"
+            android:layout_width="@dimen/padding_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_10"
+            android:text="性别" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_full_info_man"
+            style="@style/FontStyleGrey"
+            android:drawablePadding="@dimen/padding_5"
+            android:drawableLeft="@drawable/selector_gray_round"
+            android:gravity="center"
+            android:text="男" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_full_info_woman"
+            style="@style/FontStyleGrey"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:drawableLeft="@drawable/selector_gray_round"
+            android:drawablePadding="@dimen/padding_5"
+            android:layout_marginRight="@dimen/padding_10"
+            android:gravity="center"
+            android:text="女"/>
+
+        <RadioGroup
+            android:id="@+id/rg_full_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/padding_10"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_full_info_man"
+                style="@style/FontStyleBlack"
+                android:textSize="@dimen/text_font_14"
+                android:paddingBottom="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_10"
+                android:drawableLeft="@drawable/selector_gray_round"
+                android:drawablePadding="@dimen/padding_10"
+                android:button="@null"
+                android:text="男"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rb_full_info_woman"
+                style="@style/FontStyleBlack"
+                android:textSize="@dimen/text_font_14"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:paddingBottom="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_10"
+                android:drawableLeft="@drawable/selector_gray_round"
+                android:drawablePadding="@dimen/padding_10"
+                android:button="@null"
+                android:text="女"
+
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <View style="@style/LineItemStyleE0E0E0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff">
+
+        <TextView
+            style="@style/Font_Middle_Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_10"
+            android:text="参保城市" />
+
+        <TextView
+            android:id="@+id/tv_city"
+            style="@style/Font_Middle_Black"
+            android:layout_width="@dimen/padding_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawablePadding="@dimen/padding_10"
+            android:drawableRight="@mipmap/icon_forword_right0"
+            android:gravity="right"
+            android:onClick="onBtnClick"
+            android:padding="@dimen/padding_10" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_10"
+        android:background="@color/color_ffffff">
+
+        <TextView
+            style="@style/Font_Middle_Black"
+            android:layout_width="@dimen/padding_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:padding="@dimen/padding_10"
+            android:text="医保类型" />
+
+    </LinearLayout>
+
+    <View style="@style/LineItemStyleE0E0E0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_10">
+
+        <RadioButton
+            android:id="@+id/rb_info1"
+            style="@style/Font_Middle_Black"
+            android:layout_width="@dimen/padding_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_blue_white"
+            android:button="@null"
+            android:gravity="center"
+            android:onClick="onBtnClick"
+            android:paddingBottom="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_10"
+            android:text="在职职工"
+            android:textColor="@drawable/selector_color_blue_white"
+            android:checked="false" />
+
+        <RadioButton
+            android:id="@+id/rb_full_info5"
+            style="@style/Font_Middle_Black"
+            android:layout_width="@dimen/padding_0"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_20"
+            android:layout_marginRight="@dimen/padding_20"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_blue_white"
+            android:button="@color/color_ffffff_00"
+            android:gravity="center"
+            android:onClick="onBtnClick"
+            android:paddingBottom="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_10"
+            android:text="退休70岁以上"
+            android:textColor="@drawable/selector_color_blue_white" />
+
+        <RadioButton
+            android:id="@+id/rb_full_info6"
+            style="@style/Font_Middle_Black"
+            android:layout_width="@dimen/padding_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_blue_white"
+            android:button="@color/color_ffffff_00"
+            android:gravity="center"
+            android:onClick="onBtnClick"
+            android:paddingBottom="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_10"
+            android:text="退休70岁以下"
+            android:textColor="@drawable/selector_color_blue_white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_10"
+        android:paddingRight="@dimen/padding_10"
+        android:paddingBottom="@dimen/padding_10">
+
+        <RadioButton
+            android:id="@+id/rb_full_info4"
+            style="@style/Font_Middle_Black"
+            android:layout_width="@dimen/padding_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_blue_white"
+            android:button="@color/color_ffffff_00"
+            android:gravity="center"
+            android:onClick="onBtnClick"
+            android:paddingBottom="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_10"
+            android:text="城镇居民\n(学生儿童)"
+            android:textColor="@drawable/selector_color_blue_white" />
+
+        <RadioButton
+            android:id="@+id/rb_info2"
+            style="@style/Font_Middle_Black"
+            android:layout_width="@dimen/padding_0"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_20"
+            android:layout_marginRight="@dimen/padding_20"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_blue_white"
+            android:button="@null"
+            android:gravity="center"
+            android:onClick="onBtnClick"
+            android:paddingBottom="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_10"
+            android:text="城镇居民\n(老人无业居民)"
+            android:textColor="@drawable/selector_color_blue_white" />
+
+        <RadioButton
+            android:id="@+id/rb_full_info3"
+            style="@style/Font_Middle_Black"
+            android:layout_width="@dimen/padding_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_border_bbbbbb"
+            android:button="@null"
+            android:clickable="false"
+            android:gravity="center"
+            android:lines="2"
+            android:paddingBottom="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_10"
+            android:text="新农合"
+            android:textColor="@color/color_bbbbbb"
+            android:checked="false" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_full_info_ok"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_45"
+        android:layout_marginTop="@dimen/padding_80"
+        android:background="@drawable/selector_btn_style"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onBtnClick"
+        android:padding="@dimen/padding_10"
+        android:layout_marginLeft="@dimen/padding_30"
+        android:layout_marginRight="@dimen/padding_30"
+        android:layout_marginBottom="@dimen/padding_20"
+        android:text="完成"
+        android:textColor="@color/color_000000"
+        android:textSize="@dimen/text_font_17" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_30"
+        android:layout_marginRight="@dimen/padding_30"
+        android:layout_marginTop="@dimen/padding_10"
+        android:gravity="right"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_full_info_next"
+            style="@style/Font_Middle_Shallow_Gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="onBtnClick"
+            android:text="跳过" />
+    </LinearLayout>
+
+</LinearLayout>

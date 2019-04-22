@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f8f8f8"
+    android:orientation="vertical">
+    <View
+        style="@style/LineItemStyle"
+        android:background="@color/color_cecece"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_10"
+        android:background="#F1F1F3"></View>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e0e0e0"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/color_ffffff"
+        android:orientation="horizontal">
+        <!--goodname  官方名字 -->
+        <TextView
+            android:id="@+id/activity_reimbursement_utils_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:text="白加黑"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <!--name   别名-->
+        <TextView
+            android:id="@+id/activity_reimbursement_utils_drugs_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:text="氨酚伪麻美芬片Ⅱ/氨麻苯美片"
+            android:textColor="#696969"
+            android:textSize="14sp"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e0e0e0"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/color_ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:text="是否报销"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/activity_reimbursement_utils_drugs_reimbursement"
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shape_bg_yidi_drugdatial"
+            android:gravity="center"
+            android:text="部分报销"
+            android:textColor="#3e6398" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e0e0e0"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:background="@color/color_ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginTop="16dp"
+            android:text="限制条件"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/activity_reimbursement_utils_drugs_condition"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/padding_3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="@dimen/padding_10"
+            android:layout_marginTop="16dp"
+            android:text="限乙类使用"
+            android:textColor="#333333"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e0e0e0"></View>
+
+    <TextView
+        android:id="@+id/field_activity_reimbursement_utils_save"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/padding_15"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/btn_blue_5"
+        android:gravity="center"
+        android:onClick="onBtnClick"
+        android:text="保存"
+        android:clickable="true"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/text_font_14" />
+
+    <!--之前的布局-->
+    <!--  <LinearLayout
+          android:id="@+id/activity_reimbursement_utils_layout_one"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:paddingBottom="@dimen/padding_22"
+          android:paddingTop="@dimen/padding_22">
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="@dimen/padding_20">
+
+              <TextView
+                  android:id="@+id/activity_reimbursement_utils_brand"
+                  style="@style/Font_Supper_Black"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerVertical="true"
+                  android:text="感康" />
+          </RelativeLayout>
+
+          <TextView
+              android:id="@+id/activity_reimbursement_utils_drugs_name"
+              style="@style/Font_Big_Shallow_Gray"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:layout_marginTop="@dimen/padding_10"
+              android:paddingLeft="@dimen/padding_20"
+              android:text="复方氨酚烷胺片" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/padding_45"
+          android:background="@color/is_not_reimbursement_back"
+          android:gravity="center_vertical">
+
+          <TextView
+              style="@style/Font_Middle_Black"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/padding_20"
+              android:text="是否报销:" />
+
+          <Button
+              android:id="@+id/activity_reimbursement_utils_drugs_reimbursement"
+              style="@style/Font_Small_Blue"
+              android:layout_width="wrap_content"
+              android:layout_height="28dp"
+              android:layout_marginLeft="@dimen/padding_15"
+              android:background="@drawable/btn_blue_line_4"
+              android:paddingLeft="@dimen/padding_12"
+              android:paddingRight="@dimen/padding_12"
+              android:text="部分报销" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/padding_10"
+          android:layout_marginRight="@dimen/padding_10"
+          android:layout_marginTop="@dimen/padding_12"
+          android:background="@drawable/btn_blue_line_6"
+          android:orientation="vertical">
+
+          <TextView
+              style="@style/Font_Middle_Black"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/padding_15"
+              android:layout_marginTop="@dimen/padding_15"
+              android:text="限制条件：" />
+
+          <TextView
+              android:id="@+id/activity_reimbursement_utils_drugs_condition"
+              style="@style/Font_Middle_Black"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="@dimen/padding_15"
+              android:layout_marginLeft="@dimen/padding_15"
+              android:layout_marginTop="@dimen/padding_10"
+              android:text="限乙类使用" />
+
+      </LinearLayout>
+
+      <Button
+          android:id="@+id/field_activity_reimbursement_utils_save"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/padding_40"
+          android:layout_marginBottom="@dimen/padding_15"
+          android:layout_marginLeft="35dp"
+          android:layout_marginRight="35dp"
+          android:layout_marginTop="@dimen/padding_50"
+          android:background="@drawable/btn_blue_5"
+          android:onClick="onBtnClick"
+          android:text="保存"
+          android:textColor="@color/white"
+          android:textSize="@dimen/text_font_14" />-->
+</LinearLayout>

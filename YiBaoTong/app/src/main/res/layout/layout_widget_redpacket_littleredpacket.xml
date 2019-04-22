@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="15dp"
+    android:paddingBottom="20dp">
+
+    <RelativeLayout
+        android:id="@+id/little_red_packed"
+        android:layout_width="wrap_content"
+        android:layout_height="260dp"
+        android:layout_gravity="right|bottom">
+
+        <ImageView
+            android:id="@+id/circle_shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/bg_circle_shadow"/>
+
+        <ImageView
+            android:id="@+id/gold_icon"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginBottom="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/icon_gold_coin"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_redbag"
+            android:layout_alignBottom="@+id/gold_icon"
+            android:layout_centerHorizontal="true" />
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

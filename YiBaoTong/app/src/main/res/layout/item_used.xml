@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_ffffff"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_10">
+
+
+    <TextView
+        android:id="@+id/tv_used"
+        style="@style/Font_Big_Black"
+        android:layout_width="@dimen/padding_0"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="北京市丰台区马路林47号" />
+
+    <ImageButton
+        android:id="@+id/ibt_used"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_10"
+        android:src="@mipmap/icon_delete0"
+        android:background="@color/color_ffffff_00"
+       />
+</LinearLayout>
+
+
+

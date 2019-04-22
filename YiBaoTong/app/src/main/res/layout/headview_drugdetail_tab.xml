@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f3">
+
+    <LinearLayout
+        android:id="@+id/drug_detail_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_ffffff"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_22"
+                android:layout_marginRight="@dimen/padding_22"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/linear_drug_detail_info_down"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_tab_drug_detail_left"
+                    android:gravity="center"
+                    android:text="医保信息"
+                    android:layout_marginRight="-0.5dp"
+                    android:textColor="@drawable/selector_color_3e6398"
+                    android:textSize="@dimen/text_font_15" />
+
+                <TextView
+                    android:id="@+id/linear_drug_detail_instruction_down"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_tab_drug_detail_center"
+                    android:gravity="center"
+                    android:text="说明书"
+                    android:textSize="@dimen/text_font_15"
+                    android:textColor="@drawable/selector_color_3e6398" />
+
+                <TextView
+                    android:id="@+id/linear_drug_detail_factory_down"
+                    android:layout_marginRight="-0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_tab_drug_detail_right"
+                    android:gravity="center"
+                    android:text="生产企业"
+                    android:textSize="@dimen/text_font_15"
+                    android:textColor="@drawable/selector_color_3e6398" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+

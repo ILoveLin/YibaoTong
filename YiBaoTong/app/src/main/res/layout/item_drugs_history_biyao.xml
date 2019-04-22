@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/biyao_history_line_top"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/padding_10"
+        android:layout_marginRight="@dimen/padding_10"
+        android:background="@color/color_e0e0e0" />
+
+    <RelativeLayout
+        android:id="@+id/item_drugs_history_rel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_45"
+        android:background="@drawable/selector_drug_history_biyao"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/padding_20"
+            android:layout_toLeftOf="@id/item_drugs_history_createtime"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_drugs_history_goodsname"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:drawableLeft="@mipmap/icon_history_biyao_search"
+                android:drawablePadding="@dimen/padding_5"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxEms="15"
+                android:paddingBottom="10.5dp"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_5"
+                android:paddingTop="@dimen/padding_10"
+                android:singleLine="true"
+                android:text="络活喜"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_font_14" />
+
+            <TextView
+                android:id="@+id/item_drugs_history_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:text="络活喜"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/text_font_13" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_drugs_history_createtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10.5dp"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_10"
+            android:textColor="@color/color_696969"
+            android:textSize="@dimen/text_font_12" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/padding_10"
+        android:layout_marginRight="@dimen/padding_10"
+        android:background="@color/color_e0e0e0" />
+
+    <TextView
+        android:id="@+id/item_drugs_history_emptyview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/padding_20"
+        android:text="您还没有历史记录哦!"
+        android:textColor="@color/color_858585"
+        android:textSize="@dimen/text_font_14"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_30"
+        android:visibility="gone" />
+</LinearLayout>
+

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F1238"
+    android:alpha="0.98"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/pop_yongfayongliang_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_100"
+        android:text="安博维 厄贝沙坦片（薄膜片）"
+        android:textColor="@color/color_ffffff"
+        android:alpha="0.9"
+        android:gravity="center"
+        android:textSize="@dimen/text_font_18" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_17"
+        android:layout_marginRight="@dimen/padding_17"
+        android:layout_marginTop="@dimen/padding_20"
+        android:layout_marginBottom="@dimen/padding_10"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            android:background="#50ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_yongfayongliang"
+            android:paddingBottom="@dimen/padding_2"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_2"
+            android:text="用法用量"
+            android:textColor="#98FFFFFF"
+            android:textSize="@dimen/text_font_13" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            android:background="#50ffffff"  />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pop_yongfayongliang_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_17"
+        android:layout_marginRight="@dimen/padding_17"
+        android:lineSpacingMultiplier="1.1"
+        android:text="安博维 厄贝沙坦片（薄膜片）安博维 厄贝沙坦片（薄膜片）安博维 厄贝沙坦片（薄膜片）安博维 厄贝沙坦片（薄膜片）安博维 厄贝沙坦片（薄膜片）安博维 厄贝沙坦片（薄膜片）安博维 厄贝沙坦片（薄膜片）安博维 厄贝沙坦片（薄膜片）安博维 厄贝沙坦片（薄膜片）"
+        android:textColor="#70ffffff"
+        android:textSize="@dimen/text_font_13" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_5"
+        android:layout_marginLeft="@dimen/padding_17"
+        android:layout_marginRight="@dimen/padding_17"
+        android:layout_marginTop="@dimen/padding_5"
+        android:text="禁忌"
+        android:textColor="#70e21c1c"
+        android:textSize="@dimen/text_font_13"
+        android:id="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/pop_yongfayongliang_jinji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_17"
+        android:layout_marginRight="@dimen/padding_17"
+        android:lineSpacingMultiplier="1.1"
+        android:text="无"
+        android:textColor="#70ffffff" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+
+    <ImageView
+        android:id="@+id/pop_yongfayongliang_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_yongfayongliang_cancel"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/padding_50"
+        />
+</LinearLayout>

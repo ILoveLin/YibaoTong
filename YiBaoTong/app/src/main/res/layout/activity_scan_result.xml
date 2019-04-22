@@ -1,0 +1,227 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fafafa">
+    <!--标题栏-->
+    <RelativeLayout
+        android:id="@+id/rel_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_50"
+        android:layout_alignParentTop="true"
+        android:background="@color/base_bg_titlebar"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/ib_left_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="@dimen/padding_10"
+            android:src="@drawable/selector_titlebar_left"
+            android:textColor="@color/color_ffffff" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingRight="@dimen/padding_5"
+            android:singleLine="true"
+            android:text="在职职工"
+            android:clickable="true"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_font_15" />
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:layout_toRightOf="@id/tv_content"
+            android:src="@mipmap/icon_arrow_hc_list" />
+
+        <ImageButton
+            android:id="@+id/ib_right_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:clickable="true"
+            android:padding="@dimen/padding_10"
+            android:src="@mipmap/icon_hc_list_map" />
+
+    </RelativeLayout>
+    <View android:id="@+id/view_line" style="@style/LineStyle" android:layout_below="@id/rel_titlebar" />
+    <LinearLayout
+        android:id="@+id/linear_content_view"
+        android:layout_below="@id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--定位-->
+        <RelativeLayout
+            android:id="@+id/rel_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/color_fffaf3">
+
+            <TextView
+                android:id="@+id/tv_location_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:drawablePadding="@dimen/padding_6"
+                android:drawableRight="@mipmap/icon_open"
+                android:padding="@dimen/padding_10"
+                android:text="开启"
+                android:textColor="#ea7322"
+                android:textSize="@dimen/text_font_12" />
+
+            <ImageView
+                android:id="@+id/iv_location_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_marginRight="@dimen/padding_10"
+                android:src="@mipmap/icon_prompt" />
+
+            <com.lzyc.ybtappcal.view.AutoTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@id/tv_location_open"
+                android:layout_toRightOf="@id/iv_location_icon"
+                android:singleLine="true"
+                android:text="定位未开启，当前默认地址为：北京天安门"
+                android:textColor="@color/color_ea7322"
+                android:textSize="@dimen/text_font_13" />
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:focusable="true"
+            android:listSelector="@null"
+            android:scrollbars="none" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_pop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_000000_80"
+        android:orientation="vertical"
+        android:visibility="gone" />
+    <LinearLayout
+        android:id="@+id/linear_pop_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view_out"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            />
+        <include layout="@layout/pop_sresult_city_list" />
+
+        <include layout="@layout/pop_sresult_hospital_list" />
+        <!--底部刷选条件tab-->
+        <RelativeLayout
+            android:id="@+id/rel_tab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_75"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_60"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_sresult_bottom_shaixuan" />
+
+                <LinearLayout
+                    android:id="@+id/linear_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/padding_60"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="@dimen/padding_10"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_tab_address"
+                        style="@style/TabScanResult"
+                        android:drawableTop="@drawable/selector_tab_sr_address"
+                        android:text="全北京"
+                        android:textColor="@drawable/selector_color_tab_sresult" />
+
+                    <TextView
+                        android:id="@+id/tv_tab_nayao"
+                        style="@style/TabScanResult"
+                        android:drawableTop="@drawable/selector_tab_sr_nayao"
+                        android:text="全部医院"
+                        android:textColor="@drawable/selector_color_tab_sresult" />
+
+                    <TextView
+                        android:id="@+id/tv_tab_price"
+                        style="@style/TabScanResult"
+                        android:drawableTop="@drawable/selector_tab_sr_dengji"
+                        android:text="医院等级" />
+
+                    <TextView
+                        android:id="@+id/tv_tab_juli"
+                        style="@style/TabScanResult"
+                        android:drawableTop="@drawable/selector_tab_sr_juli"
+                        android:text="距离" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_tab_nayao_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_50"
+            android:text="取消"
+            android:gravity="center"
+            android:clickable="true"
+            android:visibility="gone"
+            android:layout_marginTop="-1dp"
+            android:layout_marginLeft="@dimen/padding_5"
+            android:layout_marginRight="@dimen/padding_5"
+            android:layout_marginBottom="@dimen/padding_5"
+            android:background="@drawable/shape_results_pop_bottom"
+            android:textColor="@color/color_444444"
+            android:textSize="@dimen/text_font_15"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_pop_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/padding_50"
+        android:background="@color/color_000000_80"
+        android:orientation="vertical"
+        android:visibility="gone" />
+</RelativeLayout>

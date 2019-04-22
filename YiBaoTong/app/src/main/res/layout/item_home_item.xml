@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lin_hot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_4"
+            android:background="@color/color_f2f2f2" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_50">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img_hot"
+                android:layout_width="219dp"
+                android:layout_height="40dip"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                fresco:placeholderImage="@mipmap/image_empty_home_hot"
+                />
+
+            <TextView
+                android:id="@+id/tv_show_more"
+                style="@style/FontStyleGrey"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/padding_10"
+                android:drawablePadding="@dimen/padding_8"
+                android:drawableRight="@mipmap/icon_forword_right0"
+                android:text="更多"
+                android:textColor="@color/color_000000_70"
+                android:textSize="@dimen/text_font_12" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="-1dp"
+        android:paddingLeft="@dimen/padding_5"
+        android:paddingRight="@dimen/padding_5" />
+</LinearLayout>

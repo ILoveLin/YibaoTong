@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tv_goods_name"
+        style="@style/FontStyleBlack"
+        android:padding="@dimen/padding_10"
+        android:textSize="@dimen/text_font_14" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/FontStyleBlack"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/text_font_12"
+        />
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View style="@style/LineStyle" />
+
+    <TextView
+        android:id="@+id/designated_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_fffaf3"
+        android:drawableLeft="@mipmap/icon_mine_fragment_horn"
+        android:drawablePadding="@dimen/padding_10"
+        android:paddingBottom="@dimen/padding_3"
+        android:paddingLeft="@dimen/padding_10"
+        android:paddingTop="@dimen/padding_3"
+        android:visibility="gone"
+        android:text="温馨提示:定点医院就是您入医保时选择的医院"
+        android:textColor="@color/color_ea7322"
+        android:textSize="@dimen/text_font_13" />
+
+    <ListView
+        android:id="@+id/designated_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/theme_bg_color"
+        android:divider="@null"
+        android:fastScrollEnabled="false"
+        android:listSelector="@null"
+        android:scrollbars="none" />
+
+</LinearLayout>

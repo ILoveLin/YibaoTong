@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--服务器返回不正常显示此界面-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/net_error_rel"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/tv_desc"
+        style="@style/Font15Style666666"
+        android:layout_centerInParent="true"
+        android:text="@string/empty_error_net_server" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_above="@id/tv_desc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/padding_19"
+        android:src="@mipmap/empty_error_net_server" />
+</RelativeLayout>

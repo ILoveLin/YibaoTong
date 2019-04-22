@@ -1,0 +1,175 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+android {
+    signingConfigs {
+        ybt {
+            keyAlias 'ybt'
+            keyPassword 'ybt123'
+            storeFile file('../keyStore/ybt.jks')
+            storePassword 'ybt123'
+        }
+    }
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId rootProject.ext.android.applicationId
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips", "mips64"
+        }
+    }
+    dexOptions {
+        incremental true
+        jumboMode = true
+        javaMaxHeapSize "4g"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false//开启代码混淆
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'//设置混淆关联
+//            buildConfigField "boolean", "LOG_DEBUG", "false"//显示log
+//            shrinkResources true//移除无用的res文件
+            signingConfig signingConfigs.ybt//使用上述规则进行签名
+        }
+        debug {//设置debug模式下是否混淆
+            minifyEnabled false
+            signingConfig signingConfigs.ybt
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    afterEvaluate {
+        tasks.matching {
+            it.name.startsWith('dex')
+        }.each { dx ->
+            if (dx.additionalParameters == null) {
+                dx.additionalParameters = []
+            }
+            dx.additionalParameters += '--multi-dex' // enable multidex
+
+            // optional
+            // dx.additionalParameters += "--main-dex-list=$projectDir/<filename>".toString() // enable the main-dex-list
+        }
+    }
+    //渠道打包
+    // 友盟多渠道打包
+    productFlavors {
+        ybt {}
+//        ybt10001{}
+//        ybt10002{}
+//        ybt10003{}
+//        ybt10004{}
+//        ybt10005{}
+//        ybt10006{}
+//        ybt10007{}
+//        ybt10008{}
+//        ybt10009{}
+//        ybt10010{}
+//        ybt10011{}
+//        ybt10012{}
+//        ybt10013{}
+//        ybt10014{}
+//        ybt10015{}
+//        ybt10016{}
+//        ybt10017{}
+//        ybt10018{}
+//        ybt10019{}
+//        ybt10020{}
+    }
+
+    productFlavors.all { flavor ->
+        flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+}
+def ZHY_CODE="3.0.3";
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':libDialog')
+    compile project(':libIndicator')
+    compile project(':PushSDK')
+    compile rootProject.ext.dependencies["fresco"]
+    compile rootProject.ext.dependencies["picasso"]
+//    compile rootProject.ext.dependencies["nineoldandroids"]
+    compile rootProject.ext.dependencies["design"]
+    compile rootProject.ext.dependencies["appcompat"]
+    compile rootProject.ext.dependencies["recyclerview"]
+    compile rootProject.ext.dependencies["circleimageview"]
+    compile rootProject.ext.dependencies["googleServices"]
+    compile rootProject.ext.dependencies["cardview"]
+    compile('com.youth.banner:banner:1.4.9') {
+        exclude group: 'com.android.support'
+    }
+    compile('com.jakewharton:butterknife:8.5.1') {
+        exclude group: 'com.android.support'
+    }
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile('com.github.hss01248:PageStateManager:1.0.3') {
+        exclude group: 'com.android.support'
+    }
+    compile 'com.truizlop.sectionedrecyclerview:library:1.2.0'
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    compile 'com.diegocarloslima:fgelv:0.1.+@aar'
+    compile('me.everything:overscroll-decor-android:1.0.4') {
+        exclude group: 'com.android.support'
+    }
+    compile('com.lcodecorex:tkrefreshlayout:1.0.7') {
+        exclude group: 'com.android.support'
+    }
+    compile ('com.jcodecraeer:xrecyclerview:1.3.2'){
+        exclude group: 'com.android.support'
+    }
+    compile('com.bm.photoview:library:1.4.1') {
+        exclude group: 'com.android.support'
+    }
+    //    运行时权限处理
+    compile('pub.devrel:easypermissions:0.4.2') {
+        exclude group: 'com.android.support'
+    }
+    //    折叠展开动画
+    compile('com.ramotion.foldingcell:folding-cell:1.1.0') {
+        exclude group: 'com.android.support'
+    }
+    /*扫码相关 start*/
+    compile 'cn.bingoogolapple:bga-qrcodecore:1.1.7@aar'
+    compile 'cn.bingoogolapple:bga-zbar:1.1.7@aar'
+    compile 'cn.bingoogolapple:bga-photopicker:1.2.3@aar'
+    compile 'com.google.zxing:core:3.2.1'
+    compile 'cn.bingoogolapple:bga-zxing:1.1.7@aar'
+    /*扫码相关 end*/
+
+    //跑马灯相关
+    compile('com.dalong:marqueeview:1.0.1') {
+        exclude group: 'com.android.support'
+    }
+    //友盟统计
+    compile 'com.umeng.analytics:analytics:6.1.1'
+    //    //RX Java
+
+    //    compile "io.reactivex.rxjava2:rxjava:2.1.1"
+
+    //    //Retrofit
+
+    //    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+
+    //ForRecyclerView https://github.com/haonan1/baseAdapter/
+    compile 'com.zhy:base-rvadapter:' + ZHY_CODE
+    //ForListView
+    compile 'com.zhy:base-adapter:' + ZHY_CODE
+
+    compile('com.android.support:multidex:1.0.1') {
+        exclude group: 'com.android.support'
+    }
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+}

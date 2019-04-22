@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--start-->
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+    <declare-styleable name="RoundedImageView2">
+        <attr name="corner_radius2" format="dimension" />
+        <attr name="border_width2" format="dimension" />
+        <attr name="border_color2" format="color" />
+        <attr name="mutate_background2" format="boolean" />
+        <attr name="oval2" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+    <!--end-->
+    <!--
+      border_thickness         设置边框的宽度
+      border_inside_color     设置内边框的颜色
+      border_outside_color     设置外边框的颜色
+      内外边框如果只设置一个的话，则认为只显示一个边框。
+   -->
+    <declare-styleable name="RoundImageView">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color" />
+    </declare-styleable>
+
+
+    <!--圆图-->
+    <declare-styleable name="RoundAngleImageView">
+        <attr name="roundWidth" format="dimension" />
+        <attr name="roundHeight" format="dimension" />
+    </declare-styleable>
+
+
+    <!--引导页-->
+    <declare-styleable name="Ted_IntroGuideViewPage">
+        <attr name="orientation">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+    <!--轮播图自定义属性-->
+    <declare-styleable name="JazzyViewPager">
+        <attr name="style">
+            <enum name="standard" value="0" />
+            <enum name="tablet" value="1" />
+            <enum name="cubein" value="2" />
+            <enum name="cubeout" value="3" />
+            <enum name="flipvertical" value="4" />
+            <enum name="fliphorizontal" value="5" />
+            <enum name="stack" value="6" />
+            <enum name="zoomin" value="7" />
+            <enum name="zoomout" value="8" />
+            <enum name="rotateup" value="9" />
+            <enum name="rotatedown" value="10" />
+            <enum name="accordion" value="11" />
+        </attr>
+        <attr name="ted_banner_fadeEnabled" format="boolean" />
+        <attr name="outlineEnabled" format="boolean" />
+        <attr name="outlineColor" format="color|reference" />
+    </declare-styleable>
+
+    <!--轮播图数组-->
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+
+
+    <declare-styleable name="HelloGallery">
+        <attr name="android:galleryItemBackground" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="width" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize0" format="dimension" />
+        <attr name="max" format="integer" />
+        <attr name="textIsDisplayable" format="boolean" />
+        <attr name="styles">
+            <enum name="STROKE" value="0" />
+            <enum name="FILL" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RoundCornerProgress">
+        <attr name="rcReverse" format="boolean" />
+        <attr name="rcProgress" format="float" />
+        <attr name="rcMax" format="float" />
+        <attr name="rcSecondaryProgress" format="float" />
+        <attr name="rcBackgroundPadding" format="dimension" />
+        <attr name="rcRadius" format="dimension" />
+        <attr name="rcProgressColor" format="color" />
+        <attr name="rcSecondaryProgressColor" format="color" />
+        <attr name="rcBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="IconRoundCornerProgress">
+        <attr name="rcIconSrc" format="integer" />
+        <attr name="rcIconSize" format="dimension" />
+        <attr name="rcIconWidth" format="dimension" />
+        <attr name="rcIconHeight" format="dimension" />
+        <attr name="rcIconPadding" format="dimension" />
+        <attr name="rcIconPaddingLeft" format="dimension" />
+        <attr name="rcIconPaddingRight" format="dimension" />
+        <attr name="rcIconPaddingTop" format="dimension" />
+        <attr name="rcIconPaddingBottom" format="dimension" />
+        <attr name="rcIconBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="TextRoundCornerProgress">
+        <attr name="rcTextProgressColor" format="color" />
+        <attr name="rcTextProgressSize" format="dimension" />
+        <attr name="rcTextProgressMargin" format="dimension" />
+        <attr name="rcTextProgress" format="string" />
+    </declare-styleable>
+    <declare-styleable name="StarBar">
+        <!--星星间距-->
+        <attr name="starDistance" format="dimension" />
+        <!--星星大小-->
+        <attr name="starSize" format="dimension" />
+        <!--星星个数-->
+        <attr name="starCount" format="integer" />
+        <!--星星空图-->
+        <attr name="starEmpty" format="reference" />
+        <!--星星满图-->
+        <attr name="starFill" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="RatingBar">
+        <!--星星大小-->
+        <attr name="RatingBarstarImageSize" format="dimension" />
+        <!--星星个数-->
+        <attr name="RatingBarstarCount" format="integer" />
+        <!--星星空图-->
+        <attr name="RatingBarstarEmpty" format="reference" />
+        <!--星星满图-->
+        <attr name="RatingBarstarFill" format="reference" />
+        <!--星星半图-->
+        <attr name="RatingBarstarHalf" format="reference" />
+        <!--是否可以点击评分-->
+        <attr name="RatingBarclickable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SwitchView">
+        <attr name="hasShadow" format="boolean" />
+        <attr name="primaryColor" format="color" />
+        <attr name="primaryColorDark" format="color" />
+        <attr name="isOpened" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="RoundedRectListView">
+        <attr name="radiusUpTopLeft" format="dimension"></attr>
+        <attr name="radiusUpTopRight" format="dimension"></attr>
+        <attr name="radiusUpBottomLeft" format="dimension"></attr>
+        <attr name="radiusUpBottomRight" format="dimension"></attr>
+        <attr name="radiusDownTopLeft" format="dimension"></attr>
+        <attr name="radiusDownTopRight" format="dimension"></attr>
+        <attr name="radiusDownBottomLeft" format="dimension"></attr>
+        <attr name="radiusDownBottomRight" format="dimension"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="ShimmerView">
+        <attr name="reflectionColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="AvatarToolbar">
+        <attr name="collapsedPadding" format="dimension" />
+        <attr name="expandedPadding" format="dimension" />
+
+        <attr name="collapsedImageSize" format="dimension" />
+        <attr name="expandedImageSize" format="dimension" />
+
+        <attr name="collapsedTextSize" format="dimension" />
+        <attr name="expandedTextSize" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="TitleToolbar">
+        <attr name="titleVisible" format="boolean" />
+        <attr name="titleTextSize" format="dimension" />
+
+        <attr name="subtitleVisible" format="boolean" />
+        <attr name="subtitleTextSize" format="dimension" />
+
+        <attr name="title_gravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_vertical" value="0x10" />
+            <flag name="fill_vertical" value="0x70" />
+            <flag name="center_horizontal" value="0x01" />
+            <flag name="fill_horizontal" value="0x07" />
+            <flag name="center" value="0x11" />
+            <flag name="fill" value="0x77" />
+            <flag name="clip_vertical" value="0x80" />
+            <flag name="clip_horizontal" value="0x08" />
+            <flag name="start" value="0x00800003" />
+            <flag name="end" value="0x00800005" />
+        </attr>
+
+        <attr name="closeVisible" format="boolean" />
+        <attr name="closeText" format="string" />
+        <attr name="closeTextAppearance" format="reference" />
+        <attr name="closeTextColor" format="color" />
+        <attr name="closeTextSize" format="dimension" />
+
+        <attr name="backVisible" format="boolean" />
+        <attr name="backText" format="string" />
+        <attr name="backTextAppearance" format="reference" />
+        <attr name="backTextColor" format="color" />
+        <attr name="backTextSize" format="dimension" />
+        <attr name="backIcon" format="reference" />
+        <attr name="backMarginRight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="DiffuseView">
+        <attr name="diffuse_color" format="color"/>
+        <attr name="diffuse_coreColor" format="color"/>
+        <attr name="diffuse_coreImage" format="reference"/>
+        <attr name="diffuse_coreRadius" format="dimension"/>
+        <attr name="diffuse_width" format="dimension"/>
+        <attr name="diffuse_maxWidth" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="MyFoldingCell">
+        <attr name="mBackSideResource" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="FloatingEditText">
+        <attr name="android:text"/>
+        <attr name="android:textAllCaps"/>
+        <attr name="android:textColor"/>
+        <attr name="android:textSize"/>
+        <attr name="android:textStyle"/>
+        <attr name="android:fontFamily"/>
+        <attr name="android:inputType"/>
+        <attr name="android:imeOptions"/>
+        <attr name="android:maxLength"/>
+        <attr name="android:maxLines"/>
+    </declare-styleable>
+</resources>

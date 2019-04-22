@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f3">
+
+        <com.lzyc.ybtappcal.view.xlist.XYbtRefreshListView
+            android:id="@+id/results_bottom_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:divider="@null"
+            android:dividerHeight="@dimen/padding_0"
+            android:layoutAnimation="@anim/anim_listview_item"
+            android:listSelector="@null"
+            android:scrollbars="none" />
+
+
+    <include layout="@layout/include_results_top" />
+
+    <include layout="@layout/include_loadding_listview" />
+</RelativeLayout>

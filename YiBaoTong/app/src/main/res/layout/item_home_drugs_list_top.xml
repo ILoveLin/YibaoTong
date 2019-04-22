@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_bgitem_item_drug"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rel_no_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_f2f2f2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_no_message"
+            style="@style/FontStyleBlack"
+            android:textColor="@color/color_666666"
+            android:layout_marginTop="@dimen/padding_30"
+            android:layout_marginBottom="@dimen/padding_33"
+            android:layout_centerHorizontal="true"
+            android:text="没有找到相关信息！"/>
+
+        <View
+            android:layout_below="@+id/tv_no_message"
+            android:layout_marginTop="@dimen/padding_7"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginRight="@dimen/padding_10"
+            style="@style/LineItemStyleE0E0E0_1"/>
+
+        <TextView
+            android:layout_below="@+id/tv_no_message"
+            style="@style/FontStyleGrey"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:textSize="@dimen/text_font_13"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/padding_16"
+            android:background="@color/color_f2f2f2"
+            android:text="你可能需要"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/left_home_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_15"
+        android:paddingLeft="@dimen/padding_10"
+        android:paddingRight="@dimen/padding_10"
+        android:paddingTop="@dimen/padding_6">
+
+        <ImageView
+            android:id="@+id/left_item_home_drug"
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@mipmap/image_empty_bg_white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-2dp"
+            android:layout_marginTop="@dimen/padding_15"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/FontStyleBlack"
+                android:text="@string/act_check_order_price_sign"
+                android:textSize="@dimen/text_font_13" />
+
+            <TextView
+                android:id="@+id/left_item_home_drug_price"
+                style="@style/FontStyleBlack"
+                android:text="26.00" />
+
+            <TextView
+                style="@style/FontStyleWhite"
+                android:layout_marginLeft="@dimen/padding_5"
+                android:layout_marginRight="@dimen/padding_5"
+                android:background="@mipmap/ba_home_page_tag"
+                android:gravity="center"
+                android:paddingLeft="@dimen/padding_2"
+                android:paddingRight="@dimen/padding_2"
+                android:text="@string/home_return"
+                android:textSize="@dimen/text_font_10" />
+
+            <TextView
+                style="@style/FontStyleRed"
+                android:text="@string/act_check_order_price_sign"
+                android:textSize="@dimen/text_font_14" />
+
+            <TextView
+                android:id="@+id/left_item_home_return_price"
+                style="@style/FontStyleRed"
+                android:text="4"
+                android:textSize="@dimen/text_font_16" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/FontStyleGrey"
+            android:layout_marginLeft="-3dp"
+            android:text="@string/home_return_info"
+            android:textSize="@dimen/text_font_9"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

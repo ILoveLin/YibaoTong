@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f3"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/frag_mine_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_220"
+            android:background="@mipmap/image_mine_header" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_20"
+            android:layout_marginRight="@dimen/padding_20"
+            android:layout_marginTop="@dimen/padding_30"
+            android:gravity="center_vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/padding_80"
+                android:layout_height="@dimen/padding_80"
+                android:src="@mipmap/icon_system_logo"
+                app:border_color="#30ffffff"
+                app:border_width="@dimen/padding_3" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/text_font_15"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_forword_right2" />
+        </LinearLayout>
+
+        <!--<ImageView-->
+            <!--android:id="@+id/frag_mine_message_notify"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:padding="@dimen/padding_20"-->
+            <!--android:src="@mipmap/icon_mine_message_notify" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/frag_mine_badge_message"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:paddingRight="@dimen/padding_18"-->
+            <!--android:paddingTop="@dimen/padding_20"-->
+            <!--android:src="@mipmap/icon_mine_message_reddot"-->
+            <!--android:visibility="gone" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_152"
+            android:layout_below="@id/frag_mine_avator_linear"
+            android:layout_marginTop="@dimen/padding_20">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_item" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/padding_15"
+                    android:paddingTop="@dimen/padding_15">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="可用余额(元)"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/text_font_13" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-5dp"
+                            android:text="0.00"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/text_font_30" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:layout_marginRight="@dimen/padding_20"
+                        android:drawablePadding="@dimen/padding_5"
+                        android:drawableRight="@mipmap/icon_forword_right0"
+                        android:text="提现"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/text_font_13" />
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/padding_1"
+                    android:layout_marginLeft="@dimen/padding_20"
+                    android:layout_marginRight="@dimen/padding_20"
+                    android:background="@mipmap/line_frag_mine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/padding_0"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/padding_5">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/padding_0"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="累计返现(元)"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/text_font_12" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/padding_4"
+                            android:layout_marginTop="-2dp"
+                            android:text="0.00"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/text_font_20" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="@dimen/padding_25"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/padding_2"
+                        android:background="@color/color_e0e0e0" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/padding_0"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="待返现(元)"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/text_font_12" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/padding_4"
+                            android:layout_marginTop="-2dp"
+                            android:text="0.00"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/text_font_20" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

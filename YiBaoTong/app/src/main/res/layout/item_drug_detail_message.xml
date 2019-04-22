@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--messageComment-->
+
+
+    <!--factory-->
+    <RelativeLayout
+
+        android:id="@+id/id_drugs_details_factory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_ffffff"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:progress="0"
+            android:progressDrawable="@drawable/progress_horizontal" />
+
+        <WebView
+            android:id="@+id/wb_lv_factory_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv_name"></WebView>
+
+        <LinearLayout
+            android:id="@+id/emty_linear_factory_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:src="@mipmap/icon_drugdetail_factiory_empty" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:text="暂时还没有生产企业信息哦!"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_font_16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="90dp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <!--info -->
+    <RelativeLayout
+        android:id="@+id/id_drugs_details_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_ffffff"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/wb_pb_2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:progress="0"
+            android:progressDrawable="@drawable/progress_horizontal" />
+
+        <WebView
+            android:id="@+id/wb_lv_instruction_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/wb_lv_instruction_info"
+            android:background="@color/color_ffffff"></View>
+
+
+        <LinearLayout
+            android:id="@+id/emty_linear_info_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:src="@mipmap/icon_medicinfo_empty" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:text="暂时还没有此药品说明书哦!"
+                android:textColor="@color/color_afafaf"
+                android:textSize="@dimen/text_font_16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="85dp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/isMUI"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_e0e0e0" />
+    <!--医保信息-->
+    <RelativeLayout
+        android:id="@+id/linear_item_drugs_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_ffffff"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/linear_yibao_view_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_marginTop="@dimen/padding_15"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item_drugs_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/padding_14"
+                    android:text="医保拿药"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/text_font_15" />
+
+            </LinearLayout>
+            <!--两个动画的View-->
+            <RelativeLayout
+                android:id="@+id/id_relat_show_emptyview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--动画布局-->
+                <LinearLayout
+                    android:id="@+id/id_linear_anima_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!--社区-->
+                    <LinearLayout
+                        android:id="@+id/id_drugs_detail_shequ_anima_pop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_10"
+                        android:background="@mipmap/icon_drug_detail_pop"
+                        android:paddingLeft="@dimen/padding_9"
+                        android:paddingRight="@dimen/padding_9"
+                        android:paddingTop="1dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-2dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="自付"
+                                android:textColor="@color/color_ffffff"
+                                android:textSize="@dimen/text_font_11" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/padding_4"
+                                android:text="￥"
+                                android:textColor="@color/color_ffffff"
+                                android:textSize="@dimen/text_font_10" />
+
+                            <com.lzyc.ybtappcal.widget.RiseNumberTextView
+                                android:id="@+id/id_drugs_detail_shequ_paymyself"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.00"
+                                android:textColor="@color/color_ffffff"
+                                android:textSize="@dimen/text_font_13" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_10"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="-5dp">
+
+                        <ImageView
+                            android:id="@+id/id_drugs_detail_shequ"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/icon_drug_detail_shequ" />
+
+                        <TextView
+                            android:id="@+id/id_drugs_detail_shequ_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_10"
+                            android:layout_marginTop="@dimen/padding_2"
+                            android:layout_toRightOf="@id/id_drugs_detail_shequ"
+                            android:gravity="right|center"
+                            android:text="社区" />
+
+                        <TextView
+                            android:id="@+id/id_drugs_detail_shequ_payall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_4"
+                            android:layout_toLeftOf="@id/tv_popup_hospital_pay"
+                            android:drawablePadding="5dp"
+                            android:gravity="right|center"
+                            android:text="22.88"
+                            android:textColor="#3e6398"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/id_drugs_detail_shequ_payall_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_4"
+                            android:layout_toLeftOf="@id/id_drugs_detail_shequ_payall"
+                            android:drawablePadding="5dp"
+                            android:gravity="right|center"
+                            android:text="原价 ¥"
+                            android:textColor="#3e6398"
+                            android:textSize="14sp" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/id_drugs_detail_shequ_anima"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/id_drugs_detail_shequ_payall_1"
+                            android:layout_toRightOf="@id/id_drugs_detail_shequ_text">
+
+                            <View
+                                android:id="@+id/shequ_go_null"
+                                android:layout_width="match_parent"
+                                android:layout_height="12dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@drawable/shape_pop_bar_null" />
+
+                            <View
+                                android:id="@+id/shequ_go_on"
+                                android:layout_width="0dp"
+                                android:layout_height="10.5dp"
+                                android:layout_marginLeft="5.5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="0.5dp"
+                                android:background="@drawable/shape_pop_bar_on" />
+
+                            <View
+                                android:id="@+id/shequ_go_on_all"
+                                android:layout_width="wrap_content"
+                                android:layout_height="10.5dp"
+                                android:layout_marginLeft="5.5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="0.5dp"
+                                android:background="@drawable/shape_pop_bar_on_all"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+                    <!--医院-->
+                    <LinearLayout
+                        android:id="@+id/id_linear_anima_yiyuan_isgone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_15"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+
+                            android:id="@+id/id_drugs_detail_hospital_anima_pop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_10"
+                            android:layout_marginTop="@dimen/padding_20"
+                            android:background="@mipmap/icon_drug_detail_pop"
+                            android:paddingBottom="@dimen/padding_2"
+                            android:paddingLeft="@dimen/padding_9"
+                            android:paddingRight="@dimen/padding_9"
+                            android:paddingTop="1dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-2dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="自付"
+
+                                    android:textColor="@color/color_ffffff"
+                                    android:textSize="@dimen/text_font_11" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/padding_4"
+                                    android:text="￥"
+                                    android:textColor="@color/color_ffffff"
+                                    android:textSize="@dimen/text_font_10" />
+
+                                <com.lzyc.ybtappcal.widget.RiseNumberTextView
+                                    android:id="@+id/id_drugs_detail_hospital_paymyself"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0.00"
+                                    android:textColor="@color/color_ffffff"
+                                    android:textSize="@dimen/text_font_13" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_10"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="-5dp">
+
+                            <ImageView
+                                android:id="@+id/id_drugs_detail_hospital"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@mipmap/icon_drug_detail_hosiptal" />
+
+                            <TextView
+                                android:id="@+id/id_drugs_detail_hospital_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/padding_10"
+                                android:layout_marginTop="@dimen/padding_2"
+                                android:layout_toRightOf="@id/id_drugs_detail_hospital"
+                                android:text="医院" />
+
+                            <TextView
+                                android:id="@+id/id_drugs_detail_hospital_payall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/padding_4"
+                                android:layout_toLeftOf="@id/tv_popup_hospital_pay"
+                                android:drawablePadding="5dp"
+                                android:gravity="right|center"
+                                android:text="11.00"
+                                android:textColor="#3e6398"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/id_drugs_detail_hospital_payall_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/padding_4"
+                                android:layout_toLeftOf="@id/id_drugs_detail_hospital_payall"
+                                android:drawablePadding="5dp"
+                                android:gravity="right|center"
+                                android:text="原价 ¥"
+                                android:textColor="#3e6398"
+                                android:textSize="14sp" />
+
+
+                            <RelativeLayout
+                                android:id="@+id/id_drugs_detail_hospital_anima"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@id/id_drugs_detail_hospital_payall_1"
+                                android:layout_toRightOf="@id/id_drugs_detail_hospital_text">
+
+                                <View
+                                    android:id="@+id/hospital_go_null"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="12dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@drawable/shape_pop_bar_null" />
+
+                                <View
+                                    android:id="@+id/hospital_go_on"
+                                    android:layout_width="0dp"
+                                    android:layout_height="10.5dp"
+                                    android:layout_marginLeft="5.5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="0.5dp"
+                                    android:background="@drawable/shape_pop_bar_on" />
+
+                                <View
+                                    android:id="@+id/hospital_go_on_all"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="10.5dp"
+                                    android:layout_marginLeft="5.5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="0.5dp"
+                                    android:background="@drawable/shape_pop_bar_on_all"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <!--社区  医院  空的view-->
+                <LinearLayout
+                    android:id="@+id/emty_linear_shequ_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@mipmap/icon_drugdetail_shequ_empty" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="27dp"
+                        android:text="暂无医院/社区采纳"
+                        android:textColor="@color/color_afafaf"
+                        android:textSize="@dimen/text_font_16" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!--限制条件-->
+            <View
+                android:id="@+id/v_null"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/padding_15"
+                android:background="@color/color_e0e0e0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_marginTop="@dimen/padding_15"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="限制条件"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/text_font_15" />
+
+                <TextView
+                    android:id="@+id/id_drugs_detail_limit_conditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_15"
+                    android:singleLine="false"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/color_ffffff"></View>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+

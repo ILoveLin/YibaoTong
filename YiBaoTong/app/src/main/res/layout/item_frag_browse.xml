@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_browse_linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/theme_bg_color"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/browse_group_line"
+        style="@style/LineStyle" />
+
+    <View
+        android:id="@+id/browse_group_zhanwei_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_5" />
+
+    <View
+        android:id="@+id/browse_group_bottom_line"
+        style="@style/LineStyle" />
+
+    <TextView
+        android:id="@+id/browse_group_desc"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_40"
+        android:background="@color/color_ffffff"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/padding_10"
+        android:text="今天"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/text_font_16" />
+
+    <View
+        android:id="@+id/browse_group_line_bottom"
+        style="@style/LineStyle" />
+
+    <LinearLayout
+        android:id="@+id/linear_goods"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_100"
+        android:background="@color/color_ffffff"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/item_imageview_selected_goods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="@dimen/padding_20"
+            android:paddingLeft="@dimen/padding_15"
+            android:paddingTop="@dimen/padding_20"
+            android:src="@drawable/selector_shopping_selected"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/item_goods_image"
+            android:layout_width="@dimen/padding_100"
+            android:layout_height="@dimen/padding_70"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/padding_11"
+            android:layout_marginLeft="@dimen/padding_17"
+            android:layout_marginRight="@dimen/padding_17"
+            android:layout_marginTop="@dimen/padding_11"
+            android:src="@mipmap/test" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/padding_9"
+            android:layout_marginRight="@dimen/padding_10"
+            android:layout_marginTop="@dimen/padding_9"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <!--药品名-->
+            <TextView
+                android:id="@+id/item_goods_drugname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="2dp"
+                android:lines="2"
+                android:text="安博维安博维安博维安博维安博维安博维安博维安博维安博维"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_font_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_0"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/browe_linear_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/FontStyleBlack"
+                    android:layout_marginTop="@dimen/padding_1"
+                    android:text="@string/act_check_order_price_sign"
+                    android:textSize="@dimen/text_font_12" />
+
+                <TextView
+                    android:id="@+id/item_home_drug_price"
+                    style="@style/FontStyleBlack"
+                    android:text="26.00" />
+
+                <TextView
+                    style="@style/FontStyleWhite"
+                    android:layout_marginLeft="@dimen/padding_5"
+                    android:layout_marginRight="@dimen/padding_5"
+                    android:background="@mipmap/ba_home_page_tag"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/padding_2"
+                    android:paddingRight="@dimen/padding_2"
+                    android:text="@string/home_return"
+                    android:textSize="@dimen/text_font_10" />
+
+                <TextView
+                    style="@style/FontStyleRed"
+                    android:layout_marginTop="@dimen/padding_1"
+                    android:text="@string/act_check_order_price_sign"
+                    android:textSize="@dimen/text_font_13" />
+
+                <TextView
+                    android:id="@+id/item_home_return_price"
+                    style="@style/FontStyleRed"
+                    android:text="4"
+                    android:textSize="@dimen/text_font_16" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/browe_wuxiao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="changshang"
+                android:textColor="#b1b1b1"
+                android:textSize="@dimen/text_font_11" />
+
+            <TextView
+                android:id="@+id/item_home_manufacturer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="changshang"
+                android:textColor="#b1b1b1"
+                android:textSize="@dimen/text_font_11" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_drug"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_100"
+        android:background="@color/color_ffffff"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/item_imageview_selected_drug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="@dimen/padding_20"
+            android:paddingLeft="@dimen/padding_15"
+            android:paddingTop="@dimen/padding_20"
+            android:src="@drawable/selector_shopping_selected"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/item_drugs_search_photo"
+            android:layout_width="@dimen/padding_100"
+            android:layout_height="@dimen/padding_70"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/padding_11"
+            android:layout_marginLeft="@dimen/padding_17"
+            android:layout_marginRight="@dimen/padding_17"
+            android:layout_marginTop="@dimen/padding_11"
+            android:src="@mipmap/test" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/padding_9"
+            android:layout_marginRight="@dimen/padding_10"
+            android:layout_marginTop="@dimen/padding_9"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <!--药品名-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/item_drugs_search_drugname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_2"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="2dp"
+                    android:lines="2"
+                    android:text="安博维安博aa维安博维安博维安博维安博维安博维安博维安博维"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/text_font_14" />
+
+                <TextView
+                    android:layout_width="@dimen/padding_40"
+                    android:layout_height="@dimen/padding_14"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/padding_2"
+                    android:background="@drawable/shape_results_baoxiao"
+                    android:gravity="center"
+                    android:text="报销"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="@dimen/text_font_10"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_0"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/item_drugs_search_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_4"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="邯郸制药股份有限公司"
+                android:textColor="@color/color_bfbfbf"
+                android:textSize="@dimen/text_font_12" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/v_line_bottom"
+        style="@style/LineItemStyleE0E0E0"/>
+
+    <View
+        style="@style/LineStyle"
+        android:layout_marginBottom="@dimen/padding_5"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_50" />
+</LinearLayout>

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rel_popupwindow">
+    <!--底部图层-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_200" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/color_f2f2f2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/v_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_200" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_0"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_45"
+                android:background="@color/color_ffffff"
+                android:gravity="center|right">
+
+                <ImageView
+                    android:id="@+id/img_cancel"
+                    android:layout_width="wrap_content"
+                    android:padding="@dimen/padding_10"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_pop_zhifu_cancel" />
+
+            </LinearLayout>
+
+            <View style="@style/LineStyleE5E5E5" />
+
+            <RelativeLayout
+                android:layout_above="@+id/layout_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.lzyc.ybtappcal.view.TopFloatScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_f2f2f2"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/padding_80">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/color_ffffff"
+                            android:orientation="vertical">
+
+                            <View
+                                android:id="@+id/v_pay_line_height"
+                                android:layout_width="1dp"
+                                android:layout_height="0dp"/>
+
+                            <!--在线支付-->
+                            <LinearLayout
+                                android:id="@+id/lin_top_float_online"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/lin_pay_online"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/padding_50"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="@dimen/padding_10">
+
+                                    <TextView
+                                        style="@style/FontStyleBlack"
+                                        android:layout_weight="1"
+                                        android:text="@string/order_check_pay_online" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            style="@style/FontStyleRed"
+                                            android:text="@string/act_check_order_price_sign"
+                                            android:textSize="@dimen/text_font_12" />
+
+                                        <TextView
+                                            android:id="@+id/tv_pay_online"
+                                            style="@style/FontStyleRed"
+                                            android:layout_marginLeft="@dimen/padding_3"
+                                            android:text="00.00"
+                                            android:textSize="@dimen/text_font_18" />
+
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:id="@+id/img_pay_online"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/padding_10"
+                                        android:src="@mipmap/icon_forword_down_little" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/v_pay_line"
+                                style="@style/LineStyleE5E5E5" />
+
+                            <!--在线支付-->
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recycler_pay_online"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone" />
+
+                            <!--货到付款-->
+                            <LinearLayout
+                                android:id="@+id/lin_top_float_onmoney"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/lin_pay_onmoney"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/padding_50"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="@dimen/padding_10">
+
+                                    <TextView
+                                        style="@style/FontStyleBlack"
+                                        android:layout_weight="1"
+                                        android:text="@string/order_check_pay_onmoney" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            style="@style/FontStyleRed"
+                                            android:text="@string/act_check_order_price_sign"
+                                            android:textSize="@dimen/text_font_12" />
+
+                                        <TextView
+                                            android:id="@+id/tv_pay_onmoney"
+                                            style="@style/FontStyleRed"
+                                            android:layout_marginLeft="@dimen/padding_3"
+                                            android:text="21.56"
+                                            android:textSize="@dimen/text_font_18" />
+
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:id="@+id/img_pay_onmoney"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/padding_10"
+                                        android:src="@mipmap/icon_forword_down_little" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <View
+
+                                android:id="@+id/v_pay_money"
+                                style="@style/LineStyleE5E5E5" />
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recycler_pay_onmoney"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone" />
+
+                            <View
+                                android:id="@+id/v_onmoney_bottom"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/padding_10"
+                                android:background="@color/color_f2f2f2" />
+
+                            <View
+                                android:id="@+id/v_onmoney_bottom_line"
+                                style="@style/LineStyleE5E5E5" />
+
+                            <TextView
+                                style="@style/FontStyleGrey"
+                                android:layout_height="@dimen/padding_45"
+                                android:gravity="center"
+                                android:padding="@dimen/padding_10"
+                                android:text="@string/act_check_order_payment" />
+
+                            <View style="@style/LineStyleE5E5E5" />
+
+                            <!--支付方式-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/padding_50"
+                                android:background="@color/rise_number_text_color_white"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/padding_5"
+                                android:paddingLeft="@dimen/padding_10"
+                                android:paddingRight="@dimen/padding_10"
+                                android:paddingTop="@dimen/padding_5">
+
+                                <TextView
+                                    android:id="@+id/textView17"
+                                    style="@style/FontStyleBlack"
+                                    android:layout_width="0dip"
+                                    android:layout_weight="1"
+                                    android:text="@string/act_check_order_balance" />
+
+                                <TextView
+                                    style="@style/FontStyleBlack"
+                                    android:text="@string/act_check_order_price_sign"
+                                    android:textSize="@dimen/text_font_12" />
+
+                                <TextView
+                                    android:id="@+id/payment_balance"
+                                    style="@style/FontStyleBlack"
+                                    android:layout_marginLeft="@dimen/padding_3"
+                                    android:text="2.00"
+                                    android:textSize="@dimen/text_font_17" />
+
+                                <com.lzyc.ybtappcal.view.SwitchButtom
+                                    android:id="@+id/payment_balance_check"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/padding_10" />
+
+                            </LinearLayout>
+
+
+                            <View style="@style/LineStyleE5E5E5" />
+
+
+                            <LinearLayout
+                                android:id="@+id/lin_aliPay"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/padding_50"
+                                android:clickable="true"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/padding_10">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@mipmap/icon_zhifubao" />
+
+                                <TextView
+                                    style="@style/FontStyleBlack"
+                                    android:layout_width="0dip"
+                                    android:layout_marginLeft="@dimen/padding_10"
+                                    android:layout_weight="1"
+                                    android:text="@string/pay_zhifubao" />
+
+                                <ImageView
+                                    android:id="@+id/img_aliPay"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/selector_zhifu"
+                                    android:button="@null"
+                                    android:checked="true"
+                                    android:clickable="false" />
+
+                            </LinearLayout>
+
+                            <View style="@style/LineStyleE5E5E5" />
+
+                            <LinearLayout
+                                android:id="@+id/lin_weixin"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/padding_50"
+                                android:clickable="true"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/padding_10">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@mipmap/icon_wei_xin" />
+
+                                <TextView
+                                    style="@style/FontStyleBlack"
+                                    android:layout_width="0dip"
+                                    android:layout_marginLeft="@dimen/padding_10"
+                                    android:layout_weight="1"
+                                    android:text="@string/pay_weixin" />
+
+                                <ImageView
+                                    android:id="@+id/img_weixin"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/selector_zhifu"
+                                    android:button="@null"
+                                    android:checked="true"
+                                    android:clickable="false" />
+
+                            </LinearLayout>
+
+                            <View style="@style/LineStyleE5E5E5" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.lzyc.ybtappcal.view.TopFloatScrollView>
+
+                <LinearLayout
+                    android:id="@+id/lin_top_float"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@mipmap/icon_line_shadow"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/padding_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_43"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginBottom="@dimen/padding_10"
+            android:layout_marginRight="@dimen/padding_10"
+            android:layout_marginTop="@dimen/padding_12"
+            android:background="@drawable/shape_pop_fukuan"
+            >
+
+            <ProgressBar
+                android:id="@+id/tv_submit_progress_dialog"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="@dimen/padding_5"
+                android:indeterminateDrawable="@anim/progress_bar_lodding_round"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/tv_pay_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/act_check_order_confirm_pay"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/text_font_17" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/v_shade_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_000000_00"/>
+
+</RelativeLayout>
+

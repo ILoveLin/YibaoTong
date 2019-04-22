@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f8f8f8"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_50"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/ib_titlebar_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="onBtnClick"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:src="@drawable/selector_titlebar_left" />
+
+        <LinearLayout
+            android:layout_width="@dimen/padding_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_5"
+                android:paddingRight="@dimen/padding_6"
+                android:src="@mipmap/icon_et_search_left" />
+
+            <EditText
+                android:id="@+id/input_edit"
+                style="@style/Font_Middle_Gray"
+                android:layout_width="@dimen/padding_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/title_activity_search"
+                android:padding="@dimen/padding_6" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/titlebar_right"
+            style="@style/Font_Small_Blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginRight="@dimen/padding_10"
+            android:clickable="true"
+            android:onClick="onBtnClick"
+            android:text="搜索" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/activity_drugs_history_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+<!--
+
+        <com.lzyc.ybtappcal.view.FlowLayout
+            android:id="@+id/fl_flowlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#faf"
+            />
+-->
+
+
+
+
+        <TextView
+            style="@style/Font_Middle_Black"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_45"
+            android:layout_marginTop="@dimen/padding_10"
+            android:background="@color/color_ffffff"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_10"
+            android:text="历史记录" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_1"
+            android:background="@color/color_e5e5e5" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:id="@+id/activity_drugs_history_listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_45"
+                android:background="@color/color_ffffff"
+                android:scrollbars="none"
+                />
+
+            <TextView
+                android:id="@+id/activity_drugs_search_remove_history"
+                style="@style/Font_Middle_Blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_drugs_history_listView"
+                android:layout_marginBottom="@dimen/padding_20"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onBtnClick"
+                android:text="@string/drugs_search_remove_history"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/activity_drugs_search_lianxiang_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_ffffff"
+            android:scrollbars="none" />
+
+
+        <LinearLayout
+            android:id="@+id/activity_drugs_search_drugs_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/activity_drugs_search_drugs_num"
+                style="@style/Font_Small_Gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_10"
+                android:text=""
+
+                android:visibility="gone" />
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/activity_drugs_search_drugs_listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_ffffff"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

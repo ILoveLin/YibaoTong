@@ -1,0 +1,2158 @@
+{
+  "data": [
+    {
+      "region_name": "\u5317\u4eac",
+      "region_id": "1",
+      "region": [
+        {
+          "region_id": "2",
+          "region_name": "\u5317\u4eac\u5e02",
+          "pid": "1"
+        }
+      ]
+    },
+    {
+      "region_name": "\u5929\u6d25",
+      "region_id": "22",
+      "region": [
+        {
+          "region_id": "23",
+          "region_name": "\u5929\u6d25\u5e02",
+          "pid": "22"
+        }
+      ]
+    },
+    {
+      "region_name": "\u6cb3\u5317\u7701",
+      "region_id": "44",
+      "region": [
+        {
+          "region_id": "45",
+          "region_name": "\u77f3\u5bb6\u5e84\u5e02",
+          "pid": "44"
+        },
+        {
+          "region_id": "70",
+          "region_name": "\u5510\u5c71\u5e02",
+          "pid": "44"
+        },
+        {
+          "region_id": "86",
+          "region_name": "\u79e6\u7687\u5c9b\u5e02",
+          "pid": "44"
+        },
+        {
+          "region_id": "96",
+          "region_name": "\u90af\u90f8\u5e02",
+          "pid": "44"
+        },
+        {
+          "region_id": "117",
+          "region_name": "\u90a2\u53f0\u5e02",
+          "pid": "44"
+        },
+        {
+          "region_id": "138",
+          "region_name": "\u4fdd\u5b9a\u5e02",
+          "pid": "44"
+        },
+        {
+          "region_id": "166",
+          "region_name": "\u5f20\u5bb6\u53e3\u5e02",
+          "pid": "44"
+        },
+        {
+          "region_id": "185",
+          "region_name": "\u627f\u5fb7\u5e02",
+          "pid": "44"
+        },
+        {
+          "region_id": "198",
+          "region_name": "\u6ca7\u5dde\u5e02",
+          "pid": "44"
+        },
+        {
+          "region_id": "216",
+          "region_name": "\u5eca\u574a\u5e02",
+          "pid": "44"
+        },
+        {
+          "region_id": "230",
+          "region_name": "\u8861\u6c34\u5e02",
+          "pid": "44"
+        }
+      ]
+    },
+    {
+      "region_name": "\u5c71\u897f\u7701",
+      "region_id": "243",
+      "region": [
+        {
+          "region_id": "244",
+          "region_name": "\u592a\u539f\u5e02",
+          "pid": "243"
+        },
+        {
+          "region_id": "256",
+          "region_name": "\u5927\u540c\u5e02",
+          "pid": "243"
+        },
+        {
+          "region_id": "269",
+          "region_name": "\u9633\u6cc9\u5e02",
+          "pid": "243"
+        },
+        {
+          "region_id": "276",
+          "region_name": "\u957f\u6cbb\u5e02",
+          "pid": "243"
+        },
+        {
+          "region_id": "292",
+          "region_name": "\u664b\u57ce\u5e02",
+          "pid": "243"
+        },
+        {
+          "region_id": "300",
+          "region_name": "\u6714\u5dde\u5e02",
+          "pid": "243"
+        },
+        {
+          "region_id": "308",
+          "region_name": "\u664b\u4e2d\u5e02",
+          "pid": "243"
+        },
+        {
+          "region_id": "321",
+          "region_name": "\u8fd0\u57ce\u5e02",
+          "pid": "243"
+        },
+        {
+          "region_id": "336",
+          "region_name": "\u5ffb\u5dde\u5e02",
+          "pid": "243"
+        },
+        {
+          "region_id": "352",
+          "region_name": "\u4e34\u6c7e\u5e02",
+          "pid": "243"
+        },
+        {
+          "region_id": "371",
+          "region_name": "\u5415\u6881\u5e02",
+          "pid": "243"
+        }
+      ]
+    },
+    {
+      "region_name": "\u5185\u8499\u53e4\u81ea\u6cbb\u533a",
+      "region_id": "386",
+      "region": [
+        {
+          "region_id": "387",
+          "region_name": "\u547c\u548c\u6d69\u7279\u5e02",
+          "pid": "386"
+        },
+        {
+          "region_id": "398",
+          "region_name": "\u5305\u5934\u5e02",
+          "pid": "386"
+        },
+        {
+          "region_id": "409",
+          "region_name": "\u4e4c\u6d77\u5e02",
+          "pid": "386"
+        },
+        {
+          "region_id": "414",
+          "region_name": "\u8d64\u5cf0\u5e02",
+          "pid": "386"
+        },
+        {
+          "region_id": "428",
+          "region_name": "\u901a\u8fbd\u5e02",
+          "pid": "386"
+        },
+        {
+          "region_id": "438",
+          "region_name": "\u9102\u5c14\u591a\u65af\u5e02",
+          "pid": "386"
+        },
+        {
+          "region_id": "448",
+          "region_name": "\u547c\u4f26\u8d1d\u5c14\u5e02",
+          "pid": "386"
+        },
+        {
+          "region_id": "463",
+          "region_name": "\u5df4\u5f66\u6dd6\u5c14\u5e02",
+          "pid": "386"
+        },
+        {
+          "region_id": "472",
+          "region_name": "\u4e4c\u5170\u5bdf\u5e03\u5e02",
+          "pid": "386"
+        },
+        {
+          "region_id": "485",
+          "region_name": "\u5174\u5b89\u76df",
+          "pid": "386"
+        },
+        {
+          "region_id": "493",
+          "region_name": "\u9521\u6797\u90ed\u52d2\u76df",
+          "pid": "386"
+        },
+        {
+          "region_id": "507",
+          "region_name": "\u963f\u62c9\u5584\u76df",
+          "pid": "386"
+        }
+      ]
+    },
+    {
+      "region_name": "\u8fbd\u5b81\u7701",
+      "region_id": "512",
+      "region": [
+        {
+          "region_id": "513",
+          "region_name": "\u6c88\u9633\u5e02",
+          "pid": "512"
+        },
+        {
+          "region_id": "531",
+          "region_name": "\u5927\u8fde\u5e02",
+          "pid": "512"
+        },
+        {
+          "region_id": "545",
+          "region_name": "\u978d\u5c71\u5e02",
+          "pid": "512"
+        },
+        {
+          "region_id": "555",
+          "region_name": "\u629a\u987a\u5e02",
+          "pid": "512"
+        },
+        {
+          "region_id": "564",
+          "region_name": "\u672c\u6eaa\u5e02",
+          "pid": "512"
+        },
+        {
+          "region_id": "572",
+          "region_name": "\u4e39\u4e1c\u5e02",
+          "pid": "512"
+        },
+        {
+          "region_id": "580",
+          "region_name": "\u9526\u5dde\u5e02",
+          "pid": "512"
+        },
+        {
+          "region_id": "589",
+          "region_name": "\u8425\u53e3\u5e02",
+          "pid": "512"
+        },
+        {
+          "region_id": "597",
+          "region_name": "\u961c\u65b0\u5e02",
+          "pid": "512"
+        },
+        {
+          "region_id": "606",
+          "region_name": "\u8fbd\u9633\u5e02",
+          "pid": "512"
+        },
+        {
+          "region_id": "615",
+          "region_name": "\u76d8\u9526\u5e02",
+          "pid": "512"
+        },
+        {
+          "region_id": "621",
+          "region_name": "\u94c1\u5cad\u5e02",
+          "pid": "512"
+        },
+        {
+          "region_id": "630",
+          "region_name": "\u671d\u9633\u5e02",
+          "pid": "512"
+        },
+        {
+          "region_id": "639",
+          "region_name": "\u846b\u82a6\u5c9b\u5e02",
+          "pid": "512"
+        }
+      ]
+    },
+    {
+      "region_name": "\u5409\u6797\u7701",
+      "region_id": "647",
+      "region": [
+        {
+          "region_id": "648",
+          "region_name": "\u957f\u6625\u5e02",
+          "pid": "647"
+        },
+        {
+          "region_id": "664",
+          "region_name": "\u5409\u6797\u5e02",
+          "pid": "647"
+        },
+        {
+          "region_id": "675",
+          "region_name": "\u56db\u5e73\u5e02",
+          "pid": "647"
+        },
+        {
+          "region_id": "683",
+          "region_name": "\u8fbd\u6e90\u5e02",
+          "pid": "647"
+        },
+        {
+          "region_id": "689",
+          "region_name": "\u901a\u5316\u5e02",
+          "pid": "647"
+        },
+        {
+          "region_id": "698",
+          "region_name": "\u767d\u5c71\u5e02",
+          "pid": "647"
+        },
+        {
+          "region_id": "706",
+          "region_name": "\u677e\u539f\u5e02",
+          "pid": "647"
+        },
+        {
+          "region_id": "713",
+          "region_name": "\u767d\u57ce\u5e02",
+          "pid": "647"
+        },
+        {
+          "region_id": "720",
+          "region_name": "\u5ef6\u8fb9\u671d\u9c9c\u65cf\u81ea\u6cbb\u5dde",
+          "pid": "647"
+        }
+      ]
+    },
+    {
+      "region_name": "\u9ed1\u9f99\u6c5f\u7701",
+      "region_id": "730",
+      "region": [
+        {
+          "region_id": "731",
+          "region_name": "\u54c8\u5c14\u6ee8\u5e02",
+          "pid": "730"
+        },
+        {
+          "region_id": "753",
+          "region_name": "\u9f50\u9f50\u54c8\u5c14\u5e02",
+          "pid": "730"
+        },
+        {
+          "region_id": "771",
+          "region_name": "\u9e21\u897f\u5e02",
+          "pid": "730"
+        },
+        {
+          "region_id": "782",
+          "region_name": "\u9e64\u5c97\u5e02",
+          "pid": "730"
+        },
+        {
+          "region_id": "792",
+          "region_name": "\u53cc\u9e2d\u5c71\u5e02",
+          "pid": "730"
+        },
+        {
+          "region_id": "802",
+          "region_name": "\u5927\u5e86\u5e02",
+          "pid": "730"
+        },
+        {
+          "region_id": "813",
+          "region_name": "\u4f0a\u6625\u5e02",
+          "pid": "730"
+        },
+        {
+          "region_id": "832",
+          "region_name": "\u4f73\u6728\u65af\u5e02",
+          "pid": "730"
+        },
+        {
+          "region_id": "845",
+          "region_name": "\u4e03\u53f0\u6cb3\u5e02",
+          "pid": "730"
+        },
+        {
+          "region_id": "851",
+          "region_name": "\u7261\u4e39\u6c5f\u5e02",
+          "pid": "730"
+        },
+        {
+          "region_id": "863",
+          "region_name": "\u9ed1\u6cb3\u5e02",
+          "pid": "730"
+        },
+        {
+          "region_id": "871",
+          "region_name": "\u7ee5\u5316\u5e02",
+          "pid": "730"
+        },
+        {
+          "region_id": "883",
+          "region_name": "\u5927\u5174\u5b89\u5cad\u5730\u533a",
+          "pid": "730"
+        }
+      ]
+    },
+    {
+      "region_name": "\u4e0a\u6d77",
+      "region_id": "889",
+      "region": [
+        {
+          "region_id": "890",
+          "region_name": "\u4e0a\u6d77\u5e02",
+          "pid": "889"
+        }
+      ]
+    },
+    {
+      "region_name": "\u6c5f\u82cf\u7701",
+      "region_id": "912",
+      "region": [
+        {
+          "region_id": "913",
+          "region_name": "\u5357\u4eac\u5e02",
+          "pid": "912"
+        },
+        {
+          "region_id": "928",
+          "region_name": "\u65e0\u9521\u5e02",
+          "pid": "912"
+        },
+        {
+          "region_id": "939",
+          "region_name": "\u5f90\u5dde\u5e02",
+          "pid": "912"
+        },
+        {
+          "region_id": "952",
+          "region_name": "\u5e38\u5dde\u5e02",
+          "pid": "912"
+        },
+        {
+          "region_id": "961",
+          "region_name": "\u82cf\u5dde\u5e02",
+          "pid": "912"
+        },
+        {
+          "region_id": "976",
+          "region_name": "\u5357\u901a\u5e02",
+          "pid": "912"
+        },
+        {
+          "region_id": "988",
+          "region_name": "\u8fde\u4e91\u6e2f\u5e02",
+          "pid": "912"
+        },
+        {
+          "region_id": "997",
+          "region_name": "\u6dee\u5b89\u5e02",
+          "pid": "912"
+        },
+        {
+          "region_id": "1007",
+          "region_name": "\u76d0\u57ce\u5e02",
+          "pid": "912"
+        },
+        {
+          "region_id": "1018",
+          "region_name": "\u626c\u5dde\u5e02",
+          "pid": "912"
+        },
+        {
+          "region_id": "1028",
+          "region_name": "\u9547\u6c5f\u5e02",
+          "pid": "912"
+        },
+        {
+          "region_id": "1036",
+          "region_name": "\u6cf0\u5dde\u5e02",
+          "pid": "912"
+        },
+        {
+          "region_id": "1044",
+          "region_name": "\u5bbf\u8fc1\u5e02",
+          "pid": "912"
+        }
+      ]
+    },
+    {
+      "region_name": "\u6d59\u6c5f\u7701",
+      "region_id": "1051",
+      "region": [
+        {
+          "region_id": "1052",
+          "region_name": "\u676d\u5dde\u5e02",
+          "pid": "1051"
+        },
+        {
+          "region_id": "1067",
+          "region_name": "\u5b81\u6ce2\u5e02",
+          "pid": "1051"
+        },
+        {
+          "region_id": "1080",
+          "region_name": "\u6e29\u5dde\u5e02",
+          "pid": "1051"
+        },
+        {
+          "region_id": "1093",
+          "region_name": "\u5609\u5174\u5e02",
+          "pid": "1051"
+        },
+        {
+          "region_id": "1102",
+          "region_name": "\u6e56\u5dde\u5e02",
+          "pid": "1051"
+        },
+        {
+          "region_id": "1109",
+          "region_name": "\u7ecd\u5174\u5e02",
+          "pid": "1051"
+        },
+        {
+          "region_id": "1117",
+          "region_name": "\u91d1\u534e\u5e02",
+          "pid": "1051"
+        },
+        {
+          "region_id": "1128",
+          "region_name": "\u8862\u5dde\u5e02",
+          "pid": "1051"
+        },
+        {
+          "region_id": "1136",
+          "region_name": "\u821f\u5c71\u5e02",
+          "pid": "1051"
+        },
+        {
+          "region_id": "1142",
+          "region_name": "\u53f0\u5dde\u5e02",
+          "pid": "1051"
+        },
+        {
+          "region_id": "1153",
+          "region_name": "\u4e3d\u6c34\u5e02",
+          "pid": "1051"
+        }
+      ]
+    },
+    {
+      "region_name": "\u5b89\u5fbd\u7701",
+      "region_id": "1164",
+      "region": [
+        {
+          "region_id": "1165",
+          "region_name": "\u5408\u80a5\u5e02",
+          "pid": "1164"
+        },
+        {
+          "region_id": "1179",
+          "region_name": "\u829c\u6e56\u5e02",
+          "pid": "1164"
+        },
+        {
+          "region_id": "1189",
+          "region_name": "\u868c\u57e0\u5e02",
+          "pid": "1164"
+        },
+        {
+          "region_id": "1198",
+          "region_name": "\u6dee\u5357\u5e02",
+          "pid": "1164"
+        },
+        {
+          "region_id": "1206",
+          "region_name": "\u9a6c\u978d\u5c71\u5e02",
+          "pid": "1164"
+        },
+        {
+          "region_id": "1214",
+          "region_name": "\u6dee\u5317\u5e02",
+          "pid": "1164"
+        },
+        {
+          "region_id": "1220",
+          "region_name": "\u94dc\u9675\u5e02",
+          "pid": "1164"
+        },
+        {
+          "region_id": "1226",
+          "region_name": "\u5b89\u5e86\u5e02",
+          "pid": "1164"
+        },
+        {
+          "region_id": "1239",
+          "region_name": "\u9ec4\u5c71\u5e02",
+          "pid": "1164"
+        },
+        {
+          "region_id": "1248",
+          "region_name": "\u6ec1\u5dde\u5e02",
+          "pid": "1164"
+        },
+        {
+          "region_id": "1258",
+          "region_name": "\u961c\u9633\u5e02",
+          "pid": "1164"
+        },
+        {
+          "region_id": "1268",
+          "region_name": "\u5bbf\u5dde\u5e02",
+          "pid": "1164"
+        },
+        {
+          "region_id": "1275",
+          "region_name": "\u516d\u5b89\u5e02",
+          "pid": "1164"
+        },
+        {
+          "region_id": "1284",
+          "region_name": "\u4eb3\u5dde\u5e02",
+          "pid": "1164"
+        },
+        {
+          "region_id": "1290",
+          "region_name": "\u6c60\u5dde\u5e02",
+          "pid": "1164"
+        },
+        {
+          "region_id": "1296",
+          "region_name": "\u5ba3\u57ce\u5e02",
+          "pid": "1164"
+        }
+      ]
+    },
+    {
+      "region_name": "\u798f\u5efa\u7701",
+      "region_id": "1305",
+      "region": [
+        {
+          "region_id": "1306",
+          "region_name": "\u798f\u5dde\u5e02",
+          "pid": "1305"
+        },
+        {
+          "region_id": "1321",
+          "region_name": "\u53a6\u95e8\u5e02",
+          "pid": "1305"
+        },
+        {
+          "region_id": "1329",
+          "region_name": "\u8386\u7530\u5e02",
+          "pid": "1305"
+        },
+        {
+          "region_id": "1336",
+          "region_name": "\u4e09\u660e\u5e02",
+          "pid": "1305"
+        },
+        {
+          "region_id": "1350",
+          "region_name": "\u6cc9\u5dde\u5e02",
+          "pid": "1305"
+        },
+        {
+          "region_id": "1364",
+          "region_name": "\u6f33\u5dde\u5e02",
+          "pid": "1305"
+        },
+        {
+          "region_id": "1377",
+          "region_name": "\u5357\u5e73\u5e02",
+          "pid": "1305"
+        },
+        {
+          "region_id": "1389",
+          "region_name": "\u9f99\u5ca9\u5e02",
+          "pid": "1305"
+        },
+        {
+          "region_id": "1398",
+          "region_name": "\u5b81\u5fb7\u5e02",
+          "pid": "1305"
+        }
+      ]
+    },
+    {
+      "region_name": "\u6c5f\u897f\u7701",
+      "region_id": "1409",
+      "region": [
+        {
+          "region_id": "1410",
+          "region_name": "\u5357\u660c\u5e02",
+          "pid": "1409"
+        },
+        {
+          "region_id": "1424",
+          "region_name": "\u666f\u5fb7\u9547\u5e02",
+          "pid": "1409"
+        },
+        {
+          "region_id": "1430",
+          "region_name": "\u840d\u4e61\u5e02",
+          "pid": "1409"
+        },
+        {
+          "region_id": "1437",
+          "region_name": "\u4e5d\u6c5f\u5e02",
+          "pid": "1409"
+        },
+        {
+          "region_id": "1451",
+          "region_name": "\u65b0\u4f59\u5e02",
+          "pid": "1409"
+        },
+        {
+          "region_id": "1455",
+          "region_name": "\u9e70\u6f6d\u5e02",
+          "pid": "1409"
+        },
+        {
+          "region_id": "1460",
+          "region_name": "\u8d63\u5dde\u5e02",
+          "pid": "1409"
+        },
+        {
+          "region_id": "1481",
+          "region_name": "\u5409\u5b89\u5e02",
+          "pid": "1409"
+        },
+        {
+          "region_id": "1496",
+          "region_name": "\u5b9c\u6625\u5e02",
+          "pid": "1409"
+        },
+        {
+          "region_id": "1508",
+          "region_name": "\u629a\u5dde\u5e02",
+          "pid": "1409"
+        },
+        {
+          "region_id": "1521",
+          "region_name": "\u4e0a\u9976\u5e02",
+          "pid": "1409"
+        }
+      ]
+    },
+    {
+      "region_name": "\u5c71\u4e1c\u7701",
+      "region_id": "1535",
+      "region": [
+        {
+          "region_id": "1536",
+          "region_name": "\u6d4e\u5357\u5e02",
+          "pid": "1535"
+        },
+        {
+          "region_id": "1548",
+          "region_name": "\u9752\u5c9b\u5e02",
+          "pid": "1535"
+        },
+        {
+          "region_id": "1563",
+          "region_name": "\u6dc4\u535a\u5e02",
+          "pid": "1535"
+        },
+        {
+          "region_id": "1573",
+          "region_name": "\u67a3\u5e84\u5e02",
+          "pid": "1535"
+        },
+        {
+          "region_id": "1581",
+          "region_name": "\u4e1c\u8425\u5e02",
+          "pid": "1535"
+        },
+        {
+          "region_id": "1590",
+          "region_name": "\u70df\u53f0\u5e02",
+          "pid": "1535"
+        },
+        {
+          "region_id": "1604",
+          "region_name": "\u6f4d\u574a\u5e02",
+          "pid": "1535"
+        },
+        {
+          "region_id": "1619",
+          "region_name": "\u6d4e\u5b81\u5e02",
+          "pid": "1535"
+        },
+        {
+          "region_id": "1633",
+          "region_name": "\u6cf0\u5b89\u5e02",
+          "pid": "1535"
+        },
+        {
+          "region_id": "1641",
+          "region_name": "\u5a01\u6d77\u5e02",
+          "pid": "1535"
+        },
+        {
+          "region_id": "1647",
+          "region_name": "\u65e5\u7167\u5e02",
+          "pid": "1535"
+        },
+        {
+          "region_id": "1653",
+          "region_name": "\u83b1\u829c\u5e02",
+          "pid": "1535"
+        },
+        {
+          "region_id": "1657",
+          "region_name": "\u4e34\u6c82\u5e02",
+          "pid": "1535"
+        },
+        {
+          "region_id": "1671",
+          "region_name": "\u5fb7\u5dde\u5e02",
+          "pid": "1535"
+        },
+        {
+          "region_id": "1685",
+          "region_name": "\u804a\u57ce\u5e02",
+          "pid": "1535"
+        },
+        {
+          "region_id": "1695",
+          "region_name": "\u6ee8\u5dde\u5e02",
+          "pid": "1535"
+        },
+        {
+          "region_id": "1704",
+          "region_name": "\u83cf\u6cfd\u5e02",
+          "pid": "1535"
+        }
+      ]
+    },
+    {
+      "region_name": "\u6cb3\u5357\u7701",
+      "region_id": "1715",
+      "region": [
+        {
+          "region_id": "1716",
+          "region_name": "\u90d1\u5dde\u5e02",
+          "pid": "1715"
+        },
+        {
+          "region_id": "1732",
+          "region_name": "\u5f00\u5c01\u5e02",
+          "pid": "1715"
+        },
+        {
+          "region_id": "1744",
+          "region_name": "\u6d1b\u9633\u5e02",
+          "pid": "1715"
+        },
+        {
+          "region_id": "1762",
+          "region_name": "\u5e73\u9876\u5c71\u5e02",
+          "pid": "1715"
+        },
+        {
+          "region_id": "1774",
+          "region_name": "\u5b89\u9633\u5e02",
+          "pid": "1715"
+        },
+        {
+          "region_id": "1785",
+          "region_name": "\u9e64\u58c1\u5e02",
+          "pid": "1715"
+        },
+        {
+          "region_id": "1792",
+          "region_name": "\u65b0\u4e61\u5e02",
+          "pid": "1715"
+        },
+        {
+          "region_id": "1806",
+          "region_name": "\u7126\u4f5c\u5e02",
+          "pid": "1715"
+        },
+        {
+          "region_id": "1818",
+          "region_name": "\u6d4e\u6e90\u5e02",
+          "pid": "1715"
+        },
+        {
+          "region_id": "1819",
+          "region_name": "\u6fee\u9633\u5e02",
+          "pid": "1715"
+        },
+        {
+          "region_id": "1827",
+          "region_name": "\u8bb8\u660c\u5e02",
+          "pid": "1715"
+        },
+        {
+          "region_id": "1835",
+          "region_name": "\u6f2f\u6cb3\u5e02",
+          "pid": "1715"
+        },
+        {
+          "region_id": "1842",
+          "region_name": "\u4e09\u95e8\u5ce1\u5e02",
+          "pid": "1715"
+        },
+        {
+          "region_id": "1850",
+          "region_name": "\u5357\u9633\u5e02",
+          "pid": "1715"
+        },
+        {
+          "region_id": "1865",
+          "region_name": "\u5546\u4e18\u5e02",
+          "pid": "1715"
+        },
+        {
+          "region_id": "1876",
+          "region_name": "\u4fe1\u9633\u5e02",
+          "pid": "1715"
+        },
+        {
+          "region_id": "1888",
+          "region_name": "\u5468\u53e3\u5e02",
+          "pid": "1715"
+        },
+        {
+          "region_id": "1900",
+          "region_name": "\u9a7b\u9a6c\u5e97\u5e02",
+          "pid": "1715"
+        }
+      ]
+    },
+    {
+      "region_name": "\u6e56\u5317\u7701",
+      "region_id": "1912",
+      "region": [
+        {
+          "region_id": "1913",
+          "region_name": "\u6b66\u6c49\u5e02",
+          "pid": "1912"
+        },
+        {
+          "region_id": "1928",
+          "region_name": "\u9ec4\u77f3\u5e02",
+          "pid": "1912"
+        },
+        {
+          "region_id": "1936",
+          "region_name": "\u5341\u5830\u5e02",
+          "pid": "1912"
+        },
+        {
+          "region_id": "1947",
+          "region_name": "\u5b9c\u660c\u5e02",
+          "pid": "1912"
+        },
+        {
+          "region_id": "1964",
+          "region_name": "\u8944\u9633\u5e02",
+          "pid": "1912"
+        },
+        {
+          "region_id": "1975",
+          "region_name": "\u9102\u5dde\u5e02",
+          "pid": "1912"
+        },
+        {
+          "region_id": "1980",
+          "region_name": "\u8346\u95e8\u5e02",
+          "pid": "1912"
+        },
+        {
+          "region_id": "1987",
+          "region_name": "\u5b5d\u611f\u5e02",
+          "pid": "1912"
+        },
+        {
+          "region_id": "1996",
+          "region_name": "\u8346\u5dde\u5e02",
+          "pid": "1912"
+        },
+        {
+          "region_id": "2006",
+          "region_name": "\u9ec4\u5188\u5e02",
+          "pid": "1912"
+        },
+        {
+          "region_id": "2018",
+          "region_name": "\u54b8\u5b81\u5e02",
+          "pid": "1912"
+        },
+        {
+          "region_id": "2027",
+          "region_name": "\u968f\u5dde\u5e02",
+          "pid": "1912"
+        },
+        {
+          "region_id": "2032",
+          "region_name": "\u6069\u65bd\u571f\u5bb6\u65cf\u82d7\u65cf\u81ea\u6cbb\u5dde",
+          "pid": "1912"
+        },
+        {
+          "region_id": "2042",
+          "region_name": "\u4ed9\u6843\u5e02",
+          "pid": "1912"
+        },
+        {
+          "region_id": "2043",
+          "region_name": "\u6f5c\u6c5f\u5e02",
+          "pid": "1912"
+        },
+        {
+          "region_id": "2044",
+          "region_name": "\u5929\u95e8\u5e02",
+          "pid": "1912"
+        },
+        {
+          "region_id": "2045",
+          "region_name": "\u795e\u519c\u67b6\u6797\u533a",
+          "pid": "1912"
+        }
+      ]
+    },
+    {
+      "region_name": "\u6e56\u5357\u7701",
+      "region_id": "2046",
+      "region": [
+        {
+          "region_id": "2047",
+          "region_name": "\u957f\u6c99\u5e02",
+          "pid": "2046"
+        },
+        {
+          "region_id": "2058",
+          "region_name": "\u682a\u6d32\u5e02",
+          "pid": "2046"
+        },
+        {
+          "region_id": "2069",
+          "region_name": "\u6e58\u6f6d\u5e02",
+          "pid": "2046"
+        },
+        {
+          "region_id": "2076",
+          "region_name": "\u8861\u9633\u5e02",
+          "pid": "2046"
+        },
+        {
+          "region_id": "2090",
+          "region_name": "\u90b5\u9633\u5e02",
+          "pid": "2046"
+        },
+        {
+          "region_id": "2104",
+          "region_name": "\u5cb3\u9633\u5e02",
+          "pid": "2046"
+        },
+        {
+          "region_id": "2115",
+          "region_name": "\u5e38\u5fb7\u5e02",
+          "pid": "2046"
+        },
+        {
+          "region_id": "2126",
+          "region_name": "\u5f20\u5bb6\u754c\u5e02",
+          "pid": "2046"
+        },
+        {
+          "region_id": "2132",
+          "region_name": "\u76ca\u9633\u5e02",
+          "pid": "2046"
+        },
+        {
+          "region_id": "2140",
+          "region_name": "\u90f4\u5dde\u5e02",
+          "pid": "2046"
+        },
+        {
+          "region_id": "2153",
+          "region_name": "\u6c38\u5dde\u5e02",
+          "pid": "2046"
+        },
+        {
+          "region_id": "2166",
+          "region_name": "\u6000\u5316\u5e02",
+          "pid": "2046"
+        },
+        {
+          "region_id": "2180",
+          "region_name": "\u5a04\u5e95\u5e02",
+          "pid": "2046"
+        },
+        {
+          "region_id": "2187",
+          "region_name": "\u6e58\u897f\u571f\u5bb6\u65cf\u82d7\u65cf\u81ea\u6cbb\u5dde",
+          "pid": "2046"
+        }
+      ]
+    },
+    {
+      "region_name": "\u5e7f\u4e1c\u7701",
+      "region_id": "2197",
+      "region": [
+        {
+          "region_id": "2198",
+          "region_name": "\u5e7f\u5dde\u5e02",
+          "pid": "2197"
+        },
+        {
+          "region_id": "2213",
+          "region_name": "\u97f6\u5173\u5e02",
+          "pid": "2197"
+        },
+        {
+          "region_id": "2225",
+          "region_name": "\u6df1\u5733\u5e02",
+          "pid": "2197"
+        },
+        {
+          "region_id": "2233",
+          "region_name": "\u73e0\u6d77\u5e02",
+          "pid": "2197"
+        },
+        {
+          "region_id": "2240",
+          "region_name": "\u6c55\u5934\u5e02",
+          "pid": "2197"
+        },
+        {
+          "region_id": "2249",
+          "region_name": "\u4f5b\u5c71\u5e02",
+          "pid": "2197"
+        },
+        {
+          "region_id": "2256",
+          "region_name": "\u6c5f\u95e8\u5e02",
+          "pid": "2197"
+        },
+        {
+          "region_id": "2265",
+          "region_name": "\u6e5b\u6c5f\u5e02",
+          "pid": "2197"
+        },
+        {
+          "region_id": "2276",
+          "region_name": "\u8302\u540d\u5e02",
+          "pid": "2197"
+        },
+        {
+          "region_id": "2284",
+          "region_name": "\u8087\u5e86\u5e02",
+          "pid": "2197"
+        },
+        {
+          "region_id": "2294",
+          "region_name": "\u60e0\u5dde\u5e02",
+          "pid": "2197"
+        },
+        {
+          "region_id": "2301",
+          "region_name": "\u6885\u5dde\u5e02",
+          "pid": "2197"
+        },
+        {
+          "region_id": "2311",
+          "region_name": "\u6c55\u5c3e\u5e02",
+          "pid": "2197"
+        },
+        {
+          "region_id": "2317",
+          "region_name": "\u6cb3\u6e90\u5e02",
+          "pid": "2197"
+        },
+        {
+          "region_id": "2325",
+          "region_name": "\u9633\u6c5f\u5e02",
+          "pid": "2197"
+        },
+        {
+          "region_id": "2331",
+          "region_name": "\u6e05\u8fdc\u5e02",
+          "pid": "2197"
+        },
+        {
+          "region_id": "2341",
+          "region_name": "\u4e1c\u839e\u5e02",
+          "pid": "2197"
+        },
+        {
+          "region_id": "2342",
+          "region_name": "\u4e2d\u5c71\u5e02",
+          "pid": "2197"
+        },
+        {
+          "region_id": "2343",
+          "region_name": "\u6f6e\u5dde\u5e02",
+          "pid": "2197"
+        },
+        {
+          "region_id": "2349",
+          "region_name": "\u63ed\u9633\u5e02",
+          "pid": "2197"
+        },
+        {
+          "region_id": "2357",
+          "region_name": "\u4e91\u6d6e\u5e02",
+          "pid": "2197"
+        }
+      ]
+    },
+    {
+      "region_name": "\u5e7f\u897f\u58ee\u65cf\u81ea\u6cbb\u533a",
+      "region_id": "2364",
+      "region": [
+        {
+          "region_id": "2365",
+          "region_name": "\u5357\u5b81\u5e02",
+          "pid": "2364"
+        },
+        {
+          "region_id": "2379",
+          "region_name": "\u67f3\u5dde\u5e02",
+          "pid": "2364"
+        },
+        {
+          "region_id": "2391",
+          "region_name": "\u6842\u6797\u5e02",
+          "pid": "2364"
+        },
+        {
+          "region_id": "2410",
+          "region_name": "\u68a7\u5dde\u5e02",
+          "pid": "2364"
+        },
+        {
+          "region_id": "2419",
+          "region_name": "\u5317\u6d77\u5e02",
+          "pid": "2364"
+        },
+        {
+          "region_id": "2425",
+          "region_name": "\u9632\u57ce\u6e2f\u5e02",
+          "pid": "2364"
+        },
+        {
+          "region_id": "2431",
+          "region_name": "\u94a6\u5dde\u5e02",
+          "pid": "2364"
+        },
+        {
+          "region_id": "2437",
+          "region_name": "\u8d35\u6e2f\u5e02",
+          "pid": "2364"
+        },
+        {
+          "region_id": "2444",
+          "region_name": "\u7389\u6797\u5e02",
+          "pid": "2364"
+        },
+        {
+          "region_id": "2452",
+          "region_name": "\u767e\u8272\u5e02",
+          "pid": "2364"
+        },
+        {
+          "region_id": "2466",
+          "region_name": "\u8d3a\u5dde\u5e02",
+          "pid": "2364"
+        },
+        {
+          "region_id": "2472",
+          "region_name": "\u6cb3\u6c60\u5e02",
+          "pid": "2364"
+        },
+        {
+          "region_id": "2485",
+          "region_name": "\u6765\u5bbe\u5e02",
+          "pid": "2364"
+        },
+        {
+          "region_id": "2493",
+          "region_name": "\u5d07\u5de6\u5e02",
+          "pid": "2364"
+        }
+      ]
+    },
+    {
+      "region_name": "\u6d77\u5357\u7701",
+      "region_id": "2502",
+      "region": [
+        {
+          "region_id": "2503",
+          "region_name": "\u6d77\u53e3\u5e02",
+          "pid": "2502"
+        },
+        {
+          "region_id": "2509",
+          "region_name": "\u4e09\u4e9a\u5e02",
+          "pid": "2502"
+        },
+        {
+          "region_id": "2510",
+          "region_name": "\u4e94\u6307\u5c71\u5e02",
+          "pid": "2502"
+        },
+        {
+          "region_id": "2511",
+          "region_name": "\u743c\u6d77\u5e02",
+          "pid": "2502"
+        },
+        {
+          "region_id": "2512",
+          "region_name": "\u510b\u5dde\u5e02",
+          "pid": "2502"
+        },
+        {
+          "region_id": "2513",
+          "region_name": "\u6587\u660c\u5e02",
+          "pid": "2502"
+        },
+        {
+          "region_id": "2514",
+          "region_name": "\u4e07\u5b81\u5e02",
+          "pid": "2502"
+        },
+        {
+          "region_id": "2515",
+          "region_name": "\u4e1c\u65b9\u5e02",
+          "pid": "2502"
+        },
+        {
+          "region_id": "2516",
+          "region_name": "\u5b9a\u5b89\u53bf",
+          "pid": "2502"
+        },
+        {
+          "region_id": "2517",
+          "region_name": "\u5c6f\u660c\u53bf",
+          "pid": "2502"
+        },
+        {
+          "region_id": "2518",
+          "region_name": "\u6f84\u8fc8\u53bf",
+          "pid": "2502"
+        },
+        {
+          "region_id": "2519",
+          "region_name": "\u4e34\u9ad8\u53bf",
+          "pid": "2502"
+        },
+        {
+          "region_id": "2520",
+          "region_name": "\u767d\u6c99\u9ece\u65cf\u81ea\u6cbb\u53bf",
+          "pid": "2502"
+        },
+        {
+          "region_id": "2521",
+          "region_name": "\u660c\u6c5f\u9ece\u65cf\u81ea\u6cbb\u53bf",
+          "pid": "2502"
+        },
+        {
+          "region_id": "2522",
+          "region_name": "\u4e50\u4e1c\u9ece\u65cf\u81ea\u6cbb\u53bf",
+          "pid": "2502"
+        },
+        {
+          "region_id": "2523",
+          "region_name": "\u9675\u6c34\u9ece\u65cf\u81ea\u6cbb\u53bf",
+          "pid": "2502"
+        },
+        {
+          "region_id": "2524",
+          "region_name": "\u4fdd\u4ead\u9ece\u65cf\u82d7\u65cf\u81ea\u6cbb\u53bf",
+          "pid": "2502"
+        },
+        {
+          "region_id": "2525",
+          "region_name": "\u743c\u4e2d\u9ece\u65cf\u82d7\u65cf\u81ea\u6cbb\u53bf",
+          "pid": "2502"
+        },
+        {
+          "region_id": "2526",
+          "region_name": "\u897f\u6c99\u7fa4\u5c9b",
+          "pid": "2502"
+        },
+        {
+          "region_id": "2527",
+          "region_name": "\u5357\u6c99\u7fa4\u5c9b",
+          "pid": "2502"
+        },
+        {
+          "region_id": "2528",
+          "region_name": "\u4e2d\u6c99\u7fa4\u5c9b\u7684\u5c9b\u7901\u53ca\u5176\u6d77\u57df",
+          "pid": "2502"
+        }
+      ]
+    },
+    {
+      "region_name": "\u91cd\u5e86",
+      "region_id": "2529",
+      "region": [
+        {
+          "region_id": "2530",
+          "region_name": "\u91cd\u5e86\u5e02",
+          "pid": "2529"
+        }
+      ]
+    },
+    {
+      "region_name": "\u56db\u5ddd\u7701",
+      "region_id": "2572",
+      "region": [
+        {
+          "region_id": "2573",
+          "region_name": "\u6210\u90fd\u5e02",
+          "pid": "2572"
+        },
+        {
+          "region_id": "2594",
+          "region_name": "\u81ea\u8d21\u5e02",
+          "pid": "2572"
+        },
+        {
+          "region_id": "2602",
+          "region_name": "\u6500\u679d\u82b1\u5e02",
+          "pid": "2572"
+        },
+        {
+          "region_id": "2609",
+          "region_name": "\u6cf8\u5dde\u5e02",
+          "pid": "2572"
+        },
+        {
+          "region_id": "2618",
+          "region_name": "\u5fb7\u9633\u5e02",
+          "pid": "2572"
+        },
+        {
+          "region_id": "2626",
+          "region_name": "\u7ef5\u9633\u5e02",
+          "pid": "2572"
+        },
+        {
+          "region_id": "2638",
+          "region_name": "\u5e7f\u5143\u5e02",
+          "pid": "2572"
+        },
+        {
+          "region_id": "2647",
+          "region_name": "\u9042\u5b81\u5e02",
+          "pid": "2572"
+        },
+        {
+          "region_id": "2654",
+          "region_name": "\u5185\u6c5f\u5e02",
+          "pid": "2572"
+        },
+        {
+          "region_id": "2661",
+          "region_name": "\u4e50\u5c71\u5e02",
+          "pid": "2572"
+        },
+        {
+          "region_id": "2674",
+          "region_name": "\u5357\u5145\u5e02",
+          "pid": "2572"
+        },
+        {
+          "region_id": "2685",
+          "region_name": "\u7709\u5c71\u5e02",
+          "pid": "2572"
+        },
+        {
+          "region_id": "2693",
+          "region_name": "\u5b9c\u5bbe\u5e02",
+          "pid": "2572"
+        },
+        {
+          "region_id": "2705",
+          "region_name": "\u5e7f\u5b89\u5e02",
+          "pid": "2572"
+        },
+        {
+          "region_id": "2713",
+          "region_name": "\u8fbe\u5dde\u5e02",
+          "pid": "2572"
+        },
+        {
+          "region_id": "2722",
+          "region_name": "\u96c5\u5b89\u5e02",
+          "pid": "2572"
+        },
+        {
+          "region_id": "2732",
+          "region_name": "\u5df4\u4e2d\u5e02",
+          "pid": "2572"
+        },
+        {
+          "region_id": "2738",
+          "region_name": "\u8d44\u9633\u5e02",
+          "pid": "2572"
+        },
+        {
+          "region_id": "2744",
+          "region_name": "\u963f\u575d\u85cf\u65cf\u7f8c\u65cf\u81ea\u6cbb\u5dde",
+          "pid": "2572"
+        },
+        {
+          "region_id": "2759",
+          "region_name": "\u7518\u5b5c\u85cf\u65cf\u81ea\u6cbb\u5dde",
+          "pid": "2572"
+        },
+        {
+          "region_id": "2779",
+          "region_name": "\u51c9\u5c71\u5f5d\u65cf\u81ea\u6cbb\u5dde",
+          "pid": "2572"
+        }
+      ]
+    },
+    {
+      "region_name": "\u8d35\u5dde\u7701",
+      "region_id": "2798",
+      "region": [
+        {
+          "region_id": "2799",
+          "region_name": "\u8d35\u9633\u5e02",
+          "pid": "2798"
+        },
+        {
+          "region_id": "2812",
+          "region_name": "\u516d\u76d8\u6c34\u5e02",
+          "pid": "2798"
+        },
+        {
+          "region_id": "2818",
+          "region_name": "\u9075\u4e49\u5e02",
+          "pid": "2798"
+        },
+        {
+          "region_id": "2834",
+          "region_name": "\u5b89\u987a\u5e02",
+          "pid": "2798"
+        },
+        {
+          "region_id": "2842",
+          "region_name": "\u94dc\u4ec1\u5730\u533a",
+          "pid": "2798"
+        },
+        {
+          "region_id": "2854",
+          "region_name": "\u9ed4\u897f\u5357\u5e03\u4f9d\u65cf\u82d7\u65cf\u81ea\u6cbb\u5dde",
+          "pid": "2798"
+        },
+        {
+          "region_id": "2864",
+          "region_name": "\u6bd5\u8282\u5730\u533a",
+          "pid": "2798"
+        },
+        {
+          "region_id": "2874",
+          "region_name": "\u9ed4\u4e1c\u5357\u82d7\u65cf\u4f97\u65cf\u81ea\u6cbb\u5dde",
+          "pid": "2798"
+        },
+        {
+          "region_id": "2892",
+          "region_name": "\u9ed4\u5357\u5e03\u4f9d\u65cf\u82d7\u65cf\u81ea\u6cbb\u5dde",
+          "pid": "2798"
+        }
+      ]
+    },
+    {
+      "region_name": "\u4e91\u5357\u7701",
+      "region_id": "2906",
+      "region": [
+        {
+          "region_id": "2907",
+          "region_name": "\u6606\u660e\u5e02",
+          "pid": "2906"
+        },
+        {
+          "region_id": "2923",
+          "region_name": "\u66f2\u9756\u5e02",
+          "pid": "2906"
+        },
+        {
+          "region_id": "2934",
+          "region_name": "\u7389\u6eaa\u5e02",
+          "pid": "2906"
+        },
+        {
+          "region_id": "2945",
+          "region_name": "\u4fdd\u5c71\u5e02",
+          "pid": "2906"
+        },
+        {
+          "region_id": "2952",
+          "region_name": "\u662d\u901a\u5e02",
+          "pid": "2906"
+        },
+        {
+          "region_id": "2965",
+          "region_name": "\u4e3d\u6c5f\u5e02",
+          "pid": "2906"
+        },
+        {
+          "region_id": "2972",
+          "region_name": "\u666e\u6d31\u5e02",
+          "pid": "2906"
+        },
+        {
+          "region_id": "2984",
+          "region_name": "\u4e34\u6ca7\u5e02",
+          "pid": "2906"
+        },
+        {
+          "region_id": "2994",
+          "region_name": "\u695a\u96c4\u5f5d\u65cf\u81ea\u6cbb\u5dde",
+          "pid": "2906"
+        },
+        {
+          "region_id": "3006",
+          "region_name": "\u7ea2\u6cb3\u54c8\u5c3c\u65cf\u5f5d\u65cf\u81ea\u6cbb\u5dde",
+          "pid": "2906"
+        },
+        {
+          "region_id": "3021",
+          "region_name": "\u6587\u5c71\u58ee\u65cf\u82d7\u65cf\u81ea\u6cbb\u5dde",
+          "pid": "2906"
+        },
+        {
+          "region_id": "3031",
+          "region_name": "\u897f\u53cc\u7248\u7eb3\u50a3\u65cf\u81ea\u6cbb\u5dde",
+          "pid": "2906"
+        },
+        {
+          "region_id": "3036",
+          "region_name": "\u5927\u7406\u767d\u65cf\u81ea\u6cbb\u5dde",
+          "pid": "2906"
+        },
+        {
+          "region_id": "3050",
+          "region_name": "\u5fb7\u5b8f\u50a3\u65cf\u666f\u9887\u65cf\u81ea\u6cbb\u5dde",
+          "pid": "2906"
+        },
+        {
+          "region_id": "3057",
+          "region_name": "\u6012\u6c5f\u5088\u50f3\u65cf\u81ea\u6cbb\u5dde",
+          "pid": "2906"
+        },
+        {
+          "region_id": "3063",
+          "region_name": "\u8fea\u5e86\u85cf\u65cf\u81ea\u6cbb\u5dde",
+          "pid": "2906"
+        }
+      ]
+    },
+    {
+      "region_name": "\u897f\u85cf\u81ea\u6cbb\u533a",
+      "region_id": "3068",
+      "region": [
+        {
+          "region_id": "3069",
+          "region_name": "\u62c9\u8428\u5e02",
+          "pid": "3068"
+        },
+        {
+          "region_id": "3079",
+          "region_name": "\u660c\u90fd\u5730\u533a",
+          "pid": "3068"
+        },
+        {
+          "region_id": "3092",
+          "region_name": "\u5c71\u5357\u5730\u533a",
+          "pid": "3068"
+        },
+        {
+          "region_id": "3106",
+          "region_name": "\u65e5\u5580\u5219\u5730\u533a",
+          "pid": "3068"
+        },
+        {
+          "region_id": "3126",
+          "region_name": "\u90a3\u66f2\u5730\u533a",
+          "pid": "3068"
+        },
+        {
+          "region_id": "3138",
+          "region_name": "\u963f\u91cc\u5730\u533a",
+          "pid": "3068"
+        },
+        {
+          "region_id": "3147",
+          "region_name": "\u6797\u829d\u5730\u533a",
+          "pid": "3068"
+        }
+      ]
+    },
+    {
+      "region_name": "\u9655\u897f\u7701",
+      "region_id": "3156",
+      "region": [
+        {
+          "region_id": "3157",
+          "region_name": "\u897f\u5b89\u5e02",
+          "pid": "3156"
+        },
+        {
+          "region_id": "3172",
+          "region_name": "\u94dc\u5ddd\u5e02",
+          "pid": "3156"
+        },
+        {
+          "region_id": "3178",
+          "region_name": "\u5b9d\u9e21\u5e02",
+          "pid": "3156"
+        },
+        {
+          "region_id": "3192",
+          "region_name": "\u54b8\u9633\u5e02",
+          "pid": "3156"
+        },
+        {
+          "region_id": "3208",
+          "region_name": "\u6e2d\u5357\u5e02",
+          "pid": "3156"
+        },
+        {
+          "region_id": "3221",
+          "region_name": "\u5ef6\u5b89\u5e02",
+          "pid": "3156"
+        },
+        {
+          "region_id": "3236",
+          "region_name": "\u6c49\u4e2d\u5e02",
+          "pid": "3156"
+        },
+        {
+          "region_id": "3249",
+          "region_name": "\u6986\u6797\u5e02",
+          "pid": "3156"
+        },
+        {
+          "region_id": "3263",
+          "region_name": "\u5b89\u5eb7\u5e02",
+          "pid": "3156"
+        },
+        {
+          "region_id": "3275",
+          "region_name": "\u5546\u6d1b\u5e02",
+          "pid": "3156"
+        }
+      ]
+    },
+    {
+      "region_name": "\u7518\u8083\u7701",
+      "region_id": "3284",
+      "region": [
+        {
+          "region_id": "3285",
+          "region_name": "\u5170\u5dde\u5e02",
+          "pid": "3284"
+        },
+        {
+          "region_id": "3295",
+          "region_name": "\u5609\u5cea\u5173\u5e02",
+          "pid": "3284"
+        },
+        {
+          "region_id": "3296",
+          "region_name": "\u91d1\u660c\u5e02",
+          "pid": "3284"
+        },
+        {
+          "region_id": "3300",
+          "region_name": "\u767d\u94f6\u5e02",
+          "pid": "3284"
+        },
+        {
+          "region_id": "3307",
+          "region_name": "\u5929\u6c34\u5e02",
+          "pid": "3284"
+        },
+        {
+          "region_id": "3316",
+          "region_name": "\u6b66\u5a01\u5e02",
+          "pid": "3284"
+        },
+        {
+          "region_id": "3322",
+          "region_name": "\u5f20\u6396\u5e02",
+          "pid": "3284"
+        },
+        {
+          "region_id": "3330",
+          "region_name": "\u5e73\u51c9\u5e02",
+          "pid": "3284"
+        },
+        {
+          "region_id": "3339",
+          "region_name": "\u9152\u6cc9\u5e02",
+          "pid": "3284"
+        },
+        {
+          "region_id": "3348",
+          "region_name": "\u5e86\u9633\u5e02",
+          "pid": "3284"
+        },
+        {
+          "region_id": "3358",
+          "region_name": "\u5b9a\u897f\u5e02",
+          "pid": "3284"
+        },
+        {
+          "region_id": "3367",
+          "region_name": "\u9647\u5357\u5e02",
+          "pid": "3284"
+        },
+        {
+          "region_id": "3378",
+          "region_name": "\u4e34\u590f\u56de\u65cf\u81ea\u6cbb\u5dde",
+          "pid": "3284"
+        },
+        {
+          "region_id": "3388",
+          "region_name": "\u7518\u5357\u85cf\u65cf\u81ea\u6cbb\u5dde",
+          "pid": "3284"
+        }
+      ]
+    },
+    {
+      "region_name": "\u9752\u6d77\u7701",
+      "region_id": "3398",
+      "region": [
+        {
+          "region_id": "3399",
+          "region_name": "\u897f\u5b81\u5e02",
+          "pid": "3398"
+        },
+        {
+          "region_id": "3408",
+          "region_name": "\u6d77\u4e1c\u5730\u533a",
+          "pid": "3398"
+        },
+        {
+          "region_id": "3416",
+          "region_name": "\u6d77\u5317\u85cf\u65cf\u81ea\u6cbb\u5dde",
+          "pid": "3398"
+        },
+        {
+          "region_id": "3422",
+          "region_name": "\u9ec4\u5357\u85cf\u65cf\u81ea\u6cbb\u5dde",
+          "pid": "3398"
+        },
+        {
+          "region_id": "3428",
+          "region_name": "\u6d77\u5357\u85cf\u65cf\u81ea\u6cbb\u5dde",
+          "pid": "3398"
+        },
+        {
+          "region_id": "3435",
+          "region_name": "\u679c\u6d1b\u85cf\u65cf\u81ea\u6cbb\u5dde",
+          "pid": "3398"
+        },
+        {
+          "region_id": "3443",
+          "region_name": "\u7389\u6811\u85cf\u65cf\u81ea\u6cbb\u5dde",
+          "pid": "3398"
+        },
+        {
+          "region_id": "3451",
+          "region_name": "\u6d77\u897f\u8499\u53e4\u65cf\u85cf\u65cf\u81ea\u6cbb\u5dde",
+          "pid": "3398"
+        }
+      ]
+    },
+    {
+      "region_name": "\u5b81\u590f\u56de\u65cf\u81ea\u6cbb\u533a",
+      "region_id": "3458",
+      "region": [
+        {
+          "region_id": "3459",
+          "region_name": "\u94f6\u5ddd\u5e02",
+          "pid": "3458"
+        },
+        {
+          "region_id": "3467",
+          "region_name": "\u77f3\u5634\u5c71\u5e02",
+          "pid": "3458"
+        },
+        {
+          "region_id": "3472",
+          "region_name": "\u5434\u5fe0\u5e02",
+          "pid": "3458"
+        },
+        {
+          "region_id": "3479",
+          "region_name": "\u56fa\u539f\u5e02",
+          "pid": "3458"
+        },
+        {
+          "region_id": "3486",
+          "region_name": "\u4e2d\u536b\u5e02",
+          "pid": "3458"
+        }
+      ]
+    },
+    {
+      "region_name": "\u65b0\u7586\u7ef4\u543e\u5c14\u81ea\u6cbb\u533a",
+      "region_id": "3491",
+      "region": [
+        {
+          "region_id": "3492",
+          "region_name": "\u4e4c\u9c81\u6728\u9f50\u5e02",
+          "pid": "3491"
+        },
+        {
+          "region_id": "3503",
+          "region_name": "\u514b\u62c9\u739b\u4f9d\u5e02",
+          "pid": "3491"
+        },
+        {
+          "region_id": "3509",
+          "region_name": "\u5410\u9c81\u756a\u5730\u533a",
+          "pid": "3491"
+        },
+        {
+          "region_id": "3514",
+          "region_name": "\u54c8\u5bc6\u5730\u533a",
+          "pid": "3491"
+        },
+        {
+          "region_id": "3519",
+          "region_name": "\u660c\u5409\u56de\u65cf\u81ea\u6cbb\u5dde",
+          "pid": "3491"
+        },
+        {
+          "region_id": "3529",
+          "region_name": "\u535a\u5c14\u5854\u62c9\u8499\u53e4\u81ea\u6cbb\u5dde",
+          "pid": "3491"
+        },
+        {
+          "region_id": "3534",
+          "region_name": "\u5df4\u97f3\u90ed\u695e\u8499\u53e4\u81ea\u6cbb\u5dde",
+          "pid": "3491"
+        },
+        {
+          "region_id": "3545",
+          "region_name": "\u963f\u514b\u82cf\u5730\u533a",
+          "pid": "3491"
+        },
+        {
+          "region_id": "3556",
+          "region_name": "\u514b\u5b5c\u52d2\u82cf\u67ef\u5c14\u514b\u5b5c\u81ea\u6cbb\u5dde",
+          "pid": "3491"
+        },
+        {
+          "region_id": "3562",
+          "region_name": "\u5580\u4ec0\u5730\u533a",
+          "pid": "3491"
+        },
+        {
+          "region_id": "3576",
+          "region_name": "\u548c\u7530\u5730\u533a",
+          "pid": "3491"
+        },
+        {
+          "region_id": "3586",
+          "region_name": "\u4f0a\u7281\u54c8\u8428\u514b\u81ea\u6cbb\u5dde",
+          "pid": "3491"
+        },
+        {
+          "region_id": "3598",
+          "region_name": "\u5854\u57ce\u5730\u533a",
+          "pid": "3491"
+        },
+        {
+          "region_id": "3607",
+          "region_name": "\u963f\u52d2\u6cf0\u5730\u533a",
+          "pid": "3491"
+        },
+        {
+          "region_id": "3616",
+          "region_name": "\u77f3\u6cb3\u5b50\u5e02",
+          "pid": "3491"
+        },
+        {
+          "region_id": "3617",
+          "region_name": "\u963f\u62c9\u5c14\u5e02",
+          "pid": "3491"
+        },
+        {
+          "region_id": "3618",
+          "region_name": "\u56fe\u6728\u8212\u514b\u5e02",
+          "pid": "3491"
+        },
+        {
+          "region_id": "3619",
+          "region_name": "\u4e94\u5bb6\u6e20\u5e02",
+          "pid": "3491"
+        }
+      ]
+    },
+    {
+      "region_name": "\u53f0\u6e7e\u7701",
+      "region_id": "3620",
+      "region": [
+        {
+          "region_id": "3621",
+          "region_name": "\u53f0\u5317\u5e02",
+          "pid": "3620"
+        },
+        {
+          "region_id": "3635",
+          "region_name": "\u9ad8\u96c4\u5e02",
+          "pid": "3620"
+        },
+        {
+          "region_id": "3648",
+          "region_name": "\u53f0\u5357\u5e02",
+          "pid": "3620"
+        },
+        {
+          "region_id": "3656",
+          "region_name": "\u53f0\u4e2d\u5e02",
+          "pid": "3620"
+        },
+        {
+          "region_id": "3666",
+          "region_name": "\u91d1\u95e8\u53bf",
+          "pid": "3620"
+        },
+        {
+          "region_id": "3667",
+          "region_name": "\u5357\u6295\u53bf",
+          "pid": "3620"
+        },
+        {
+          "region_id": "3668",
+          "region_name": "\u57fa\u9686\u5e02",
+          "pid": "3620"
+        },
+        {
+          "region_id": "3677",
+          "region_name": "\u65b0\u7af9\u5e02",
+          "pid": "3620"
+        },
+        {
+          "region_id": "3682",
+          "region_name": "\u5609\u4e49\u5e02",
+          "pid": "3620"
+        },
+        {
+          "region_id": "3686",
+          "region_name": "\u65b0\u5317\u5e02",
+          "pid": "3620"
+        },
+        {
+          "region_id": "3687",
+          "region_name": "\u5b9c\u5170\u53bf",
+          "pid": "3620"
+        },
+        {
+          "region_id": "3688",
+          "region_name": "\u65b0\u7af9\u53bf",
+          "pid": "3620"
+        },
+        {
+          "region_id": "3689",
+          "region_name": "\u6843\u56ed\u53bf",
+          "pid": "3620"
+        },
+        {
+          "region_id": "3690",
+          "region_name": "\u82d7\u6817\u53bf",
+          "pid": "3620"
+        },
+        {
+          "region_id": "3691",
+          "region_name": "\u5f70\u5316\u53bf",
+          "pid": "3620"
+        },
+        {
+          "region_id": "3692",
+          "region_name": "\u5609\u4e49\u53bf",
+          "pid": "3620"
+        },
+        {
+          "region_id": "3693",
+          "region_name": "\u4e91\u6797\u53bf",
+          "pid": "3620"
+        },
+        {
+          "region_id": "3694",
+          "region_name": "\u5c4f\u4e1c\u53bf",
+          "pid": "3620"
+        },
+        {
+          "region_id": "3695",
+          "region_name": "\u53f0\u4e1c\u53bf",
+          "pid": "3620"
+        },
+        {
+          "region_id": "3696",
+          "region_name": "\u82b1\u83b2\u53bf",
+          "pid": "3620"
+        },
+        {
+          "region_id": "3697",
+          "region_name": "\u6f8e\u6e56\u53bf",
+          "pid": "3620"
+        }
+      ]
+    },
+    {
+      "region_name": "\u9999\u6e2f\u7279\u522b\u884c\u653f\u533a",
+      "region_id": "3698",
+      "region": [
+        {
+          "region_id": "3699",
+          "region_name": "\u9999\u6e2f\u5c9b",
+          "pid": "3698"
+        },
+        {
+          "region_id": "3704",
+          "region_name": "\u4e5d\u9f99",
+          "pid": "3698"
+        },
+        {
+          "region_id": "3710",
+          "region_name": "\u65b0\u754c",
+          "pid": "3698"
+        }
+      ]
+    },
+    {
+      "region_name": "\u6fb3\u95e8\u7279\u522b\u884c\u653f\u533a",
+      "region_id": "3720",
+      "region": [
+        {
+          "region_id": "3721",
+          "region_name": "\u6fb3\u95e8\u534a\u5c9b",
+          "pid": "3720"
+        },
+        {
+          "region_id": "3722",
+          "region_name": "\u79bb\u5c9b",
+          "pid": "3720"
+        }
+      ]
+    }
+  ]
+}

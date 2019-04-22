@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_f8f8f8">
+
+    <!--标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_50"
+        android:background="@color/color_ffffff"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/ib_city_left"
+            style="@style/ww"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/padding_10"
+            android:background="@null"
+            android:src="@drawable/selector_titlebar_left"
+            android:onClick="onBtnClick"
+            android:textColor="@color/color_ffffff" />
+
+        <TextView
+            android:id="@+id/tv_city_title"
+            style="@style/ww"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="北京"
+            android:drawableRight="@mipmap/icon_forword_down"
+            android:drawablePadding="@dimen/padding_5"
+            android:textColor="@color/color_000000"
+            android:textSize="@dimen/text_font_20" />
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_10"
+        android:text="当前定位城市"
+        style="@style/Font_Big_Gray"/>
+    <View
+        style="@style/LineStyleE5E5E5"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_10"
+        android:background="@color/color_ffffff">
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_15"
+            android:paddingRight="@dimen/padding_15"
+            android:paddingTop="@dimen/padding_5"
+            android:paddingBottom="@dimen/padding_5"
+            android:text="北京"
+            android:onClick="onBtnClick"
+            style="@style/Font_Big_White"
+            android:background="@drawable/btn_blue_5"/>
+
+    </LinearLayout>
+
+
+    <com.lzyc.ybtappcal.widget.sort.ContactListViewImpl
+        android:id="@+id/lv_city"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:listSelector="#00000000"
+        android:smoothScrollbar="true" />
+
+</LinearLayout>

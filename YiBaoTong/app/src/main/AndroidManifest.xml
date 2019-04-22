@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lzyc.ybtappcal">
+    <!--<uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />-->
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_INSTALL" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!--<uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- 百度地图权限 -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />·
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+
+
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <!-- 百度地图key -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Zz5U8BsvtQF5Fer8iT2KUvNV" />
+        <!-- 百度地图 定位 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="561cce2567e58ee42500363f" />
+        <!--友盟推送-->
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="07aa3e330ae9b6fd7eed048b04c54b82"></meta-data>
+
+        <!--友盟统计渠道-->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+        <!-- 微信 -->
+        <activity
+            android:name="com.umeng.socialize.weixin.view.WXCallbackActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 新浪微博 -->
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:launchMode="singleTask"
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <!--<service-->
+        <!--android:name="com.sina.weibo.sdk.net.DownloadService"-->
+        <!--android:exported="false" />-->
+        <!-- qq -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1104912596" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--输入条形码的-->
+        <activity
+            android:name=".activity.ScanHelpActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <!--支付宝 start-->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <!--支付宝 end-->
+        <!--微信支付-->
+
+        <!-- 启动页 -->
+        <activity
+            android:name=".activity.LaunchActivity"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppStartLoadTranslucent"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 引导页 -->
+        <activity
+            android:name=".activity.GuideActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 广告页 -->
+        <activity
+            android:name=".activity.AdvertisementActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppStartLoadTranslucent"
+            android:screenOrientation="portrait" />
+        <!-- 主页 -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+        <!-- EditSetActivity -->
+        <activity
+            android:name=".activity.EditSetActivity"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustUnspecified" />
+        <!-- 城市选择 -->
+        <activity
+            android:name=".activity.account.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            />
+        <!--android:windowSoftInputMode="adjustResize"-->
+        <activity
+            android:name=".activity.account.ForgetPasswordActivity"
+            android:label="@string/title_activity_forget_password"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".activity.account.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.account.SetPasswordActivity"
+            android:label="@string/title_activity_set_password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.account.TermActivity"
+            android:label="@string/title_activity_term"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.account.FullInfoActivity"
+            android:label="@string/title_activity_full_info"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.mine.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.FeedBackActivity"
+            android:label="@string/title_activity_feed_back"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.ChangePasswordActivity"
+            android:label="@string/title_activity_change_password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.BindPhoneActivity"
+            android:label="@string/title_activity_bind_phone"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustUnspecified" />
+        <!--浏览记录-->
+        <activity android:name=".activity.mine.BrowseHistoryActivity"
+            android:screenOrientation="portrait"/>
+        <!--添加用药-->
+        <activity android:name=".activity.mine.medicine.DrugAddActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.notAnimation"
+            />
+        <activity
+            android:name=".activity.top.RecommendActivity"
+            android:label="@string/title_activity_recommend"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.top.ScanResultActivity"
+            android:label="@string/title_activity_scan_result"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.top.HospitalDrugDetailActivity"
+            android:label="@string/title_activity_scan_result"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogStyle_PopMapView" />
+
+        <activity
+            android:name=".activity.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.top.HispitalListActivity"
+            android:label="@string/title_activity_hispital_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.top.ConfirmActivity"
+            android:label="@string/title_activity_confirm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.reimbursement.ReimbursementNoYbDetailsActivity"
+            android:label="@string/title_activity_factory_info"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".activity.reimbursement.ReimbursementYbDetailsActivity"
+            android:label="@string/title_activity_factory_info"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".activity.top.HispitalDetailActivity"
+            android:label="@string/title_activity_hispital_detail"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".activity.top.PlanDetailActivity"
+            android:label="@string/title_activity_plan_detail"
+            android:screenOrientation="portrait" />
+        <!--<activity-->
+            <!--android:name=".activity.top.HospitalLoctionActivity"-->
+            <!--android:label="@string/title_activity_hospital_loction"-->
+            <!--android:screenOrientation="portrait" />-->
+        <activity
+            android:name=".activity.top.CitylistSearchActivity"
+            android:label="@string/title_activity_city_list"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            />
+        <!--<activity-->
+            <!--android:name=".activity.top.SelectPositionActivity"-->
+            <!--android:label="@string/title_activity_select_position"-->
+            <!--android:screenOrientation="portrait" />-->
+        <activity
+            android:name=".activity.mine.MessageListActivity"
+            android:label="@string/title_activity_message_list"
+            android:screenOrientation="portrait" />
+        <!--<activity-->
+            <!--android:name=".activity.mine.UsedPositionActivity"-->
+            <!--android:label="@string/title_activity_used"-->
+            <!--android:screenOrientation="portrait" />-->
+        <activity
+            android:name=".activity.mine.MessageDetailActivity"
+            android:label="@string/title_activity_message_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activity.mine.PersonalInfoActivity"
+            android:label="@string/title_activity_personal_info"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activity.mine.HealthActivity"
+            android:label="@string/title_activity_health"
+            android:screenOrientation="portrait" />
+        <!--  android:windowSoftInputMode="stateAlwaysHidden|adjustResize"-->
+        <activity
+            android:name=".activity.mine.MinePlanActivity"
+            android:label="@string/title_activity_my_plan"
+            android:screenOrientation="portrait" />
+        <!--提现-->
+        <activity android:name=".activity.mine.withdraw.MineWithdrawActivity"
+            android:screenOrientation="portrait"/>
+        <!--提现记录-->
+        <activity android:name=".activity.mine.withdraw.MineWithdrawListActivity"
+            android:screenOrientation="portrait"/>
+        <!--提现详情-->
+        <activity android:name=".activity.mine.withdraw.MineWithdrawDetailActivity"
+            android:screenOrientation="portrait"/>
+        <!--待返现-->
+        <activity android:name=".activity.mine.withdraw.MineWithdrawReturnActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--我的药箱-->
+        <!--扫码 zxing-->
+        <!--扫码 zbar-->
+        <activity
+            android:name="com.lzyc.zbar.activity.CaptureActivity"
+            android:label="@string/title_activity_capture"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.notAnimation"
+            />
+
+
+        <activity
+            android:name=".activity.top.DrugNoDetailActivity"
+            android:label="@string/title_activity_drug_no_detail"
+            android:screenOrientation="portrait"></activity>
+
+        <!--条形码扫描为空，推荐列表页面-->
+        <activity
+            android:name=".activity.top.RecommentIFEmptyActivity"
+            android:label="@string/title_activity_drug_no_detail"
+            android:screenOrientation="portrait" />
+        <!--条形码结果没有-->
+        <activity
+            android:name=".activity.ScancodeErrorActivity"
+            android:screenOrientation="portrait" />
+
+        <!--扫描识别记录-->
+        <activity
+            android:name=".activity.CaptureHistoryActivity"
+            android:screenOrientation="portrait" />
+        <!--关于医院或者是社区-->
+        <activity
+            android:name=".activity.top.AboutHospitalOrCommunityActivity"
+            android:screenOrientation="portrait" />
+        <!--评价回复界面-->
+        <activity
+            android:name=".activity.top.HospitalCommunityRaplyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.mine.DesignatedHospitalsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.mine.ChooseDesignatedHospitalsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!--&lt;!&ndash;评价详情&ndash;&gt;-->
+        <!--<activity-->
+        <!--android:name=".activity.top.HcCommentDetailActivity"-->
+        <!--android:screenOrientation="portrait" />-->
+        <!--写评价-->
+        <activity
+            android:name=".activity.top.HcCommentEditActivity"
+            android:screenOrientation="portrait" />
+        <!--评价动态-->
+        <activity
+            android:name=".activity.mine.DynMessageActivity"
+            android:screenOrientation="portrait" />
+        <!--系统消息-->
+        <activity
+            android:name=".activity.mine.SysMessageActivity"
+            android:screenOrientation="portrait" />
+        <!--医院位置，扫描结果界面右上角点击进去查看附近的医院覆盖物，查看医院列表-->
+        <activity
+            android:name=".activity.top.HospitalNearbyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppStartLoadTranslucent"
+            />
+        <!--搜索,扫码，查询结果界面-->
+        <activity
+            android:name=".activity.top.ResultsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            />
+        <!--&lt;!&ndash;零元拿药&ndash;&gt;-->
+        <!--<activity-->
+            <!--android:name=".activity.top.ResultsNayaoActivity"-->
+            <!--android:screenOrientation="portrait" />-->
+        <!--拿药药品详情-->
+        <activity
+            android:name=".activity.top.ResultsDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.TransparentActivity"
+            />
+
+        <!--订单-->
+        <!--检查订单【处方和非处方】 购物车购买-->
+        <activity android:name=".activity.payment.order.OrderCheckActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+        <!--购买药品【处方和非处方】-->
+        <activity android:name=".activity.payment.order.OrderbyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            />
+
+        <!--购买成功-->
+        <activity android:name=".activity.payment.order.OrderSuccessActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--德开大药房-->
+        <activity android:name=".activity.payment.order.DekaiDetailsActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--我的订单-->
+        <activity
+            android:name=".activity.payment.order.OrderMineActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <!--订单详情-->
+        <activity
+            android:name=".activity.payment.order.OrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            />
+        <!--地址管理-->
+        <activity
+            android:name=".activity.payment.order.AddressManagerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            />
+        <!--新建地址-->
+        <activity
+            android:name=".activity.payment.order.AddressBuildActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified"
+            />
+        <!--编辑地址-->
+        <activity
+            android:name=".activity.payment.order.AddressEditActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified"
+            />
+        <!--医院社区 认可度列表-->
+        <!--<activity android:name=".activity.top.ResultsAdoptActivity"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:windowSoftInputMode="stateUnspecified"-->
+            <!--/>-->
+        <activity android:name=".activity.reimbursement.ReimbursementDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <!--<activity android:name=".activity.top.HospitalListBYActivity"-->
+            <!--android:screenOrientation="portrait"/>-->
+
+        <!--物流信息-->
+        <activity android:name=".activity.payment.order.LogisticsActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.top.HomeWebActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.top.TopWebviewActivity"
+            android:screenOrientation="portrait"/>
+        <!--购物车-->
+        <activity android:name=".activity.ShoppingCartActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            />
+
+        <!--商品搜索-->
+        <activity android:name=".activity.GoodsSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            />
+
+        <!--分类-->
+        <activity android:name=".activity.home.TypeActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--用药-->
+        <activity android:name=".activity.home.HotActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--我的药箱-->
+        <activity android:name=".activity.mine.medicine.FamilyMedicineActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--添加成员-->
+        <activity android:name=".activity.mine.medicine.AddMemberActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--个人药箱-->
+        <activity android:name=".activity.mine.medicine.MedicinePersonActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--余额明细-->
+        <activity android:name=".activity.mine.withdraw.MineBalanceListActivity"
+            android:screenOrientation="portrait"/>
+        <!--扫码-->
+        <activity android:name=".activity.ScanActivity"
+            android:screenOrientation="portrait"/>
+        <!--投保-->
+        <activity android:name=".activity.InsuranceActivity"
+            android:screenOrientation="portrait"/>
+        <!--帮助与反馈-->
+        <activity android:name=".activity.mine.FeedbackHelpActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            />
+        <service
+            android:name=".service.MyPushIntentService"
+            android:process=":push" />
+        <service android:name=".service.NotificationService" />
+
+
+        <activity
+            android:name="com.lzyc.ybtappcal.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+    </application>
+
+</manifest>

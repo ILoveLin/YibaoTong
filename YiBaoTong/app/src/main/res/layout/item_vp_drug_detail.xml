@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sex="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical">
+
+
+    <com.lzyc.ybtappcal.view.roundimageview.RoundedImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_vp_iv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="@dimen/padding_10"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/bg_drug_a"
+        sex:border_color2="@color/color_e0e0e0"
+        sex:border_width2="2dp"
+        sex:corner_radius2="@dimen/padding_5"
+        sex:oval2="false" />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear_pop_city"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/padding_5"
+        android:layout_marginRight="@dimen/padding_5"
+        android:background="@drawable/shape_results_pop_top"
+        android:padding="1px"
+        android:orientation="horizontal">
+
+        <com.lzyc.ybtappcal.view.RoundedRectListView
+            android:id="@+id/lv_pop_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:listSelector="@null"
+            android:scrollbars="none"
+            android:background="@drawable/shape_bg_pop_result_left"
+            app:radiusDownBottomLeft="@dimen/padding_0"
+            app:radiusDownBottomRight="@dimen/padding_0"
+            app:radiusUpTopLeft="@dimen/padding_6"
+            app:radiusUpTopRight="@dimen/padding_6" />
+
+        <View
+            android:layout_width="@dimen/padding_5"
+            android:layout_height="match_parent"
+            android:background="@color/color_ffffff" />
+
+        <com.lzyc.ybtappcal.view.RoundedRectListView
+            android:id="@+id/lv_pop_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:listSelector="@null"
+            android:scrollbars="none"
+            android:background="@drawable/shape_bg_pop_result_right"
+            app:radiusDownTopLeft="@dimen/padding_0"
+            app:radiusDownTopRight="@dimen/padding_0"
+            app:radiusUpBottomLeft="@dimen/padding_6"
+            app:radiusUpBottomRight="@dimen/padding_6" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg_color"
+    android:orientation="vertical">
+
+    <View style="@style/LineStyle" android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/message_rel_dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@drawable/selector_item_ffffff">
+
+        <ImageView
+            android:id="@+id/message_iv_dynamic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/padding_17"
+            android:layout_marginLeft="@dimen/padding_15"
+            android:layout_marginTop="@dimen/padding_17"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_message_dynamic" />
+
+        <TextView
+            android:id="@+id/message_tv_dynamic_desc"
+            style="@style/FontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_toRightOf="@id/message_iv_dynamic"
+            android:background="@null"
+            android:text="评论动态" />
+
+        <com.lzyc.ybtappcal.view.BadgeView
+            android:id="@+id/message_tv_dynamic_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-8dp"
+            android:layout_marginTop="@dimen/padding_26"
+            android:layout_toRightOf="@id/message_tv_dynamic_desc" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding_15"
+            android:src="@mipmap/icon_forword_right0" />
+    </RelativeLayout>
+
+    <View style="@style/LineStyle" android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/message_rel_system"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_item_ffffff">
+
+        <ImageView
+            android:id="@+id/message_iv_system"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/padding_17"
+            android:layout_marginLeft="@dimen/padding_15"
+            android:layout_marginTop="@dimen/padding_17"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_message_system" />
+
+        <TextView
+            android:id="@+id/message_tv_system_desc"
+            style="@style/FontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_toRightOf="@id/message_iv_system"
+            android:background="@null"
+            android:text="系统消息" />
+
+        <com.lzyc.ybtappcal.view.BadgeView
+            android:id="@+id/message_tv_system_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-8dp"
+            android:layout_marginTop="@dimen/padding_26"
+            android:layout_toRightOf="@id/message_tv_system_desc" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding_15"
+            android:src="@mipmap/icon_forword_right0" />
+    </RelativeLayout>
+
+    <View style="@style/LineStyle" />
+
+</LinearLayout>
+

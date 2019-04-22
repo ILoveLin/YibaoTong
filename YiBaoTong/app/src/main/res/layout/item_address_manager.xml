@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_ffffff"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:id="@+id/address_manager_choose">
+
+    <View style="@style/LineItemStyleE0E0E0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_12">
+
+            <TextView
+                android:id="@+id/address_manager_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="帅的人"
+                android:textColor="@color/color_000000"
+                android:textSize="@dimen/text_font_15" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/address_manager_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13333333333"
+                android:textColor="@color/color_000000"
+                android:textSize="@dimen/text_font_15" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/address_manager_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_11"
+            android:lineSpacingExtra="@dimen/padding_5"
+            android:paddingBottom="@dimen/padding_11"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:textColor="@color/color_777777"
+            android:text="北京市大兴区经济开发区融化南路荣华国际5号楼南路荣华南路荣华南路荣华南路荣华1607"
+            android:textSize="@dimen/text_font_15" />
+
+    </LinearLayout>
+
+    <View style="@style/LineItemStyleE0E0E0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/address_manager_setdefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/selector_shopping_selected"
+            android:drawablePadding="@dimen/padding_10"
+            android:paddingBottom="@dimen/padding_11"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_11"
+            android:text="设为默认"
+            android:textColor="@color/color_000000"
+            android:textSize="@dimen/text_font_13" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/address_manager_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_address_bianji"
+            android:drawablePadding="@dimen/padding_10"
+            android:gravity="center"
+            android:paddingBottom="@dimen/padding_11"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_11"
+            android:text="编辑"
+            android:textColor="@color/color_000000"
+            android:textSize="@dimen/text_font_13"
+
+            />
+
+        <TextView
+            android:id="@+id/address_manager_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:drawableLeft="@mipmap/icon_address_clear"
+            android:drawablePadding="@dimen/padding_10"
+            android:gravity="center"
+            android:paddingBottom="@dimen/padding_11"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_11"
+            android:text="删除"
+            android:textColor="@color/color_000000"
+            android:textSize="@dimen/text_font_13" />
+    </LinearLayout>
+
+    <View style="@style/LineItemStyleE0E0E0" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_8"
+        android:background="@color/theme_bg_color" />
+    <View
+        android:id="@+id/line_bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_60"
+        android:background="@color/theme_bg_color"
+        android:visibility="gone"
+        />
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/padding_190"
+    android:background="@mipmap/icon_medicine_person_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:scaleType="fitXY">
+
+    <LinearLayout
+        android:id="@+id/lin_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/padding_8"
+            android:src="@mipmap/icon_medicine_bag_user_man" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/FontStyleWhite"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="100岁"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_age"
+            style="@style/FontStyleWhite"
+            android:layout_margin="@dimen/padding_8"
+            android:paddingLeft="@dimen/padding_12"
+            android:paddingRight="@dimen/padding_12"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="100岁100岁100岁100岁100岁100岁100岁100岁100岁100岁100岁100岁" />
+
+        <TextView
+            android:id="@+id/tv_drug_num"
+            style="@style/FontStyleWhite"
+            android:singleLine="true"
+            android:text="暂时还没有药品"
+            android:textSize="@dimen/text_font_13" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ib_left_01"
+        style="@style/ww"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:padding="@dimen/padding_10"
+        android:src="@mipmap/icon_back_white" />
+
+</FrameLayout>
+
+
+    <!--
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@mipmap/icon_medicine_bg"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_18">
+
+        <ImageButton
+            android:id="@+id/ib_left_01"
+            style="@style/ww"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="@dimen/padding_10"
+            android:src="@mipmap/icon_back_white"
+            />
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/padding_8"
+            android:layout_marginTop="@dimen/padding_10"
+            android:src="@mipmap/icon_medicine_girl" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/FontStyleWhite"
+            android:layout_centerInParent="true"
+            android:drawablePadding="@dimen/padding_7"
+            android:drawableRight="@mipmap/icon_modicine_edit"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="name"
+            android:textSize="@dimen/text_font_15" />
+
+        <TextView
+            android:id="@+id/tv_info"
+            style="@style/FontStyleWhite"
+            android:layout_marginLeft="@dimen/padding_60"
+            android:layout_marginRight="@dimen/padding_60"
+            android:layout_marginTop="@dimen/padding_13"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="@dimen/text_font_13" />
+
+        <TextView
+            android:id="@+id/tv_drug_num"
+            style="@style/FontStyleWhite"
+            android:layout_marginTop="@dimen/padding_10"
+            android:singleLine="true"
+            android:text="num"
+            android:textSize="@dimen/text_font_14" />
+
+    </LinearLayout>
+    -->

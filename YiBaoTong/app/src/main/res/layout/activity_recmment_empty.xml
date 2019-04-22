@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f8f8f8"
+    android:orientation="vertical">
+    <View
+      style="@style/LineItemStyle"
+        android:background="#e0e0e0"
+        />
+    <com.lzyc.ybtappcal.view.xlist.XYbtRefreshListView
+        android:id="@+id/ptlv_recomment_druglist"
+        style="@style/Style_lv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/color_f8f8f8"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scrollbars="none" />
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="102dp"
+    android:layout_marginLeft="@dimen/padding_8"
+    android:layout_marginRight="@dimen/padding_8"
+    android:background="@color/color_ffffff"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/padding_14"
+    android:paddingRight="@dimen/padding_5">
+
+
+    <ImageView
+        android:id="@+id/img_drug"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/test" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/padding_20"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_13">
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_20"
+                android:layout_marginLeft="-7dp"
+                android:alpha="0.6"
+                android:text="【处方】"
+                android:includeFontPadding="false"
+                android:textColor="@color/color_000000"
+                android:textSize="@dimen/text_font_14" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_20"
+                android:lineSpacingExtra="2dp"
+                android:alpha="0.6"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:lines="2"
+                android:text="               安博维 厄贝沙坦氢録赛呗贝沙坦氢録赛呗贝沙坦氢録赛呗贝沙坦氢録赛呗贝沙坦氢録赛呗"
+                android:textColor="@color/color_000000"
+                android:textSize="@dimen/text_font_14" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/padding_1"
+            android:layout_height="@dimen/padding_0"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_13"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Font15Style666666"
+                android:text="￥"
+                android:textSize="@dimen/text_font_11" />
+
+            <TextView
+                android:id="@+id/tv_price_new"
+                style="@style/Font15Style666666"
+                android:text="36.43"
+                android:textSize="@dimen/text_font_16" />
+
+            <TextView
+                style="@style/FontStyleGrey"
+                android:text="  ￥"
+                android:textSize="@dimen/text_font_7" />
+
+            <TextView
+                android:id="@+id/tv_price_old"
+                style="@style/FontStyleGrey"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:text="46.68"
+                android:textSize="@dimen/text_font_12" />
+
+            <TextView
+                android:id="@+id/tv_num"
+                style="@style/Font15Style666666"
+                android:layout_marginRight="@dimen/padding_5"
+                android:gravity="bottom"
+                android:layout_gravity="bottom"
+                android:text="x1"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2f2f2"
+    android:orientation="vertical">
+
+    <View style="@style/LineItemStyleE0E0E0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_85"
+        android:background="@color/color_ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_scan_help_question"
+            android:drawablePadding="@dimen/padding_12"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_12"
+            android:text="@string/scancode_help_question1"
+            android:textColor="@color/color_111111"
+            android:textSize="@dimen/text_font_16"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="@dimen/padding_1"
+            android:layout_height="@dimen/padding_0"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_scan_help_answer"
+            android:drawablePadding="@dimen/padding_12"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_10"
+            android:text="@string/scancode_help_answer1"
+            android:textColor="@color/color_777777"
+            android:textSize="@dimen/text_font_15" />
+
+        <View
+            style="@style/LineItemStyleE0E0E0"
+            android:layout_marginTop="@dimen/padding_12" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_85"
+        android:layout_marginBottom="@dimen/padding_10"
+        android:background="@color/color_ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_scan_help_question"
+            android:drawablePadding="@dimen/padding_12"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_12"
+            android:text="@string/scancode_help_question2"
+            android:textColor="@color/color_111111"
+            android:textSize="@dimen/text_font_16"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="@dimen/padding_1"
+            android:layout_height="@dimen/padding_0"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_scan_help_answer"
+            android:drawablePadding="@dimen/padding_10"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_12"
+            android:text="@string/scancode_help_answer2"
+            android:textColor="@color/color_777777"
+            android:textSize="@dimen/text_font_15" />
+
+        <View
+            style="@style/LineItemStyleE0E0E0"
+            android:layout_marginTop="@dimen/padding_12" />
+
+    </LinearLayout>
+
+
+    <View style="@style/LineItemStyleE0E0E0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="#ffffff"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginTop="@dimen/padding_12"
+            android:paddingRight="@dimen/padding_10"
+            android:text="@string/scancode_help_desc"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_font_16" />
+
+        <View
+            android:layout_width="@dimen/padding_1"
+            android:layout_height="@dimen/padding_0"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_12"
+            android:layout_marginRight="@dimen/padding_10"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.lzyc.ybtappcal.widget.ClearEditTextView
+                android:id="@+id/scancode_help_etinput"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/padding_40"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_weight="1"
+                android:background="@drawable/shape_bg_edit_code"
+                android:hint="@string/scancode_help_input_hint"
+                android:inputType="number"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:singleLine="true"
+                android:textColor="@color/color_333333"
+                android:textCursorDrawable="@drawable/shape_edit_focus"
+                android:textSize="@dimen/text_font_13">
+
+                <requestFocus />
+            </com.lzyc.ybtappcal.widget.ClearEditTextView>
+
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="@dimen/padding_60"
+                android:layout_height="@dimen/padding_40"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:background="@drawable/shape_bg_edit_code_sure"
+                android:gravity="center"
+                android:text="@string/search"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/text_font_17" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

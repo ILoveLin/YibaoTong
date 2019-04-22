@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_lvright_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_e9e9e9"
+        android:orientation="horizontal">
+        <View
+            android:id="@+id/item_view"
+            android:layout_width="@dimen/padding_2"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/padding_14"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginTop="@dimen/padding_14"
+            android:background="@color/base_btn_color"
+            />
+        <TextView
+            android:id="@+id/item_lvright_tvdesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="11.5dp"
+            android:paddingLeft="@dimen/padding_5"
+            android:paddingTop="@dimen/padding_10"
+            android:text="省份"
+            android:textSize="@dimen/text_font_14" />
+    </LinearLayout>
+</LinearLayout>

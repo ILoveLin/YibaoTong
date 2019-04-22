@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f1f1f3"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/Font_Middle_Black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_f1f1f3"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/padding_10"
+        android:paddingLeft="@dimen/padding_10"
+        android:paddingTop="@dimen/padding_10"
+        android:text="热门搜索"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/text_font_14" />
+
+    <View style="@style/LineStyleE5E5E5" />
+
+    <com.lzyc.ybtappcal.widget.CustomGridView
+        android:id="@+id/header_search_hot_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:horizontalSpacing="@dimen/padding_0"
+        android:numColumns="3"
+        android:paddingBottom="@dimen/padding_5"
+        android:paddingLeft="@dimen/padding_2"
+        android:paddingRight="@dimen/padding_10"
+        android:paddingTop="@dimen/padding_15"
+        android:verticalSpacing="@dimen/padding_0" />
+
+    <View style="@style/LineStyleE5E5E5" />
+
+
+</LinearLayout>

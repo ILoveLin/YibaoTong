@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_reimbursement_bg"
+        android:paddingTop="@dimen/padding_20"
+        android:paddingBottom="@dimen/padding_20"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:layout_gravity="center"
+            android:src="@mipmap/bg_baoxiaochaxun_banner5" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_10"
+            android:layout_weight="1">
+
+            <com.lzyc.ybtappcal.view.DiffuseView
+                android:id="@+id/diffuseview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/icon_reimbursement_country"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginRight="@dimen/padding_10"
+            android:layout_marginTop="@dimen/padding_10"
+            android:background="@drawable/shape_bg_top_search_out_1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_bg_reimbursement_search">
+
+                <TextView
+                    android:id="@+id/tv_search"
+                    style="@style/FontStyleWhite"
+                    android:layout_width="240dp"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@mipmap/icon__baoxiao_searchleft"
+                    android:drawablePadding="@dimen/padding_10"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/padding_10"
+                    android:paddingLeft="@dimen/padding_15"
+                    android:paddingRight="@dimen/padding_10"
+                    android:paddingTop="@dimen/padding_10"
+                    android:textSize="@dimen/text_font_15"
+                    android:text="请输入药品名称"
+                    android:textColor="@color/color_e0e0e0" />
+
+                <TextView
+                    android:id="@+id/tv_scan"
+                    style="@style/FontStyleGrey"
+                    android:textColor="@color/color_ffffff_80"
+                    android:textSize="@dimen/text_font_8"
+                    android:drawableTop="@mipmap/icon_baoxiao_scan"
+                    android:drawablePadding="@dimen/padding_3"
+                    android:layout_marginTop="@dimen/padding_2"
+                    android:layout_marginBottom="@dimen/padding_2"
+                    android:text="扫一扫"
+                    android:paddingRight="@dimen/padding_22"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="@dimen/padding_45"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/city_jiuzhen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_32"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:id="@+id/img_jiuzhen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/icon_baoxiao_jiuzhen" />
+
+                    <com.lzyc.ybtappcal.view.DiffuseView
+                        android:id="@+id/diffuseview_jz"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center|bottom" />
+
+                </FrameLayout>
+
+                <TextView
+                    style="@style/FontStyleGrey"
+                    android:layout_marginTop="@dimen/padding_1"
+                    android:text="就诊城市"
+                    android:textColor="@color/color_ffffff_80"
+                    android:textSize="@dimen/text_font_12" />
+
+                <TextView
+                    android:id="@+id/tv_jiuzhen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxEms="5"
+                    android:text="上海"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="@dimen/padding_15" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="120dp"
+            android:layout_marginRight="@dimen/padding_35"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/city_canbao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/padding_20"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:id="@+id/img_canbao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/icon_baoxiao_canbao" />
+
+                    <com.lzyc.ybtappcal.view.DiffuseView
+                        android:id="@+id/diffuseview_cb"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center|bottom" />
+
+                </FrameLayout>
+
+                <TextView
+                    style="@style/FontStyleGrey"
+                    android:layout_marginTop="@dimen/padding_1"
+                    android:text="参保城市"
+                    android:textColor="@color/color_ffffff_80"
+                    android:textSize="@dimen/text_font_12" />
+
+                <TextView
+                    android:id="@+id/tv_canbao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="北京"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="@dimen/padding_15" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

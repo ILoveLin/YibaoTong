@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pop_top_height"
+        android:layout_marginLeft="@dimen/pop_drug_margin"
+        android:layout_marginRight="@dimen/pop_drug_margin"
+        android:layout_centerVertical="true"
+        android:background="@drawable/shape_ffffff_15"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_70" />
+        <!--<ListView-->
+        <!--android:id="@+id/listview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/padding_0"-->
+        <!--android:layout_weight="1"-->
+        <!--android:divider="@null"-->
+        <!--android:dividerHeight="@dimen/padding_0"-->
+        <!--android:listSelector="@color/theme_bg_color"-->
+        <!--android:overScrollMode="never"-->
+        <!--android:scrollbars="none"-->
+        <!--android:visibility="gone" />-->
+
+        <com.lzyc.ybtappcal.view.RoundedRectListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_0"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:dividerHeight="@dimen/padding_0"
+            android:listSelector="@color/white"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:visibility="gone"
+            app:radiusDownBottomLeft="@dimen/padding_15"
+            app:radiusDownBottomRight="@dimen/padding_15"
+            app:radiusDownTopLeft="@dimen/padding_15"
+            app:radiusDownTopRight="@dimen/padding_15"
+            app:radiusUpBottomLeft="@dimen/padding_15"
+            app:radiusUpBottomRight="@dimen/padding_15"
+            app:radiusUpTopLeft="@dimen/padding_15"
+            app:radiusUpTopRight="@dimen/padding_15" />
+
+        <View
+            android:id="@+id/view_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_0" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/white_mengban"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pop_mengban"
+        android:layout_marginBottom="@dimen/padding_15"
+        android:layout_marginLeft="@dimen/pop_drug_margin"
+        android:layout_marginRight="@dimen/pop_drug_margin"
+        android:layout_marginTop="@dimen/padding_15"
+        android:layout_centerVertical="true"
+        android:background="@drawable/shape_ffffff_15"
+        android:visibility="gone" />
+    <RelativeLayout
+        android:id="@+id/rl_pop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pop_top_height"
+        android:layout_marginLeft="@dimen/pop_drug_margin"
+        android:layout_marginRight="@dimen/pop_drug_margin"
+        android:layout_centerVertical="true">
+        <LinearLayout
+            android:id="@+id/pop_drug_add_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/pop_drug_add_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/image_drug_add_title" />
+
+            <ImageView
+                android:id="@+id/empty_member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/padding_37"
+                android:src="@mipmap/icon_drugadd_avatar_member"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_0"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/pop_add_member_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_0"
+                android:background="@drawable/image_pop_add_drug_bottom"
+                android:gravity="center"
+                android:padding="@dimen/padding_0"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/pop_add_member"
+                    android:layout_width="@dimen/padding_140"
+                    android:layout_height="@dimen/padding_44"
+                    android:background="@drawable/shape_drugadd_member"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="#1aa98c"
+                        android:textSize="@dimen/text_font_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="添加成员"
+                        android:textColor="#1aa98c"
+                        android:textSize="@dimen/text_font_17" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/pop_add_member_linear_ok"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_20"
+                android:layout_margin="@dimen/padding_0"
+                android:clickable="false"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_0"
+                android:background="@drawable/pop_bottom_yuanjiao"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_20"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="选择成员"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_font_15" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/pop_cancel"
+        android:layout_width="@dimen/padding_44"
+        android:layout_height="@dimen/padding_44"
+        android:layout_below="@id/rl_pop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/padding_20"
+        android:src="@mipmap/icon_drug_add_cancel" />
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg_color"
+    android:orientation="vertical">
+
+    <View style="@style/LineStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_30"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@mipmap/icon_about_logo" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/padding_15"
+            android:background="@mipmap/icon_about_title"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_version_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/padding_8"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/text_font_13" />
+
+        <TextView
+            android:id="@+id/id_about_data_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_0"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/padding_30"
+            android:layout_marginRight="@dimen/padding_30"
+            android:layout_marginTop="@dimen/padding_30"
+            android:lineSpacingMultiplier="1.5"
+            android:text="@string/about_conent"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/text_font_14" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_0"
+        android:layout_weight="1" />
+
+    <View style="@style/LineStyle" />
+
+    <LinearLayout
+        android:id="@+id/linear_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_10"
+        android:paddingTop="@dimen/padding_10">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:drawableLeft="@mipmap/icon_about_email"
+            android:drawablePadding="@dimen/padding_14"
+            android:gravity="center_vertical"
+            android:text="@string/about_email"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/text_font_14" />
+    </LinearLayout>
+
+    <View style="@style/LineStyle" />
+
+    <LinearLayout
+        android:id="@+id/linear_wechat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_10"
+        android:paddingTop="@dimen/padding_10">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:drawableLeft="@mipmap/icon_about_wechat"
+            android:drawablePadding="@dimen/padding_14"
+            android:gravity="center_vertical"
+            android:text="@string/about_wechat_public"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/text_font_14" />
+
+
+    </LinearLayout>
+
+    <View style="@style/LineStyle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/padding_30"
+        android:layout_marginBottom="@dimen/padding_10"
+        android:text="@string/about_company"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/text_font_13"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/about_website"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/text_font_13"
+        android:layout_marginBottom="@dimen/padding_22"
+        />
+</LinearLayout>

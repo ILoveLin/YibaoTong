@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+    xmlns:starbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f3"
+    android:orientation="vertical">
+
+    <View style="@style/LineItemStyleE0E0E0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/color_ffffff"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_10"
+        android:paddingRight="@dimen/padding_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务态度"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_font_15" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.lzyc.ybtappcal.view.RatingBar
+            android:id="@+id/hc_fuwutaidu_comment_star_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            ratingbar:RatingBarclickable="true"
+            ratingbar:RatingBarstarCount="5"
+            ratingbar:RatingBarstarEmpty="@mipmap/icon_hospital_star_nor"
+            ratingbar:RatingBarstarFill="@mipmap/icon_hospital_star_pre"
+            ratingbar:RatingBarstarHalf="@mipmap/icon_hospital_star_pre"
+            ratingbar:RatingBarstarImageSize="26dp" />
+
+        <TextView
+            android:id="@+id/hc_fuwutaidu_tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:text="5.0"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_font_16" />
+    </LinearLayout>
+
+    <View style="@style/LineItemStyleE0E0E0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/color_ffffff"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_10"
+        android:paddingRight="@dimen/padding_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="药品齐全"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_font_15" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+        <com.lzyc.ybtappcal.view.RatingBar
+            android:id="@+id/hc_yaopinqiquan_comment_star_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            ratingbar:RatingBarclickable="true"
+            ratingbar:RatingBarstarCount="5"
+            ratingbar:RatingBarstarEmpty="@mipmap/icon_hospital_star_nor"
+            ratingbar:RatingBarstarFill="@mipmap/icon_hospital_star_pre"
+            ratingbar:RatingBarstarHalf="@mipmap/icon_hospital_star_pre"
+            ratingbar:RatingBarstarImageSize="26dp" />
+
+        <TextView
+            android:id="@+id/hc_yaopinqiquan_tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:text="5.0"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_font_16" />
+    </LinearLayout>
+
+    <View style="@style/LineItemStyleE0E0E0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/color_ffffff"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_10"
+        android:paddingRight="@dimen/padding_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拿药方便"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_font_15" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.lzyc.ybtappcal.view.RatingBar
+            android:id="@+id/hc_nayaofangbian_comment_star_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            ratingbar:RatingBarclickable="true"
+            ratingbar:RatingBarstarCount="5"
+            ratingbar:RatingBarstarEmpty="@mipmap/icon_hospital_star_nor"
+            ratingbar:RatingBarstarFill="@mipmap/icon_hospital_star_pre"
+            ratingbar:RatingBarstarHalf="@mipmap/icon_hospital_star_pre"
+            ratingbar:RatingBarstarImageSize="26dp" />
+
+        <TextView
+            android:id="@+id/hc_nayaofangbian_tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:text="5.0"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_font_16" />
+    </LinearLayout>
+
+    <View style="@style/LineItemStyleE0E0E0" />
+
+    <View
+        style="@style/LineItemStyleE0E0E0"
+        android:layout_marginTop="@dimen/padding_10" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="104dp">
+
+        <EditText
+            android:id="@+id/hc_comment_edit_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_ffffff"
+            android:gravity="left|top"
+            android:hint="说说你的感受吧!"
+            android:maxLength="140"
+            android:minLines="6"
+            android:padding="@dimen/padding_10"
+            android:textColor="@color/color_999999"
+            android:textCursorDrawable="@drawable/shape_edit_focus"
+            android:textSize="@dimen/text_font_15"></EditText>
+
+        <TextView
+            android:id="@+id/id_tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:clickable="false"
+            android:paddingBottom="@dimen/padding_3"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_6"
+            android:text="0/140字"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/text_font_13" />
+    </RelativeLayout>
+
+    <View style="@style/LineItemStyleE0E0E0" />
+
+
+    <TextView
+        android:id="@+id/hc_comment_edit_send"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_45"
+        android:layout_marginBottom="@dimen/padding_20"
+        android:layout_marginLeft="@dimen/padding_30"
+        android:layout_marginRight="@dimen/padding_30"
+        android:background="@drawable/selector_btn_style"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/padding_10"
+        android:text="提交"
+        android:onClick="onBtnClick"
+        android:layout_marginTop="@dimen/padding_50"
+        android:textColor="@color/color_000000"
+        android:textSize="@dimen/text_font_17" />
+</LinearLayout>

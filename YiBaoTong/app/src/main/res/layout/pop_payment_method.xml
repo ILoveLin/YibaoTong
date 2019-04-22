@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_out"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_0"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付方式"
+                android:padding="@dimen/padding_15"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/padding_14" />
+
+            <View
+                android:layout_width="@dimen/padding_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/pop_payment_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_15"
+                android:src="@mipmap/icon_pop_zhifu_cancel"
+                 />
+
+        </LinearLayout>
+
+        <View
+            style="@style/LineItemStyle"
+            android:background="#e4e4e4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/padding_15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_font_18" />
+
+            <TextView
+                android:id="@+id/pop_payment_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="77.88"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_font_30" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="需付金额"
+            android:layout_marginRight="@dimen/padding_5"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_font_13" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_15"
+            android:background="@color/rise_number_text_color_white"
+            android:clickable="true"
+            android:onClick="onBtnClick"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/pop_payment_zhifubao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_14"
+                android:paddingBottom="@dimen/padding_14">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_zhifubao" />
+
+                <TextView
+                    style="@style/FontStyleBlack"
+                    android:layout_width="0dip"
+                    android:layout_marginLeft="@dimen/padding_10"
+                    android:layout_weight="1"
+                    android:text="@string/pay_zhifubao" />
+
+                <TextView
+                    android:id="@+id/pop_payment_tv_zhifubao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_zhifu"
+                    android:button="@null"
+                    android:checked="true"
+                    android:clickable="false" />
+
+            </LinearLayout>
+            <View style="@style/LineItemStyle" android:background="#e4e4e4" />
+
+            <LinearLayout
+                android:id="@+id/pop_payment_weixin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_14"
+                android:paddingBottom="@dimen/padding_14">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_wei_xin" />
+
+                <TextView
+                    style="@style/FontStyleBlack"
+                    android:layout_width="0dip"
+                    android:layout_marginLeft="@dimen/padding_10"
+                    android:layout_weight="1"
+                    android:text="@string/pay_weixin"
+                    android:id="@+id/textView9" />
+
+                <TextView
+                    android:id="@+id/pop_payment_tv_wechat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_zhifu"
+                    android:button="@null"
+                    android:clickable="false" />
+
+            </LinearLayout>
+
+            <View style="@style/LineItemStyle" android:background="#e4e4e4" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_43"
+            android:text="立即付款"
+            android:gravity="center"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/text_font_17"
+            android:layout_marginTop="@dimen/padding_70"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginBottom="@dimen/padding_10"
+            android:layout_marginRight="@dimen/padding_10"
+            android:background="@drawable/shape_pop_fukuan"
+            android:id="@+id/pop_payment_fukuan" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_city"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_item_ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_item_other"
+        style="@style/FontStyle3e6398"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:clickable="true"
+        android:drawableLeft="@mipmap/icon_triangel"
+        android:drawablePadding="@dimen/padding_10"
+        android:drawableRight="@mipmap/icon_forword_right0"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_10"
+        android:text="北京" />
+
+    <View style="@style/LineStyleE5E5E5" />
+
+    <com.lzyc.ybtappcal.view.YbtListView
+        android:id="@+id/smlv_item_other"
+        style="@style/Style_lv" />
+</LinearLayout>

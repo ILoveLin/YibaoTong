@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/item_view_padding"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_8"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_item_hispital_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_6"
+        android:layout_marginLeft="@dimen/padding_10"
+        android:layout_marginRight="@dimen/padding_10"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/item_scanresult_linear_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_item_left_nayao_yiyuan"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_scanresult_hospital"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_10"
+                android:paddingBottom="@dimen/padding_4"
+                android:singleLine="true"
+                android:text="北京市安康医院（精神病专科）"
+                android:textColor="#70ffffff"
+                android:textSize="@dimen/text_font_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10">
+
+                <TextView
+                    android:id="@+id/item_hospital_type_hospital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/padding_5"
+                    android:drawableLeft="@mipmap/icon_nayao_hospital"
+                    android:drawablePadding="@dimen/padding_6"
+                    android:gravity="center|left"
+                    android:text="医院"
+                    android:textColor="#70ffffff"
+                    android:textSize="@dimen/text_font_14"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/item_hospital_type_community"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/padding_5"
+                    android:drawableLeft="@mipmap/icon_nayao_shequ"
+                    android:drawablePadding="@dimen/padding_6"
+                    android:gravity="center|left"
+                    android:text="社区"
+                    android:textColor="#70ffffff"
+                    android:textSize="@dimen/text_font_14"
+                    android:visibility="gone" />
+
+                <com.lzyc.ybtappcal.view.StarBar
+                    android:id="@+id/item_hospital_star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_3"
+                    android:layout_marginRight="@dimen/padding_8"
+                    app:starCount="5"
+                    app:starDistance="1dp"
+                    app:starEmpty="@mipmap/icon_nayao_star_nor"
+                    app:starFill="@mipmap/icon_nayao_star_pre"
+                    app:starSize="12dp" />
+
+                <TextView
+                    android:id="@+id/item_hospital_dingdian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_results_dingdian"
+                    android:paddingBottom="@dimen/padding_1"
+                    android:paddingLeft="@dimen/padding_6"
+                    android:paddingRight="@dimen/padding_6"
+                    android:paddingTop="@dimen/padding_1"
+                    android:text="无需定点"
+                    android:textColor="#70ffffff"
+                    android:textSize="@dimen/text_font_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/padding_8"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_15"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自付"
+                    android:textColor="#70ffffff"
+                    android:textSize="@dimen/text_font_13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_6"
+                    android:text="￥"
+                    android:textColor="#70ffffff"
+                    android:textSize="@dimen/text_font_14" />
+
+                <TextView
+                    android:id="@+id/item_scanresult_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12.00"
+                    android:textColor="#70ffffff"
+                    android:textSize="@dimen/text_font_16" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/padding_6"
+                    android:text="距离"
+                    android:textColor="#70ffffff"
+                    android:textSize="@dimen/text_font_13" />
+
+                <TextView
+                    android:id="@+id/tv_item_hispital_left_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/padding_3"
+                    android:text="0.5"
+                    android:textColor="#70ffffff"
+                    android:textSize="@dimen/text_font_20" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:text="km"
+                    android:textColor="#70ffffff"
+                    android:textSize="@dimen/text_font_14" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_scanresult_linear_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_item_radius_f5f7fc"
+            android:clickable="true"
+            android:gravity="center"
+            android:layout_marginLeft="-1px"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/item_scanresult_line"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#00ffffff" />
+
+            <TextView
+                android:id="@+id/item_scanresult_navigation_hospital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/padding_8"
+                android:drawableTop="@mipmap/icon_navigation_nayao"
+                android:gravity="center"
+                android:paddingLeft="@dimen/padding_17"
+                android:paddingRight="@dimen/padding_17"
+                android:text="到这去"
+                android:textColor="#70ffffff"
+                android:textSize="@dimen/text_font_14"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/item_scanresult_navigation_community"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/padding_8"
+                android:drawableTop="@mipmap/icon_navigation_nayao"
+                android:gravity="center"
+                android:paddingLeft="@dimen/padding_17"
+                android:paddingRight="@dimen/padding_17"
+                android:text="到这去"
+                android:textColor="#70ffffff"
+                android:textSize="@dimen/text_font_14"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/include_loadding_listview" />
+</LinearLayout>

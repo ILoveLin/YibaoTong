@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg_color"
+    android:orientation="vertical">
+
+    <View style="@style/LineItemStyle" />
+
+    <com.lzyc.ybtappcal.view.xlist.XYbtRefreshListView
+        android:id="@+id/message_sys_lv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_0"
+        android:layout_weight="1"
+        android:paddingTop="@dimen/padding_5"
+        android:divider="@null"
+        android:listSelector="@null" />
+</LinearLayout>

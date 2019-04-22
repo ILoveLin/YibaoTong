@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="theme_bg_account">#377eb4</color>
+    <color name="theme_bg_color">#f2f2f2</color>
+
+    <color name="title_bar_right_color">#666666</color>
+    <color name="title_bar_color">#666666</color>
+
+    <color name="tab_mine_order_color">#1d7ad0</color>
+    <color name="tab_main_pre_90">#901aa98c</color>
+
+    <color name="base_btn_color2">#4870b7</color>
+    <color name="base_white">#ffffff</color>
+    <color name="base_bg_titlebar">#f7f7f8</color>
+    <color name="base_bg_titlebar2">#f8f8f8</color>
+    <color name="base_btn_deep_color">#fa4515</color>
+    <color name="base_btn_light_color">#f9892e</color>
+    <color name="base_btn_pre">#60ffffff</color>
+    <color name="base_btn_color">#1aa98c</color>
+
+    <color name="border_search_goods">#dfdfdf</color>
+
+    <color name="tab_main_nor">#7c7c7c</color>
+    <color name="tab_main_pre">#1aa98c</color>
+
+    <color name="toggle_color_slelected">#1aa98d</color>
+
+
+    <color name="bg_item_results_left">#5d4a99</color>
+    <color name="bg_item_results_left_current">#708bff</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="manufacturer">#b1b1b1</color>
+
+
+</resources>

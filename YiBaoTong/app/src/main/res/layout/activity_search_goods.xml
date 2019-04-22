@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rel_search"
+    android:background="@color/theme_bg_color">
+    <!--标题栏-->
+    <LinearLayout
+        android:id="@+id/linear_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_45"
+        android:background="@color/base_bg_titlebar"
+        android:orientation="horizontal">
+        <!--可编辑的标题栏-->
+        <LinearLayout
+            android:id="@+id/linear_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_45"
+            android:visibility="visible"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <com.lzyc.ybtappcal.widget.ClearEditTextView
+                android:id="@+id/et_input"
+                android:layout_width="@dimen/padding_0"
+                android:layout_height="@dimen/padding_33"
+                android:layout_weight="1"
+                android:background="@drawable/shape_bg_search_goods"
+                android:drawableLeft="@mipmap/icon_goods_search"
+                android:drawablePadding="@dimen/padding_10"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_search_goods"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:singleLine="true"
+                android:textColor="@color/color_464545"
+                android:textColorHint="@color/color_cbcbcb"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_marginRight="@dimen/padding_10"
+                android:textCursorDrawable="@drawable/shape_edit_focus"
+                android:textSize="@dimen/text_font_14" />
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:paddingBottom="5dp"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingTop="4.5dp"
+                android:text="@string/cancel"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_font_15" />
+        </LinearLayout>
+        <!--不可编辑的标题栏-->
+        <LinearLayout
+            android:id="@+id/linear_edit_none"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_45"
+            android:background="@color/base_bg_titlebar2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/title_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:src="@drawable/selector_titlebar_left"
+                />
+
+            <TextView
+                android:id="@+id/tv_input"
+                android:layout_width="@dimen/padding_0"
+                android:layout_height="@dimen/padding_33"
+                android:layout_marginRight="@dimen/padding_10"
+                android:layout_weight="1"
+                android:background="@drawable/shape_bg_search_goods"
+                android:drawableLeft="@mipmap/icon_goods_search"
+                android:drawablePadding="@dimen/padding_10"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_search_goods"
+                android:paddingLeft="@dimen/padding_10"
+                android:textColor="@color/color_464545"
+                android:textSize="@dimen/text_font_14" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/titlebar_line"
+        style="@style/LineStyle"
+        android:layout_below="@id/linear_titlebar" />
+
+    <RelativeLayout
+        android:id="@+id/rel_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titlebar_line">
+
+        <!--第一页，热门搜索标签和历史记录-->
+        <RelativeLayout
+            android:id="@+id/rel_hot_his"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+                android:id="@+id/scroll_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/nested_search_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/padding_10"
+                        android:text="热门搜索"
+                        android:background="@color/theme_bg_color"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/text_font_14" />
+
+
+                    <com.lzyc.ybtappcal.widget.CustomGridView
+                        android:id="@+id/gv_hot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/base_white"
+                        android:horizontalSpacing="@dimen/padding_0"
+                        android:numColumns="3"
+                        android:paddingBottom="@dimen/padding_5"
+                        android:paddingLeft="@dimen/padding_2"
+                        android:paddingRight="@dimen/padding_10"
+                        android:paddingTop="@dimen/padding_15"
+                        android:verticalSpacing="@dimen/padding_0" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/rel_history_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/theme_bg_color"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:clickable="false"
+                            android:padding="@dimen/padding_10"
+                            android:text="@string/search_history_desc"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/text_font_14" />
+
+                        <ImageView
+                            android:id="@+id/iv_clear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:clickable="true"
+                            android:padding="@dimen/padding_10"
+                            android:src="@drawable/selector_search_history_delete" />
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/goods_history_bar_line"
+                        style="@style/LineStyleE5E5E5" />
+
+                    <com.lzyc.ybtappcal.widget.CustomGridView
+                        android:id="@+id/gv_history"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/padding_0"
+                        android:layout_weight="1"
+                        android:background="@color/base_white"
+                        android:horizontalSpacing="@dimen/padding_0"
+                        android:numColumns="3"
+                        android:paddingBottom="@dimen/padding_5"
+                        android:paddingLeft="@dimen/padding_2"
+                        android:paddingRight="@dimen/padding_10"
+                        android:paddingTop="@dimen/padding_15"
+                        android:verticalSpacing="@dimen/padding_0"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+            </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_history_bar_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="@color/theme_bg_color"
+                android:visibility="gone">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:clickable="false"
+                        android:text="@string/search_history_desc"
+                        android:padding="@dimen/padding_10"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/text_font_14" />
+
+                    <ImageView
+                        android:id="@+id/iv_history_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:clickable="true"
+                        android:padding="@dimen/padding_10"
+                        android:src="@drawable/selector_search_history_delete" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <!--第二页，联想搜索-->
+        <ListView
+            android:id="@+id/lv_dim"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/base_white"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:scrollbars="none"
+            android:visibility="gone" />
+        <!--第三页，商品列表-->
+        <RelativeLayout
+            android:id="@+id/rel_drug_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/theme_bg_color"
+            android:visibility="gone">
+            <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+                android:id="@+id/scroll_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ListView
+                    android:id="@+id/lv_druglist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never"
+                    android:listSelector="@null"
+                    android:divider="@null"
+                    android:scrollbars="none"
+                    android:background="@null" />
+            </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

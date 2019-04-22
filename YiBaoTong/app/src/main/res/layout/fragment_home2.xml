@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2f2f3">
+
+    <RelativeLayout
+        android:id="@+id/relative_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.lzyc.ybtappcal.widget.IRecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginRight="-5dp"
+            android:id="@+id/recyclerview"
+            />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_to_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/padding_30"
+            android:background="@mipmap/icon_to_top"/>
+
+        <include
+            android:id="@+id/include_net_error"
+            layout="@layout/include_error_net"/>
+
+        <LinearLayout
+            android:id="@+id/fg_home_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_1e7ab8"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <include
+                layout="@layout/include_search"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/include_loading_image" />
+
+    <include layout="@layout/include_error_net" />
+
+</RelativeLayout>

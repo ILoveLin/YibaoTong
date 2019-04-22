@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.lzyc.ybtappcal.view.CustomWebView
+        android:id="@+id/item_fragment_adopt_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!--暂时还没有生产企业信息-->
+    <LinearLayout
+        android:id="@+id/emty_linear_factory_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:alpha="0.9"
+            android:src="@mipmap/icon_drugdetail_factiory_empty" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:text="暂时还没有生产企业信息哦!"
+            android:textColor="@color/color_afafaf"
+            android:textSize="@dimen/text_font_16" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+    </LinearLayout>
+    <!--暂时还没有此药品说明书-->
+    <LinearLayout
+        android:id="@+id/emty_linear_info_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:alpha="0.9"
+            android:src="@mipmap/icon_medicinfo_empty" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:text="暂时还没有此药品说明书哦!"
+            android:textColor="@color/color_afafaf"
+            android:textSize="@dimen/text_font_16" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="85dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+

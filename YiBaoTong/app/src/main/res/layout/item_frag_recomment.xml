@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_10"
+        android:background="@drawable/selector_item_ffffff"
+        android:orientation="horizontal">
+
+        <com.lzyc.ybtappcal.view.roundimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/item_recomment_iv_covert"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:scaleType="centerCrop"
+            app:corner_radius2="5dp"
+            app:type="round"
+            app:border_color2="@color/color_e0e0e0"
+            app:border_width2="0.5dp"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_recomment_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:lines="2"
+                android:gravity="left|top"
+                android:lineSpacingMultiplier="1.1"
+                android:paddingLeft="@dimen/padding_10"
+                android:ellipsize="end"
+                android:text="今天（25日），国台办主任张志军与台湾工商团体会谈时强调，台湾新执政当局在两岸关系的性质上，必须以实际行动，才能确保两岸和平发展得到良好局面；同时，强硬向新政府喊话，搞“台独”只有死路一条，如果把历史发展定论想明白，就要把这个选项排除，回到“两岸同属一中”的基础上推动两岸关系和平发展。"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_font_15" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="left|bottom">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="阅读"
+                android:paddingLeft="@dimen/padding_10"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/text_font_12" />
+            <TextView
+                android:id="@+id/info_readcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:paddingLeft="@dimen/padding_3"
+                android:textColor="@color/color_999999"
+                android:layout_marginBottom="@dimen/padding_1"
+                android:textSize="@dimen/text_font_13" />
+        </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/LineItemStyleE0E0E0" />
+
+</LinearLayout>

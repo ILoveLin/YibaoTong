@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:pv="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/item_hc_linear_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_ffffff"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_5"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10">
+
+            <LinearLayout
+                android:id="@+id/item_community_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_5"
+                    android:layout_marginTop="@dimen/padding_15"
+                    android:gravity="center|left"
+                    android:orientation="horizontal">
+
+                    <!--<com.lzyc.ybtappcal.view.roundimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                        <!--android:id="@+id/item_recomment_iv_covert"-->
+                        <!--android:layout_width="36dp"-->
+                        <!--android:layout_height="36dp"-->
+                        <!--android:scaleType="centerCrop"-->
+                        <!--android:src="@mipmap/icon_mine_image"-->
+                        <!--app:border_color="@color/color_e0e0e0"-->
+                        <!--app:border_width="0dp"-->
+                        <!--app:corner_radius="@dimen/padding_5"-->
+                        <!--app:oval="true" />-->
+                    <com.lzyc.ybtappcal.widget.MyRoundImageView
+                        android:id="@+id/item_recomment_iv_covert"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@mipmap/icon_mine_image"
+                        pv:border_outside_color="@color/color_e0e0e0"
+                        pv:border_thickness="@dimen/padding_1"
+                         />
+
+
+                    <TextView
+                        android:id="@+id/item_community_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_7"
+                        android:layout_marginRight="@dimen/padding_20"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="13881005611"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/padding_13" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/item_community_reply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/padding_10"
+                    android:paddingBottom="@dimen/padding_10"
+                    android:paddingTop="@dimen/padding_5"
+                    android:text="回复"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/text_font_13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_community_add_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2016-06-20"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/text_font_12" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/LineStyle" android:layout_marginLeft="@dimen/padding_10" android:layout_marginRight="@dimen/padding_10" />
+        <!--<include layout="@layout/include_loadding_listview"/>-->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_hc_emptyview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_f1f1f3"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/padding_90"
+        android:text="还没有人评价哦"
+        android:visibility="gone" />
+</RelativeLayout>

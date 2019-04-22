@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    style="@style/ww"
+    android:background="@color/color_ffffff_00"
+    android:gravity="center"
+    android:padding="20dip">
+
+    <TextView
+        android:id="@+id/tv"
+        style="@style/ww"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+
+</LinearLayout>

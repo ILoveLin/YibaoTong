@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_230"
+            android:background="@mipmap/bg_biyao_top" />
+
+        <LinearLayout
+            android:id="@+id/linear_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--标题栏-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_10"
+                android:layout_marginLeft="9.5dp"
+                android:layout_marginRight="@dimen/padding_9"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_bg_top_search_out"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_dingwei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@mipmap/icon_position_biyao"
+                    android:drawablePadding="@dimen/padding_7"
+                    android:ellipsize="end"
+                    android:maxEms="5"
+                    android:paddingLeft="@dimen/padding_12"
+                    android:singleLine="true"
+                    android:text="未定位"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="@dimen/text_font_17" />
+
+                <LinearLayout
+                    android:id="@+id/tv_search"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_3"
+                    android:layout_marginLeft="@dimen/padding_8"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="@dimen/padding_3"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_bg_top_search"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/padding_11">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/padding_5"
+                        android:layout_marginTop="@dimen/padding_7"
+                        android:src="@mipmap/icon_search_biyao" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/padding_5"
+                        android:layout_marginLeft="@dimen/padding_6"
+                        android:layout_marginTop="@dimen/padding_7"
+                        android:text="请输入药品名称"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/text_font_15" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--scan barcode入口-->
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="13dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/selector_barcode" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_12"
+                android:background="@color/color_ffffff" />
+            <!--中间的，藏起来的-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--整体的原背景-->
+                <RelativeLayout
+                    android:id="@+id/rel_anim"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x40"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/bg_top_up2"
+                        android:scaleType="centerInside" />
+                    <!--android:layout_marginTop="4.4dp"-->
+
+                    <ImageView
+                        android:id="@+id/tv_anim_bg"
+                        android:layout_width="@dimen/x33"
+                        android:layout_height="@dimen/x33"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/x21"
+                        android:layout_marginTop="4.4dp"
+                        android:background="@mipmap/bg_top_btn_show"
+                        android:scaleType="centerInside" />
+
+                    <ImageView
+                        android:id="@+id/tv_start_anim"
+                        android:layout_width="@dimen/x33"
+                        android:layout_height="@dimen/x33"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/x21"
+                        android:layout_marginTop="4.4dp"
+                        android:background="@null"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/icon_top_btn" />
+                </RelativeLayout>
+                <!--隐藏动画-->
+                <!--android:background="@mipmap/bg_top_jianbian"-->
+                <LinearLayout
+                    android:id="@+id/linear_hidden"
+                    android:layout_width="match_parent"
+                    android:layout_height="124dp"
+                    android:background="#f6f6f6"
+                    android:orientation="vertical"
+                    android:paddingBottom="-50dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="-1dp"
+                        android:layout_marginLeft="@dimen/padding_81"
+                        android:layout_marginTop="@dimen/padding_10"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/image_logo_biyao" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_9"
+                            android:text="用好药"
+                            android:textColor="@color/color_999999"
+                            android:textSize="@dimen/text_font_20" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="-1.5dp"
+                            android:drawableLeft="@mipmap/icon_top_and"
+                            android:text="更省钱"
+                            android:textColor="@color/color_999999"
+                            android:textSize="@dimen/text_font_20" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_80"
+                        android:layout_marginTop="@dimen/padding_10"
+                        android:text="扫码或搜索,提供最省钱的用药方案."
+                        android:textColor="#aeaeae"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+                <!--下半圆-->
+                <RelativeLayout
+                    android:id="@+id/rel_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-25dp"
+                    android:background="@mipmap/bg_top_down"
+                    android:orientation="vertical"
+                    android:paddingRight="@dimen/x21">
+                    <!--最后的描述-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/padding_10"
+                        android:text="药品电子监管码(20位) 或 条形码(13位)"
+                        android:textColor="#60000000"
+                        android:textSize="@dimen/text_font_11" />
+
+                    <TextView
+                        android:id="@+id/tv_anim_under"
+                        android:layout_width="@dimen/x33"
+                        android:layout_height="25.5dp"
+                        android:layout_alignParentRight="true"
+                        android:text="" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_10"
+                android:background="@color/color_ffffff" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_0"
+        android:layout_weight="1">
+
+        <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+            android:id="@+id/scroll_pull"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.lzyc.ybtappcal.view.NoShadowListView
+                android:id="@+id/no_showdow_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_ffffff"
+                android:divider="@null"
+                android:dividerHeight="@dimen/padding_0"
+                android:listSelector="@color/color_000000_00"
+                android:scrollbars="none" />
+        </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <View style="@style/LineItemStyleE0E0E0" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:clickable="false"
+                    android:paddingBottom="10.5dp"
+                    android:paddingLeft="@dimen/padding_10"
+                    android:paddingRight="@dimen/padding_5"
+                    android:paddingTop="@dimen/padding_10"
+                    android:layout_marginBottom="2dp"
+                    android:text="@string/biyao_history_desc"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/text_font_14" />
+                <ImageView
+                    android:id="@+id/iv_history_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    android:paddingBottom="10.5dp"
+                    android:paddingLeft="@dimen/padding_10"
+                    android:paddingRight="@dimen/padding_10"
+                    android:paddingTop="@dimen/padding_10"
+                    android:layout_marginBottom="2dp"
+                    android:src="@drawable/selector_biyao_history_delete" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_marginRight="@dimen/padding_10"
+                android:background="@color/color_e0e0e0" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+
+

@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_377eb4"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_30"
+        android:layout_marginRight="@dimen/padding_30"
+        android:layout_marginTop="@dimen/padding_65"
+        android:background="@drawable/shape_ffffff_35"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_phone"
+            style="@style/Font_Big_Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableLeft="@mipmap/icon_login_phone"
+            android:drawablePadding="@dimen/padding_10"
+            android:hint="请输入手机号码"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:padding="@dimen/padding_10"
+            android:textColorHint="@color/color_cccccc" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_30"
+        android:layout_marginRight="@dimen/padding_30"
+        android:layout_marginTop="@dimen/padding_15"
+        android:background="@drawable/shape_ffffff_35"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_code"
+            style="@style/Font_Big_Black"
+            android:layout_width="@dimen/padding_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@null"
+            android:drawableLeft="@mipmap/icon_login_yanzm"
+            android:drawablePadding="@dimen/padding_10"
+            android:hint="请输入短信验证码"
+            android:inputType="number"
+            android:maxLength="6"
+            android:padding="@dimen/padding_10"
+            android:textColorHint="@color/color_cccccc" />
+
+        <View
+            style="@style/Style_vLine"
+            android:layout_marginBottom="@dimen/padding_5"
+            android:layout_marginLeft="@dimen/padding_5"
+            android:layout_marginRight="@dimen/padding_5"
+            android:layout_marginTop="@dimen/padding_5"
+            android:background="@color/color_02a3f0" />
+
+        <com.lzyc.ybtappcal.widget.TimerTextView
+            android:id="@+id/ttv_get_code"
+            style="@style/Font_Middle_Blue"
+            android:layout_width="@dimen/padding_0"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/padding_10"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onBtnClick"
+            android:text="获取验证码" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_30"
+        android:layout_marginRight="@dimen/padding_30"
+        android:layout_marginTop="@dimen/padding_10"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_code_invite"
+            style="@style/Font_Big_Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_ffffff_35"
+            android:drawableLeft="@mipmap/icon_login_invitecode"
+            android:drawablePadding="@dimen/padding_10"
+            android:hint="请输入邀请码(选填)"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:visibility="gone"
+            android:padding="@dimen/padding_10"
+            android:textColorHint="@color/color_cccccc" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_register_message"
+        style="@style/Font_Middle_Blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/icon_et_phone"
+        android:drawablePadding="@dimen/padding_10"
+        android:padding="@dimen/padding_10"
+        android:text="错误提示"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_next"
+        style="@style/LoginButtonStyle"
+        android:layout_marginTop="@dimen/padding_5"
+        android:text="下一步" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_40"
+        android:layout_marginRight="@dimen/padding_30"
+        android:layout_marginTop="@dimen/padding_15"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/selector_register_checbox"
+            android:checked="true" />
+
+        <!--<CheckBox-->
+        <!--android:id="@+id/cb_set_yan"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/color_ffffff_00"-->
+        <!--android:button="@drawable/selector_password"-->
+        <!--android:checked="false" />-->
+
+        <TextView
+            style="@style/Login_Font_Middle_Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_6"
+            android:text="我已同意" />
+
+        <TextView
+            android:id="@+id/tv_register_term"
+            style="@style/Login_Font_Middle_Blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="onBtnClick"
+            android:text="《使用条款和隐私政策》" />
+    </LinearLayout>
+
+</LinearLayout>

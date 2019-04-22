@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_50"
+        android:background="@color/base_bg_titlebar"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/ib_recommend_back"
+            style="@style/ww"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="@dimen/padding_10"
+            android:src="@drawable/selector_titlebar_left" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/ww"
+            android:layout_centerInParent="true"
+            android:ems="8"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="资讯详情"
+            android:textColor="@color/title_bar_color"
+            android:textSize="@dimen/text_font_17" />
+
+
+        <ImageButton
+            android:id="@+id/ib_font"
+            style="@style/ww"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ib_share"
+            android:background="@null"
+            android:onClick="onBtnClick"
+            android:padding="@dimen/padding_10"
+            android:src="@drawable/selector_titlebar_right_a" />
+
+        <ImageButton
+            android:id="@+id/ib_share"
+            style="@style/ww"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:onClick="onBtnClick"
+            android:padding="@dimen/padding_10"
+            android:src="@drawable/selector_titlebar_right_share" />
+
+    </RelativeLayout>
+
+    <View style="@style/LineStyle"/>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:progress="0"
+        android:progressDrawable="@drawable/progress_horizontal" />
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

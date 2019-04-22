@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/footer_ybtlv_linear"
+    android:paddingBottom="@dimen/padding_11"
+    android:paddingTop="@dimen/padding_5"
+    android:gravity="center"
+    android:visibility="gone"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/padding_30"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d1d1d1" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_11"
+        android:layout_marginRight="@dimen/padding_11"
+        android:gravity="center"
+        android:textColor="#999999"
+        android:textSize="@dimen/text_font_14"
+        android:text="已经到底啦" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/padding_30"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d1d1d1" />
+    </LinearLayout>
+</LinearLayout>

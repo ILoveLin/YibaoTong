@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        style="@style/LineItemStyle"
+        android:background="@color/color_cecece" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/padding_43"
+        android:background="@mipmap/empty_error_scan_code" />
+
+    <TextView
+        android:id="@+id/error_scan_tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_12"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/text_font_24" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_50"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.2"
+        android:text="对不起,没有找到该条形码的药品!"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/text_font_16" />
+
+    <TextView
+        android:id="@+id/error_scan_tv_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_45"
+        android:layout_margin="@dimen/padding_30"
+        android:background="@drawable/shape_bg_btn_long_withdraw_green"
+        android:clickable="true"
+        android:onClick="onBtnClick"
+        android:gravity="center"
+        android:padding="@dimen/padding_8"
+        android:text="输入药品名称查找"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/text_font_17" />
+
+</LinearLayout>

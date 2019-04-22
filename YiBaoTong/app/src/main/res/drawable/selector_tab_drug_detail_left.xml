@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <!--按下的时候,显示的长方形(相当于ui给我们的pictrue只是这里自己画了一个图片)-->
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="@dimen/padding_5" android:bottomRightRadius="@dimen/padding_0" android:topLeftRadius="@dimen/padding_5" android:topRightRadius="@dimen/padding_0" />
+            <stroke android:width="0.5dp" android:color="@color/color_7791cd" />
+            <solid android:color="@color/color_7791cd"  />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="@dimen/padding_5" android:bottomRightRadius="@dimen/padding_0" android:topLeftRadius="@dimen/padding_5" android:topRightRadius="@dimen/padding_0" />
+            <stroke android:width="0.5dp" android:color="@color/color_7791cd" />
+            <solid android:color="@color/color_ffffff"  />
+        </shape>
+    </item>
+</selector>

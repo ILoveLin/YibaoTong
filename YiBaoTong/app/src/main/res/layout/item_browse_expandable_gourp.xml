@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <View style="@style/LineStyle" />
+    <TextView
+        android:id="@+id/browse_group_desc"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_40"
+        android:text="今天"
+        android:textSize="@dimen/text_font_16"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/padding_10"
+        android:background="@color/color_ffffff"
+        android:textColor="@color/color_333333"
+        />
+</LinearLayout>

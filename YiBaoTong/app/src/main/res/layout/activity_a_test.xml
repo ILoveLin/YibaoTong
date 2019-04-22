@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--认可地第一的-->
+        <LinearLayout
+            android:id="@+id/line_scan_stute_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="@dimen/padding_100"
+                android:layout_height="@dimen/padding_100"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_eeeeee"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/icon_scan_result_fine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/icon_scan_result_fine" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/icon_scan_result_fine"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:text="你太会用药了"
+                    android:textColor="@color/color_333333"
+                    android:textSize="15sp" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="这是最好的.大医院的专家都在用"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="(药品医保信息,厂家信息,药品信息都有)"
+                android:textColor="@color/color_666666"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <!--认可度 2和3的情况-->
+        <LinearLayout
+            android:id="@+id/line_scan_stute_2_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="@dimen/padding_100"
+                android:layout_height="@dimen/padding_100"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_eeeeee"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/icon_scan_result_mind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/icon_scan_result_mind" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/icon_scan_result_mind"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:text="你很会用药"
+                    android:textColor="@color/color_333333"
+                    android:textSize="15sp" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="挺好的,医院的专家都在用啊"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="(药品医保信息,厂家信息,药品信息都有)"
+                android:textColor="@color/color_666666"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <!--认可度 第3名之后的情况-->
+        <LinearLayout
+            android:id="@+id/line_scan_stute_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="@dimen/padding_100"
+                android:layout_height="@dimen/padding_100"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_eeeeee"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/icon_scan_result_bad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/icon_scan_result_bad" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/icon_scan_result_bad"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:text="这个药一般啊"
+                    android:textColor="@color/color_333333"
+                    android:textSize="15sp" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="医院的专家不怎么用啊"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="(药品医保信息,厂家信息,药品信息都有)"
+                android:textColor="@color/color_666666"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <!--未采纳情况-->
+        <LinearLayout
+            android:id="@+id/line_scan_stute_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="@dimen/padding_100"
+                android:layout_height="@dimen/padding_100"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_eeeeee"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/icon_scan_result_none"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/icon_scan_result_none" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/icon_scan_result_none"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:text="这个药一般啊"
+                    android:textColor="@color/color_333333"
+                    android:textSize="15sp" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="医院的专家不怎么用啊"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="(药品医保信息,厂家信息,药品信息都有)"
+                android:textColor="@color/color_666666"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

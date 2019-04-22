@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/padding_50"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/ib_white_left"
+        style="@style/ww"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/padding_10"
+        android:background="@null"
+        android:padding="@dimen/padding_10"
+        android:src="@mipmap/icon_back_black_left"
+        android:onClick="onBtnClick"
+        android:textColor="@color/color_ffffff" />
+
+    <TextView
+        android:id="@+id/tv_white_title"
+        style="@style/ww"
+        android:layout_centerInParent="true"
+        android:ems="8"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="标题"
+        android:textColor="@color/color_000000"
+        android:textSize="@dimen/text_font_22" />
+
+
+    <TextView
+        android:id="@+id/tv_white_right"
+        style="@style/ww"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/padding_10"
+        android:textColor="@color/color_000000"
+        android:textSize="@dimen/text_font_17"
+        android:clickable="true"
+        android:onClick="onBtnClick"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/ib_white_right"
+        style="@style/ww"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/padding_5"
+        android:background="@null"
+        android:padding="@dimen/padding_12"
+        android:onClick="onBtnClick"
+        android:visibility="gone" />
+
+</RelativeLayout>

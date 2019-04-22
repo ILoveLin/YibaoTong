@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rel_all">
+
+    <LinearLayout
+        android:id="@+id/linear_title_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_45"
+        android:layout_marginLeft="@dimen/padding_10"
+        android:layout_marginRight="@dimen/padding_10"
+        android:layout_marginTop="@dimen/padding_7"
+        android:paddingLeft="@dimen/padding_19"
+        android:paddingRight="@dimen/padding_12"
+        android:background="@drawable/shape_white_corners5"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="@dimen/padding_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="医保通支持绑定医保卡吗？"
+            android:textColor="@color/color_43454e"
+            android:textSize="@dimen/text_font_16" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="1"
+                android:src="@mipmap/icon_help_close" />
+
+            <ImageView
+                android:id="@+id/iv_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0"
+                android:src="@mipmap/icon_help_open" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_title_name"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_15"
+            android:layout_marginRight="@dimen/padding_15"
+            android:layout_marginTop="@dimen/padding_7"
+            android:background="@drawable/shape_white_corners5"
+            android:lineSpacingExtra="@dimen/padding_7"
+            android:paddingLeft="@dimen/padding_14"
+            android:paddingRight="@dimen/padding_7"
+            android:paddingTop="@dimen/padding_12"
+            android:paddingBottom="@dimen/padding_12"
+            android:text="望城区纪委责令靖港镇党委政府要主动查实管理中的疏漏，迅速整改完善针对靖港镇、芦江社区相关干部在处理相关事件中的行为。望城区纪委决定，给予靖港镇纪委书记邓治国通报批评；给予芦江社区主任刘壮党内严重警告处分。"
+            android:textColor="@color/color_85878f"
+            android:textSize="@dimen/text_font_15" />
+    </LinearLayout>
+
+</RelativeLayout>

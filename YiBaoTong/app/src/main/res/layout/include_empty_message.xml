@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/include_empty_message_no_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:background="@color/color_f1f1f3">
+
+    <TextView
+        android:id="@+id/inculde_empty_message_no_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="您还未收到消息哦!"
+        android:textColor="@color/color_afafaf"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/inculde_empty_message_no_desc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/padding_19"
+        android:background="@mipmap/empty_message" />
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_46"
+        android:layout_marginLeft="@dimen/padding_8"
+        android:layout_marginRight="@dimen/padding_8"
+        android:layout_marginTop="@dimen/padding_8"
+        android:background="@drawable/shape_top_corner_6dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_10">
+
+        <ImageView
+            android:id="@+id/img_pharmacy"
+            android:layout_width="@dimen/padding_25"
+            android:layout_height="@dimen/padding_25"
+            android:src="@mipmap/icon_yaodian_logo_dekai" />
+
+        <TextView
+            android:id="@+id/tv_pharmacy"
+            style="@style/FontStyle"
+            android:layout_width="@dimen/padding_0"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_weight="1"
+            android:text="康爱多大药房"
+            android:textColor="@color/color_43454e" />
+
+        <TextView
+            android:id="@+id/tv_pay_type"
+            style="@style/FontStyle"
+            android:text="在线支付"
+            android:textColor="@color/color_43454e" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_10"
+        android:layout_marginRight="@dimen/padding_10"
+        android:background="@color/color_ffffff">
+
+        <View
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginRight="@dimen/padding_10"
+            style="@style/LineItemStyleE0E0E0"/>
+
+    </LinearLayout>
+
+</LinearLayout>

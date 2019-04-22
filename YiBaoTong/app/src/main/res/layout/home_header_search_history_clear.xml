@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/header_search_history_clear_linear"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_f1f1f3"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_10">
+
+        <TextView
+            android:id="@+id/search_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:clickable="false"
+            android:text="历史记录"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/text_font_14" />
+
+        <ImageView
+            android:id="@+id/search_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:onClick="onBtnClick"
+            android:src="@drawable/selector_search_history_delete" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        style="@style/LineStyleD9D9D9"
+        android:layout_marginLeft="@dimen/padding_15"
+        android:layout_marginRight="@dimen/padding_15" />
+</LinearLayout>

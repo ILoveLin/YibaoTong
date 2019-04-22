@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/padding_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_25"
+            android:paddingLeft="@dimen/padding_20"
+            android:paddingRight="@dimen/padding_20"
+            android:paddingTop="@dimen/padding_10"
+            android:background="@drawable/bg_wode">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/FontStyleBlack"
+                        android:layout_width="0dip"
+                        android:layout_weight="1"
+                        android:text="@string/with_draw_detail_draw_balance" />
+
+                    <TextView
+                        android:id="@+id/balance"
+                        style="@style/FontStyleBlack"
+                        android:textSize="@dimen/text_font_21" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/LineStyleE5E5E5"
+                    android:layout_marginBottom="@dimen/padding_10"
+                    android:layout_marginTop="@dimen/padding_10" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/FontStyleGrey"
+                        android:layout_width="0dip"
+                        android:layout_weight="1"
+                        android:text="@string/withdraw_detail_alipay" />
+
+                    <TextView
+                        android:id="@+id/alipay"
+                        style="@style/FontStyleGrey" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/FontStyleGrey"
+                        android:layout_width="0dip"
+                        android:layout_weight="1"
+                        android:text="@string/with_draw_detail_draw_alipay_name" />
+
+                    <TextView
+                        android:id="@+id/aliname"
+                        style="@style/FontStyleGrey" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/FontStyleGrey"
+                        android:layout_width="0dip"
+                        android:layout_weight="1"
+                        android:text="@string/with_draw_detail_draw_time" />
+
+                    <TextView
+                        android:id="@+id/create_time"
+                        style="@style/FontStyleGrey" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/FontStyleGrey"
+                        android:layout_width="0dip"
+                        android:layout_weight="1"
+                        android:text="@string/with_draw_detail_draw_remarks" />
+
+                    <TextView
+                        android:id="@+id/tv_msg"
+                        style="@style/FontStyleGrey"
+                        android:layout_marginLeft="@dimen/padding_60"
+                        android:gravity="right"
+                        android:textColor="@color/color_43a047" />
+
+                </LinearLayout>
+
+                <View
+                    android:visibility="gone"
+                    android:id="@+id/v_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/padding_9"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/msg_type"
+                    style="@style/FontStyleGrey"
+                    android:textSize="@dimen/text_font_13"
+                    android:gravity="right"
+                    android:layout_marginLeft="@dimen/padding_100"
+                    android:lineSpacingExtra="@dimen/padding_2"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>

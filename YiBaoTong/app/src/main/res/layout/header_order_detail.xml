@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_8"
+        android:layout_marginRight="@dimen/padding_8"
+        android:layout_marginTop="@dimen/padding_8"
+        android:background="@drawable/shape_order_check_bg"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/FontStyle"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginTop="@dimen/padding_10"
+            android:drawableLeft="@mipmap/icon_order_check_receiver"
+            android:drawablePadding="@dimen/padding_5"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/padding_2"
+            android:text="收货人信息"
+            android:textColor="@color/color_43454e" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginTop="@dimen/padding_8"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/order_detail_account"
+                style="@style/ww"
+                android:text="姓名"
+                android:textColor="@color/color_43454e"
+                android:textSize="@dimen/text_font_14" />
+
+            <TextView
+                android:id="@+id/order_detail_phone"
+                style="@style/FontStyle"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:text="1890990979"
+                android:textColor="@color/color_43454e" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/order_detail_address"
+            style="@style/ww"
+            android:layout_marginBottom="@dimen/padding_10"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginRight="@dimen/padding_10"
+            android:layout_marginTop="@dimen/padding_5"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/padding_2"
+            android:lines="2"
+            android:text="8989897987889898979878898989798788989897987889898979878898989798788989897987889898979878"
+            android:textColor="@color/color_43454e"
+            android:textSize="@dimen/text_font_13" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_2"
+            android:layout_marginLeft="@dimen/padding_1"
+            android:layout_marginRight="@dimen/padding_1"
+            android:background="@mipmap/icon_jianchadingdan_youjitiao" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_46"
+        android:layout_marginLeft="@dimen/padding_8"
+        android:layout_marginRight="@dimen/padding_8"
+        android:layout_marginTop="@dimen/padding_8"
+        android:background="@drawable/shape_top_corner_6dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_10">
+
+        <ImageView
+            android:id="@+id/res_merchant_logo"
+            android:layout_width="@dimen/padding_25"
+            android:layout_height="@dimen/padding_25"
+            android:src="@mipmap/icon_yaodian_logo_dekai" />
+
+        <TextView
+            android:id="@+id/res_merchant_name"
+            style="@style/FontStyle"
+            android:layout_width="@dimen/padding_0"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_weight="1"
+            android:text="康爱多大药房"
+            android:textColor="@color/color_43454e" />
+
+        <TextView
+            android:id="@+id/contact_kefu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:drawablePadding="@dimen/padding_5"
+            android:drawableRight="@mipmap/icon_kefu0"
+            android:gravity="center"
+            android:onClick="onBtnClick"
+            android:padding="@dimen/padding_10"
+            android:text="@string/contact_kefu" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_1"
+        android:layout_marginLeft="@dimen/padding_8"
+        android:layout_marginRight="@dimen/padding_8"
+        android:background="@color/color_ffffff">
+
+        <View
+            style="@style/LineItemStyleE0E0E0"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginRight="@dimen/padding_10" />
+
+    </LinearLayout>
+
+</LinearLayout>

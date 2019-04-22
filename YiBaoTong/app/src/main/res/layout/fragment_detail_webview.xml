@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2f2f2"
+    android:orientation="vertical"
+    android:id="@+id/scroll">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.lzyc.ybtappcal.view.CustomWebView
+            android:id="@+id/frag_detail_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_ffffff"/>
+
+        <!--暂时还没有生产企业信息-->
+        <LinearLayout
+            android:id="@+id/empty_linear_qiye"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_30"
+            android:paddingTop="@dimen/padding_30"
+            android:orientation="vertical"
+            android:background="@color/color_ffffff"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.9"
+                android:src="@mipmap/icon_drugdetail_factiory_empty" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:text="暂时还没有生产企业信息哦!"
+                android:textColor="@color/color_afafaf"
+                android:textSize="@dimen/text_font_16" />
+
+        </LinearLayout>
+
+        <!--暂时还没有此药品说明书-->
+        <LinearLayout
+            android:id="@+id/empty_linear_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/padding_30"
+            android:paddingBottom="@dimen/padding_30"
+            android:background="@color/color_ffffff"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.9"
+                android:src="@mipmap/icon_medicinfo_empty" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:text="暂时还没有此药品说明书哦!"
+                android:textColor="@color/color_afafaf"
+                android:textSize="@dimen/text_font_16" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

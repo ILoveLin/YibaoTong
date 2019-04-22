@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rel_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/padding_60"
+        android:visibility="gone" />
+
+    <com.lzyc.ybtappcal.widget.xrecycler.XRecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_190"
+        android:background="@color/color_f2f2f2" />
+
+    <include layout="@layout/item_drug_medicine_title" />
+
+    <!-- <RelativeLayout
+         android:id="@+id/rel_title"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/padding_50"
+         android:background="#a2a2a3"
+         >
+
+         <ImageButton
+             android:id="@+id/ib_left_01"
+             style="@style/ww"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:background="@null"
+             android:padding="@dimen/padding_10"
+             android:src="@mipmap/icon_back_white"
+              />
+
+         <TextView
+             android:id="@+id/tv_title_01"
+             style="@style/ww"
+             android:layout_centerInParent="true"
+             android:layout_marginLeft="@dimen/padding_20"
+             android:layout_marginRight="@dimen/padding_20"
+             android:ellipsize="end"
+             android:ems="8"
+             android:gravity="center"
+             android:singleLine="true"
+             android:text="个人药箱"
+             android:textColor="@color/color_ffffff"
+             android:textSize="@dimen/text_font_17" />
+
+     </RelativeLayout>-->
+
+    <LinearLayout
+        android:id="@+id/lin_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/image_medicine_bag_shadow" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_55"
+            android:layout_gravity="center"
+            android:background="@drawable/selector_item_ffffff"
+            android:scaleType="center"
+            android:src="@mipmap/icon_address_manager_build" />
+    </LinearLayout>
+
+
+</RelativeLayout>

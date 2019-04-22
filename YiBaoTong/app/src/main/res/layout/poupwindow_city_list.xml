@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_10"
+        android:text="当前定位城市"
+        style="@style/Font_Big_Gray"/>
+    <View
+        style="@style/LineStyleE5E5E5"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_10"
+        android:background="@color/color_ffffff">
+        <Button
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/padding_28"
+            android:text="北京"
+            style="@style/Font_Small_White"
+            android:background="@drawable/btn_blue_5"/>
+
+    </LinearLayout>
+
+
+    <com.lzyc.ybtappcal.widget.sort.ContactListViewImpl
+        android:id="@+id/lv_city"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:listSelector="#00000000"
+        android:smoothScrollbar="true" />
+
+</LinearLayout>

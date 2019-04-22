@@ -1,0 +1,14 @@
+<com.lzyc.ybtappcal.view.MyFoldingCell xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/results_foldingcell"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    folding-cell:animationDuration="1500"
+    folding-cell:cameraHeight="30"
+    folding-cell:additionalFlipsCount="4"
+    folding-cell:backSideColor="@color/cellBackSideviewOther">
+    <!--content view 展开状态-->
+    <include layout="@layout/item_results_contentview" />
+    <!--title view 折叠状态-->
+    <include layout="@layout/item_results_titleview" />
+</com.lzyc.ybtappcal.view.MyFoldingCell>

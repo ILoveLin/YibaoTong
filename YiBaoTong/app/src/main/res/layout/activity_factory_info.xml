@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:layout_marginTop="@dimen/padding_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_factory_info_name"
+                android:layout_width="@dimen/padding_0"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="石药"
+                style="@style/Font_Big_Black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:layout_marginTop="@dimen/padding_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地址："
+                style="@style/Font_Middle_Gray" />
+
+            <TextView
+                android:id="@+id/tv_factory_info_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="北京市西城区大木仓胡同47号"
+                style="@style/Font_Middle_Gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:layout_marginTop="@dimen/padding_5"
+            android:layout_marginBottom="@dimen/padding_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系方式："
+                style="@style/Font_Middle_Gray" />
+
+            <TextView
+                android:id="@+id/tv_factory_info_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13568425497"
+                style="@style/Font_Middle_Gray" />
+        </LinearLayout>
+
+        <View style="@style/LineStyleE5E5E5" />
+    </LinearLayout>
+
+
+    <View style="@style/LineItemStyleE0E0E0"/>
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:progress="0"
+        android:progressDrawable="@drawable/progress_horizontal"
+        />
+    <WebView
+        android:id="@+id/wb_factory_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_ffffff"
+        />
+    <LinearLayout
+        android:id="@+id/emty_linear_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:layout_marginTop="140dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_medicinfo_empty"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_30"
+            android:text="暂时还没有生产企业信息哦"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_font_16"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/include_error_net"/>
+</LinearLayout>

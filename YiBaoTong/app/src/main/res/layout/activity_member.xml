@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scroll_hide">
+
+    <LinearLayout
+        android:id="@+id/lin_hide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_10"
+            android:padding="@dimen/padding_10"
+            android:background="@drawable/bg_item"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_10"
+                    android:src="@mipmap/icon_medicine_none"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/lin_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/color_ffffff"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/padding_10"
+                            android:paddingRight="@dimen/padding_10"
+                            android:paddingBottom="@dimen/padding_12"
+                            android:paddingTop="@dimen/padding_3"
+                            >
+
+                            <TextView
+                                style="@style/FontStyleBlack"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="称呼" />
+
+                            <EditText
+                                android:id="@+id/edit_name"
+                                style="@style/FontStyleGrey"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:textColor="@color/color_333333"
+                                android:gravity="right"
+                                android:hint="请输入称呼"
+                                android:inputType="text"
+                                android:singleLine="true"
+                                android:textColorHint="@color/color_999999" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/padding_10"
+                                android:src="@mipmap/icon_forword_right0"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/v_name_click"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </FrameLayout>
+
+                    <View
+                        style="@style/LineItemStyleE0E0E0"
+                        android:layout_marginLeft="@dimen/padding_10"
+                        android:layout_marginRight="@dimen/padding_10"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_ffffff"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/padding_10"
+                        android:layout_marginTop="@dimen/padding_2.5"
+                        android:layout_marginBottom="@dimen/padding_2.5"
+                        >
+
+                        <TextView
+                            style="@style/FontStyleBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="性别" />
+
+                        <TextView
+                            android:id="@+id/tv_gender"
+                            style="@style/FontStyleGrey"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/padding_10"
+                            android:drawableRight="@mipmap/icon_forword_right0"
+                            android:gravity="right"
+                            android:text="请选择性别" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                style="@style/LineItemStyleE0E0E0"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_marginRight="@dimen/padding_10"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_12"
+                android:paddingBottom="@dimen/padding_3"
+                android:layout_marginBottom="@dimen/padding_10"
+                >
+
+                <TextView
+                    style="@style/FontStyleBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="年龄" />
+
+                <TextView
+                    android:id="@+id/tv_age"
+                    style="@style/FontStyleGrey"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/padding_10"
+                    android:drawableRight="@mipmap/icon_forword_right0"
+                    android:gravity="right"
+                    android:text="请选择年龄"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/FontStyleGrey"
+            android:layout_height="@dimen/padding_30"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_font_13"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginBottom="@dimen/padding_8"
+            android:drawableLeft="@mipmap/icon_yuding_tish"
+            android:drawablePadding="@dimen/padding_5"
+            android:text="扩展资料(有利于医生的诊断，可不填)"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_wode"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/FontStyleBlack"
+                    android:layout_marginBottom="@dimen/padding_2.5"
+                    android:layout_marginLeft="@dimen/padding_10"
+                    android:layout_marginTop="@dimen/padding_2.5"
+                    android:layout_weight="1"
+                    android:text="慢性病史" />
+
+                <TextView
+                    android:id="@+id/tv_have"
+                    style="@style/FontStyleGrey"
+                    android:drawablePadding="@dimen/padding_5"
+                    android:paddingLeft="@dimen/padding_25"
+                    android:paddingRight="@dimen/padding_8"
+                    android:paddingTop="@dimen/padding_2.5"
+                    android:paddingBottom="@dimen/padding_2.5"
+                    android:drawableRight="@drawable/selector_green_round"
+                    android:gravity="center"
+                    android:text="有" />
+
+                <TextView
+                    android:id="@+id/tv_not_have"
+                    style="@style/FontStyleGrey"
+                    android:drawablePadding="@dimen/padding_5"
+                    android:drawableRight="@drawable/selector_green_round"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/padding_2.5"
+                    android:paddingLeft="@dimen/padding_10"
+                    android:paddingRight="@dimen/padding_10"
+                    android:paddingTop="@dimen/padding_2.5"
+                    android:text="无" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/LineItemStyleE0E0E0"
+                android:layout_margin="@dimen/padding_10" />
+
+            <LinearLayout
+                android:id="@+id/lin_remarks"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_150"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/padding_10"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10">
+
+                <TextView
+                    style="@style/FontStyleBlack"
+                    android:text="备注：" />
+
+                <EditText
+                    android:id="@+id/edit_remarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="如高血压"
+                    android:textColor="@color/color_333333"
+                    android:textColorHint="@color/color_999999"
+                    android:textSize="@dimen/text_font_14" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

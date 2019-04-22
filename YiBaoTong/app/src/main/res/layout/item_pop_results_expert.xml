@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_pop_expert_hos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_4"
+        android:layout_marginLeft="@dimen/padding_5"
+        android:text="北京协和医院"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:gravity="center_vertical"
+        android:textColor="@color/color_4a91e1"
+        android:textSize="@dimen/text_font_13" />
+
+    <View
+        android:id="@+id/item_pop_expert_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/padding_10"
+        android:layout_marginRight="@dimen/padding_10"
+        android:background="@color/color_75aff0" />
+
+    <TextView
+        android:id="@+id/item_pop_expert_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:padding="@dimen/padding_5"
+        android:layout_marginLeft="@dimen/padding_5"
+        android:layout_marginRight="@dimen/padding_5"
+        android:text="北京协和医院"
+        android:gravity="center_vertical"
+        android:textColor="@color/color_1765bd"
+        android:textSize="@dimen/text_font_13"
+        android:visibility="visible" />
+</LinearLayout>

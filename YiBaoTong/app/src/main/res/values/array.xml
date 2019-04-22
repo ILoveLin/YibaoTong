@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type_job">
+        <item>在职职工</item>
+        <item>城镇居民</item>
+        <item>儿童(18岁以下)</item>
+        <item>退休(70岁以下)</item>
+        <item>退休(70岁以上)</item>
+    </string-array>
+    <string-array name="type_job_status">
+        <item>ZZ00</item>
+        <item>ZZ03</item>
+        <item>ZZ04</item>
+        <item>ZZ01</item>
+        <item>ZZ02</item>
+    </string-array>
+    <string-array name="type_city_isopen">
+        <item>北京市</item>
+    </string-array>
+    <string-array name="city_list_hot">
+        <item>北京市</item>
+        <item>上海市</item>
+        <item>广州市</item>
+        <item>深圳市</item>
+        <item>武汉市</item>
+        <item>南京市</item>
+        <item>保定市</item>
+        <item>郑州市</item>
+        <item>济南市</item>
+    </string-array>
+</resources>

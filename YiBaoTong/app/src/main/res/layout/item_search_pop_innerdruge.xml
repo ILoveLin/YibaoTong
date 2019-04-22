@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#d0ebff"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是标题" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="143dp"
+        android:layout_height="190dp"
+        android:text="百度云是由百度公司出品的一款云服务产品,不仅为用户提供免费存储空间,还可以将视频、照片、文档、通讯录数据在移动设备和PC端之间跨平台同步、备份等,百度云还支持添加好友" />
+</LinearLayout>

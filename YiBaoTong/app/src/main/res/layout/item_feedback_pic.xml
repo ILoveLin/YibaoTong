@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/item_fb_iv_content"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        android:layout_margin="@dimen/padding_10"
+        android:src="@mipmap/icon_feedback_add" />
+    <ImageView
+        android:id="@+id/item_fb_iv_delete"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="@dimen/padding_4"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/icon_feedback_clear"
+        />
+</RelativeLayout>

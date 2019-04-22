@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="referesh_header_anim_time">80</integer>
+    <integer name="radius_80">80</integer>
+    <integer name="referesh_footer_anim_time">100</integer>
+</resources>

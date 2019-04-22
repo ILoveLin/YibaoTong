@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f8f8f8"
+    android:orientation="vertical">
+
+    <!--标题-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_50"
+        android:background="@color/color_f7f7f8"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ib_select_left"
+            style="@style/ww"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:onClick="onBtnClick"
+            android:padding="@dimen/padding_10"
+            android:src="@drawable/selector_titlebar_left"
+            android:textColor="@color/color_ffffff" />
+
+        <com.lzyc.ybtappcal.widget.ClearEditTextView
+            android:id="@+id/et_select"
+            android:layout_width="@dimen/padding_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_bg_search"
+            android:drawableLeft="@mipmap/icon_et_search_left"
+            android:drawablePadding="@dimen/padding_10"
+            android:focusable="true"
+            android:textCursorDrawable="@drawable/shape_edit_focus"
+            android:gravity="center_vertical"
+            android:hint="输入地址"
+            android:paddingBottom="6dp"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_5"
+            android:singleLine="true"
+            android:textColor="@color/color_464545"
+            android:textColorHint="@color/color_cbcbcb"
+            android:textSize="@dimen/text_font_14" />
+        <TextView
+            android:id="@+id/tv_select_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_6"
+            android:layout_marginRight="@dimen/padding_10"
+            android:background="@drawable/selector_btn_search"
+            android:clickable="true"
+            android:onClick="onBtnClick"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/padding_13"
+            android:paddingRight="@dimen/padding_13"
+            android:paddingTop="4.5dp"
+            android:text="搜索"
+            android:textColor="@color/color_5b6ba1"
+            android:textSize="@dimen/text_font_16" />
+
+     </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/mv_select_search"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_000000_80"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_10">
+
+
+            <!--确认地址-->
+            <TextView
+                android:id="@+id/tv_hospital"
+                android:layout_width="@dimen/padding_0"
+                android:textSize="@dimen/text_font_15"
+                android:textColor="@color/color_ffffff"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/padding_5"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/bt_hospital"
+                android:textSize="@dimen/text_font_15"
+                android:textColor="@color/color_3e6398"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_ffffff_5"
+                android:onClick="onBtnClick"
+                android:paddingTop="@dimen/padding_5"
+                android:paddingBottom="@dimen/padding_5"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:layout_marginRight="@dimen/padding_10"
+                android:text="确定" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

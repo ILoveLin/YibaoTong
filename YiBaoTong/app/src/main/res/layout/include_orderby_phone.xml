@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_ffffff"
+    android:layout_marginBottom="@dimen/padding_10"
+    android:orientation="vertical">
+
+    <View style="@style/LineStyleE5E5E5"/>
+
+    <TextView
+        style="@style/FontStyleBlack"
+        android:textSize="@dimen/text_font_16"
+        android:padding="@dimen/padding_10"
+        android:layout_marginLeft="@dimen/padding_10"
+        android:text="@string/act_check_order_input_phone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/padding_10"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_5"
+            android:src="@mipmap/icon_yuding_tish"/>
+
+        <com.lzyc.ybtappcal.widget.ClearEditTextView
+            android:id="@+id/activity_orderby_phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_corner"
+            android:padding="@dimen/padding_10"
+            android:layout_marginRight="@dimen/padding_10"
+            android:gravity="center_vertical"
+            android:numeric="integer"
+            android:hint="@string/act_check_order_input_phone"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:textColor="@color/color_333333"
+            android:maxLength="11"
+            android:textColorHint="@color/color_cbcbcb"
+            android:textCursorDrawable="@drawable/shape_edit_focus"
+            android:textSize="@dimen/text_font_14" />
+
+    </LinearLayout>
+
+    <View style="@style/LineStyleE5E5E5"/>
+</LinearLayout>

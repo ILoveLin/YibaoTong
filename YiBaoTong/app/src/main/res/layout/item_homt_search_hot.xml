@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_drug_name"
+        style="@style/FontStyleBlack"
+        android:padding="@dimen/padding_10"
+        android:text="络活喜"
+        />
+
+</LinearLayout>

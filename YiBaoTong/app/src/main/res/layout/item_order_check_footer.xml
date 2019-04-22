@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_8"
+        android:layout_marginRight="@dimen/padding_8"
+        android:background="@drawable/shape_bottom_corner_6dip"
+        android:orientation="vertical">
+
+        <View
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginRight="@dimen/padding_10"
+            style="@style/LineItemStyleE0E0E0"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_10">
+
+            <TextView
+                style="@style/FontStyle"
+                android:layout_width="@dimen/padding_0"
+                android:layout_weight="1"
+                android:text="@string/act_check_order_product_price"
+                android:textColor="@color/color_43454e" />
+
+            <TextView
+                style="@style/FontStyleBlack"
+                android:text="@string/act_check_order_price_sign"
+                android:textColor="@color/color_43454e"
+                android:textSize="@dimen/text_font_12" />
+
+            <TextView
+                android:id="@+id/tv_drug_price"
+                style="@style/FontStyleBlack"
+                android:text="15.00"
+                android:textColor="@color/color_43454e"
+                android:textSize="@dimen/text_font_17" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/padding_4"
+            android:padding="@dimen/padding_10">
+
+            <TextView
+                style="@style/FontStyleGrey"
+                android:layout_width="@dimen/padding_0"
+                android:layout_weight="1"
+                android:text="@string/act_check_order_yunfei"
+                android:textSize="@dimen/text_font_14" />
+
+            <TextView
+                android:id="@+id/tv_freight_price_sign"
+                style="@style/FontStyleGrey"
+                android:text="¥"
+                android:textSize="@dimen/text_font_10" />
+
+            <TextView
+                android:id="@+id/tv_freight_price"
+                style="@style/FontStyleGrey"
+                android:text="0.00" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_120"
+        android:visibility="gone" />
+
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footer_scanresult_lay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+    <View
+        android:id="@+id/view_footer"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+    <include layout="@layout/ybt_listview_footer_complete"/>
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/designated_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg_color"
+    android:orientation="vertical">
+
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+        android:id="@+id/designated_search_overscroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <View style="@style/LineStyle" />
+                <!--搜索栏-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_5"
+                    android:layout_marginLeft="@dimen/padding_13"
+                    android:layout_marginRight="@dimen/padding_13"
+                    android:layout_marginTop="@dimen/padding_5"
+                    android:orientation="horizontal">
+
+                    <com.lzyc.ybtappcal.view.ContainsEmojiEditText
+                        android:id="@+id/input_edit"
+                        android:layout_width="@dimen/padding_0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg_search_goods"
+                        android:drawableLeft="@mipmap/icon_search_dingdian"
+                        android:drawablePadding="@dimen/padding_10"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:hint="请输入医院名称"
+                        android:imeOptions="actionSearch"
+                        android:paddingBottom="@dimen/padding_10"
+                        android:paddingLeft="@dimen/padding_15"
+                        android:paddingRight="@dimen/padding_15"
+                        android:paddingTop="@dimen/padding_10"
+                        android:singleLine="true"
+                        android:textColor="@color/color_333333"
+                        android:textColorHint="@color/color_999999"
+                        android:textCursorDrawable="@drawable/shape_edit_focus"
+                        android:textSize="@dimen/text_font_16" />
+
+                    <TextView
+                        android:id="@+id/search_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_13"
+                        android:clickable="true"
+                        android:text="搜索"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/text_font_15" />
+                </LinearLayout>
+                <!--附近的医院-->
+                <LinearLayout
+                    android:id="@+id/nearby_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical">
+
+                    <View style="@style/LineStyle" />
+
+                    <TextView
+                        android:id="@+id/tv_choose_distance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_fffaf3"
+                        android:drawableLeft="@mipmap/icon_search_dingdian_dingwei"
+                        android:drawablePadding="@dimen/padding_5"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/padding_5"
+                        android:paddingLeft="@dimen/padding_13"
+                        android:paddingTop="@dimen/padding_5"
+                        android:text="附近的医院"
+                        android:textColor="@color/color_e99e34"
+                        android:textSize="@dimen/text_font_14" />
+
+                    <View style="@style/LineStyle" />
+                </LinearLayout>
+                <com.lzyc.ybtappcal.view.YbtListView
+                    android:id="@+id/designated_nearby_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/padding_0"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:divider="@null"
+                    android:fastScrollEnabled="false"
+                    android:listSelector="@null"
+                    android:scrollbars="none" />
+                <com.lzyc.ybtappcal.view.YbtListView
+                    android:id="@+id/designated_search_dim"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/padding_0"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:divider="@null"
+                    android:fastScrollEnabled="false"
+                    android:listSelector="@null"
+                    android:scrollbars="none"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </ScrollView>
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+</LinearLayout>

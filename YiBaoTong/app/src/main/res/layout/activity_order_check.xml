@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2f2f2"
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_bottom"
+        android:layout_above="@+id/lin_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/image_medicine_bag_shadow"/>
+
+    <LinearLayout
+        android:id="@+id/lin_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_50"
+        android:gravity="center_vertical"
+        android:background="@color/rise_number_text_color_white"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:paddingTop="-2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/FontStyleBlack"
+                    android:textColor="@color/color_43454e"
+                    android:textSize="@dimen/text_font_17"
+                    android:paddingLeft="@dimen/padding_10"
+                    android:text="@string/act_check_order_total"/>
+
+                <TextView
+                    style="@style/FontStyleBlack"
+                    android:textColor="@color/color_43454e"
+                    android:textSize="@dimen/text_font_14"
+                    android:text="@string/act_check_order_price_sign"/>
+
+                <TextView
+                    android:id="@+id/tv_total"
+                    style="@style/FontStyleBlack"
+                    android:textColor="@color/color_43454e"
+                    android:textSize="@dimen/text_font_19"
+                    android:text="77.88"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="@dimen/padding_10"
+                android:layout_marginTop="-3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/FontStyleRed"
+                    android:textColor="@color/color_fa4515"
+                    android:textSize="@dimen/text_font_12"
+                    android:text="医保通【返现】"/>
+
+                <TextView
+                    style="@style/FontStyleRed"
+                    android:textSize="@dimen/text_font_11"
+                    android:textColor="@color/color_fa4515"
+                    android:text="￥"/>
+
+                <TextView
+                    android:id="@+id/tv_return_money"
+                    style="@style/FontStyleRed"
+                    android:textColor="@color/color_fa4515"
+                    android:textSize="@dimen/text_font_14"
+                    android:text="3.70"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_submit"
+            android:layout_width="@dimen/padding_115"
+            android:layout_height="@dimen/padding_40"
+            android:layout_marginRight="@dimen/padding_8"
+            android:background="@drawable/shape_order_check_submit"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_submit_progress"
+                android:text="@string/act_check_order_submit_order"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/text_font_17" />
+
+            <ProgressBar
+                android:id="@+id/tv_submit_progress"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="@dimen/padding_5"
+                android:indeterminateDrawable="@anim/progress_bar_lodding_round"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/v_shade"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_000000_00"/>
+
+</RelativeLayout>

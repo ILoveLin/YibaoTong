@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/id_about_community_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_f1f1f3"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_50"
+            android:background="@color/color_f7f7f8">
+
+            <ImageButton
+                android:id="@+id/hc_about_titlebar_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@null"
+                android:clickable="true"
+                android:onClick="onBtnClick"
+                android:padding="@dimen/padding_10"
+                android:src="@drawable/selector_titlebar_left" />
+
+            <ImageButton
+                android:id="@+id/hc_about_titlebar_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:clickable="true"
+                android:onClick="onBtnClick"
+                android:padding="@dimen/padding_10"
+                android:src="@drawable/selector_titlebar_right_hc"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/hc_about_titlebar_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@id/hc_about_titlebar_right"
+                android:layout_toRightOf="@id/hc_about_titlebar_left"
+                android:gravity="center"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_font_18" />
+        </RelativeLayout>
+
+        <View style="@style/LineItemStyleE0E0E0" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.lzyc.ybtappcal.view.xlist.XYbtRefreshListView
+                android:id="@+id/hc_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:dividerHeight="@dimen/padding_0"
+                android:listSelector="@null"
+                android:background="@null"
+                 />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/LineItemStyle"
+            android:background="@color/color_c6c6c6" />
+
+        <LinearLayout
+            android:id="@+id/hc_about_bottom_linear"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_gravity="bottom"
+            android:background="@color/color_f7f7f7"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/hc_about_bottom_position"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_hc_f7f7f7"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onBtnClick">
+
+                <TextView
+                    android:id="@+id/hc_about_bottom_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/icon_hospital_position"
+                    android:drawablePadding="@dimen/padding_15"
+                    android:text="2.1千米"
+                    android:textColor="@color/base_btn_color"
+                    android:textSize="@dimen/text_font_15" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/padding_10"
+                android:layout_marginTop="@dimen/padding_10"
+                android:background="@color/color_c6c6c6" />
+
+            <LinearLayout
+                android:id="@+id/hc_about_bottom_comment_edit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_hc_f7f7f7"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onBtnClick">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/icon_hospital_comment_edit"
+                    android:drawablePadding="@dimen/padding_15"
+                    android:text="写评价"
+                    android:textColor="@color/base_btn_color"
+                    android:textSize="@dimen/text_font_15" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/include_loading_image" />
+
+</LinearLayout>

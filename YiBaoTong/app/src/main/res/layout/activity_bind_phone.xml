@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f3"
+    android:orientation="vertical">
+
+    <View style="@style/LineItemStyleE0E0E0" />
+
+    <View
+        style="@style/LineItemStyleE0E0E0"
+        android:layout_marginTop="@dimen/padding_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_phone"
+            style="@style/Font_Big_Black"
+            android:textSize="@dimen/text_font_15"
+            android:layout_width="@dimen/padding_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@color/color_ffffff"
+            android:drawableLeft="@mipmap/icon_change_phone_num_green"
+            android:drawablePadding="@dimen/padding_10"
+            android:hint="请输入新手机号"
+            android:padding="@dimen/padding_10"
+            android:singleLine="true"
+            android:textColorHint="@color/color_cccccc" />
+
+        <View
+            style="@style/Style_vLine"
+            android:layout_marginBottom="@dimen/padding_5"
+            android:layout_marginLeft="@dimen/padding_5"
+            android:layout_marginTop="@dimen/padding_5"
+            android:background="@color/color_999999" />
+
+        <com.lzyc.ybtappcal.widget.TimerTextView
+            android:id="@+id/ttv_getcode"
+            style="@style/Font_Middle_Blue"
+            android:textColor="@color/color_333333"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/padding_10"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onBtnClick"
+            android:text="获取验证码" />
+    </LinearLayout>
+
+    <View style="@style/LineItemStyleE0E0E0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_code"
+            style="@style/Font_Big_Black"
+            android:textSize="@dimen/text_font_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_ffffff"
+            android:drawableLeft="@mipmap/icon_get_code_green"
+            android:drawablePadding="@dimen/padding_10"
+            android:hint="请输入短信验证码"
+            android:singleLine="true"
+            android:padding="@dimen/padding_10"
+            android:textColorHint="@color/color_cccccc" />
+
+    </LinearLayout>
+
+    <View style="@style/LineItemStyleE0E0E0" />
+
+
+    <TextView
+        android:id="@+id/bt_bind_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_45"
+        android:layout_marginTop="@dimen/padding_80"
+        android:background="@drawable/selector_btn_style"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onBtnClick"
+        android:padding="@dimen/padding_10"
+        android:layout_marginLeft="@dimen/padding_30"
+        android:layout_marginRight="@dimen/padding_30"
+        android:layout_marginBottom="@dimen/padding_20"
+        android:text="完成"
+        android:textColor="@color/color_000000"
+        android:textSize="@dimen/text_font_17" />
+
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/theme_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_8"
+        android:layout_marginRight="@dimen/padding_8"
+        android:background="@drawable/shape_bottom_corner_6dip"
+        android:orientation="vertical">
+
+        <View
+            style="@style/LineItemStyleE0E0E0"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginRight="@dimen/padding_10" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_10">
+
+            <TextView
+                style="@style/FontStyle"
+                android:layout_width="@dimen/padding_0"
+                android:layout_weight="1"
+                android:text="@string/act_check_order_product_price"
+                android:textColor="@color/color_43454e" />
+
+            <TextView
+                style="@style/FontStyleBlack"
+                android:text="@string/act_check_order_price_sign"
+                android:textColor="@color/color_43454e"
+                android:textSize="@dimen/text_font_12" />
+
+            <TextView
+                android:id="@+id/order_detail_price_balance"
+                style="@style/FontStyleBlack"
+                android:text="15.00"
+                android:textColor="@color/color_43454e"
+                android:textSize="@dimen/text_font_17" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10">
+
+            <TextView
+                style="@style/FontStyleGrey"
+                android:layout_width="@dimen/padding_0"
+                android:layout_weight="1"
+                android:text="@string/act_check_order_yunfei"
+                android:textSize="@dimen/text_font_14" />
+
+            <TextView
+                android:id="@+id/order_detail_price_yunfei"
+                style="@style/FontStyleGrey"
+                android:text="+0.00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/order_detail_linear_yuqian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_10">
+
+            <TextView
+                style="@style/FontStyleGrey"
+                android:layout_width="@dimen/padding_0"
+                android:layout_weight="1"
+                android:text="@string/act_check_order_yuezhifu"
+                android:textSize="@dimen/text_font_14" />
+
+            <TextView
+                android:id="@+id/order_detail_yuqian"
+                style="@style/FontStyleGrey"
+                android:text="-0.00" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/LineItemStyleE0E0E0"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginRight="@dimen/padding_10"
+            android:layout_marginTop="@dimen/padding_10" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center|bottom"
+            android:orientation="horizontal"
+            android:paddingBottom="10.5dp"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_10">
+
+            <TextView
+                android:id="@+id/order_detail_price_desc"
+                style="@style/ww"
+                android:text="实付款 "
+                android:textColor="@color/order_detail_red"
+                android:textSize="@dimen/text_font_16" />
+
+            <TextView
+                style="@style/ww"
+                android:text="@string/act_check_order_price_sign"
+                android:textColor="@color/order_detail_red"
+                android:textSize="@dimen/text_font_13" />
+
+            <TextView
+                android:id="@+id/order_detail_price_zongjia"
+                style="@style/ww"
+                android:text="89.89"
+                android:textColor="@color/order_detail_red"
+                android:textSize="@dimen/text_font_18" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_8"
+        android:layout_marginRight="@dimen/padding_8"
+        android:layout_marginTop="@dimen/padding_8"
+        android:background="@drawable/shape_corner_white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_15"
+        android:paddingLeft="@dimen/padding_8"
+        android:paddingRight="@dimen/padding_8"
+        android:paddingTop="@dimen/padding_8">
+
+        <TextView
+            android:id="@+id/order_detail_id"
+            style="@style/FontStyleGrey"
+            android:paddingTop="@dimen/padding_5"
+            android:text="订单编号：订单编号" />
+
+        <TextView
+            android:id="@+id/order_detail_createtime"
+            style="@style/FontStyleGrey"
+            android:paddingTop="@dimen/padding_10"
+            android:text="下单时间：下单时间" />
+
+        <TextView
+            android:id="@+id/order_detail_paytype"
+            style="@style/FontStyleGrey"
+            android:paddingTop="@dimen/padding_10"
+            android:text="支付方式：货到付款" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_100" />
+
+</LinearLayout>

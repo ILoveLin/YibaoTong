@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_ffffff_00"
+    android:padding="@dimen/padding_10"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_ffffff_5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_popup_cap_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="输入条形码"
+            style="@style/Font_Big_Black"
+            android:padding="@dimen/padding_10"
+            android:gravity="center" />
+        <View
+            style="@style/LineStyleE5E5E5"/>
+        <TextView
+            android:id="@+id/tv_popup_cap_teach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="扫描教程"
+            style="@style/Font_Big_Black"
+            android:padding="@dimen/padding_10"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_ffffff_5"
+        android:layout_marginTop="@dimen/padding_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_popup_cap_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            style="@style/Font_Big_Gray"
+            android:padding="@dimen/padding_10"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

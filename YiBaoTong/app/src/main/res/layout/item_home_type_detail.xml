@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f2f2f2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_f2f2f2">
+
+        <View
+            style="@style/LineItemStyleE0E0E0_1"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginRight="@dimen/padding_10"
+            android:background="@color/color_cccccc" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            style="@style/FontStyleBlack"
+            android:layout_centerInParent="true"
+            android:background="@color/color_f2f2f2"
+            android:padding="@dimen/padding_10"
+            android:layout_marginTop="@dimen/padding_2"
+            android:layout_marginBottom="@dimen/padding_2"
+            android:text="全部分类"
+            android:textColor="@color/color_666666" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_10"
+        android:layout_marginRight="@dimen/padding_10"
+        android:paddingLeft="@dimen/padding_10"
+        android:paddingRight="@dimen/padding_10"
+        android:paddingTop="@dimen/padding_2"
+        android:layout_marginBottom="@dimen/padding_20"
+        android:background="@drawable/shape_ffffff_10"
+        />
+
+</LinearLayout>

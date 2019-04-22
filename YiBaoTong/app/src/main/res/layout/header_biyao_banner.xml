@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="105dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.lzyc.ybtappcal.view.viewpager.DecoratorViewPager
+        android:id="@+id/header_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="105dp" />
+
+    <LinearLayout
+        android:id="@+id/detail_vp_bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/padding_15">
+
+        <ybt.library.indicator.indicator.PageIndicatorView
+            android:id="@+id/detail_vp_indicator"
+            app:animationType="worm"
+            app:interactiveAnimation="true"
+            app:padding="5dp"
+            app:radius="2dp"
+            app:selectedColor="@color/color_ffffff"
+            app:unselectedColor="@color/color_000000_70"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+</RelativeLayout>

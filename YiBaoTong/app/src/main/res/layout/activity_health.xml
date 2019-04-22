@@ -1,0 +1,256 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_linea_health_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f3"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_50"
+        android:background="@color/color_f7f7f8">
+
+        <ImageButton
+            android:id="@+id/ib_health_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:onClick="onBtnClick"
+            android:padding="@dimen/padding_10"
+            android:src="@drawable/selector_titlebar_left"
+            android:textColor="@color/color_ffffff" />
+        <TextView
+            android:id="@+id/tv_health_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawablePadding="@dimen/padding_10"
+            android:drawableRight="@mipmap/icon_forword_down"
+            android:gravity="center"
+            android:maxEms="10"
+            android:onClick="onBtnClick"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_000000"
+            android:textSize="@dimen/text_font_18" />
+    </RelativeLayout>
+
+    <View style="@style/LineItemStyleE0E0E0" />
+    <include layout="@layout/include_loading_image"/>
+    <include layout="@layout/include_error_net"/>
+    <ScrollView
+        android:id="@+id/health_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <WebView
+                android:id="@+id/web_health"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/color_ffffff"
+                android:scrollbars="horizontal" />
+
+
+            <LinearLayout
+                android:id="@+id/id_linea_health_under"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-55dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_ffffff"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Font_Big_Black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_10"
+                        android:text="总花费" />
+
+                    <EditText
+                        android:id="@+id/et_health"
+                        style="@style/Font_Big_Gray"
+                        android:layout_width="@dimen/padding_0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/color_ffffff_00"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:hint="请输入总花费"
+                        android:inputType="number"
+                        android:imeOptions="actionDone"
+                        android:padding="@dimen/padding_10" />
+
+                    <TextView
+                        style="@style/Font_Big_Black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_10"
+                        android:text="元" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_1"
+                    android:background="@color/color_ffffff"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Font_Big_Black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_10"
+                        android:text="门诊" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_ffffff"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_10">
+
+                        <RadioButton
+                            android:id="@+id/rb_health_info1"
+                            style="@style/Font_Middle_Black"
+                            android:layout_width="@dimen/padding_0"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_btn_blue_white"
+                            android:button="@color/color_ffffff_00"
+                            android:gravity="center"
+                            android:onClick="onBtnClick"
+                            android:paddingBottom="@dimen/padding_10"
+                            android:paddingTop="@dimen/padding_10"
+                            android:text="社区"
+                            android:textColor="@drawable/selector_color_blue_white" />
+
+                        <RadioButton
+                            android:id="@+id/rb_health_info2"
+                            style="@style/Font_Middle_Black"
+                            android:layout_width="@dimen/padding_0"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_20"
+                            android:layout_marginRight="@dimen/padding_20"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_btn_blue_white"
+                            android:button="@color/color_ffffff_00"
+                            android:gravity="center"
+                            android:onClick="onBtnClick"
+                            android:paddingBottom="@dimen/padding_10"
+                            android:paddingTop="@dimen/padding_10"
+                            android:text="非社区"
+                            android:textColor="@drawable/selector_color_blue_white" />
+
+                        <RadioButton
+                            android:layout_width="@dimen/padding_0"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_gray_5"
+                            android:button="@color/color_ffffff_00"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/padding_10"
+                            android:paddingTop="@dimen/padding_10"
+                            android:text="新农合"
+                            android:textColor="@drawable/selector_color_blue_white"
+                            android:visibility="invisible" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/LineItemStyleE0E0E0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_10"
+                    android:background="@color/color_ffffff"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Font_Big_Black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_10"
+                        android:text="住院" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_ffffff"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_10">
+
+                        <RadioButton
+                            android:id="@+id/rb_health_info3"
+                            style="@style/Font_Middle_Black"
+                            android:layout_width="@dimen/padding_0"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_btn_blue_white"
+                            android:button="@color/color_ffffff_00"
+                            android:gravity="center"
+                            android:onClick="onBtnClick"
+                            android:paddingBottom="@dimen/padding_10"
+                            android:paddingTop="@dimen/padding_10"
+                            android:text="一级医院"
+                            android:textColor="@drawable/selector_color_blue_white" />
+
+                        <RadioButton
+                            android:id="@+id/rb_health_info4"
+                            style="@style/Font_Middle_Black"
+                            android:layout_width="@dimen/padding_0"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_20"
+                            android:layout_marginRight="@dimen/padding_20"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_btn_blue_white"
+                            android:button="@color/color_ffffff_00"
+                            android:gravity="center"
+                            android:onClick="onBtnClick"
+                            android:paddingBottom="@dimen/padding_10"
+                            android:paddingTop="@dimen/padding_10"
+                            android:text="二级医院"
+                            android:textColor="@drawable/selector_color_blue_white" />
+
+                        <RadioButton
+                            android:id="@+id/rb_health_info5"
+                            style="@style/Font_Middle_Black"
+                            android:layout_width="@dimen/padding_0"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_btn_blue_white"
+                            android:button="@color/color_ffffff_00"
+                            android:gravity="center"
+                            android:onClick="onBtnClick"
+                            android:paddingBottom="@dimen/padding_10"
+                            android:paddingTop="@dimen/padding_10"
+                            android:text="三级医院"
+                            android:textColor="@drawable/selector_color_blue_white" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

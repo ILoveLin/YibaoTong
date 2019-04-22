@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_results"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_results">
+
+    <RelativeLayout
+        android:id="@+id/rl_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_50"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/color_ffffff_00"
+            android:drawableLeft="@mipmap/icon_back_white_left"
+            android:drawablePadding="@dimen/padding_5"
+            android:gravity="center"
+            android:padding="@dimen/padding_10"
+            android:paddingLeft="@dimen/padding_13"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/text_font_15" />
+
+        <TextView
+            android:id="@+id/tv_capture_info"
+            style="@style/Font_Big_White"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="查询结果"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <com.lzyc.ybtappcal.view.xlist.XYbtRefreshListView
+        android:id="@+id/results_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_titlebar"
+        android:background="@color/color_ffffff_00"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:divider="@color/color_ffffff_00"
+        android:dividerHeight="@dimen/padding_15"
+        android:layoutAnimation="@anim/anim_listview_item"
+        android:listSelector="@color/color_ffffff_00"
+        android:overScrollMode="never"
+        android:paddingLeft="@dimen/padding_19"
+        android:paddingRight="@dimen/padding_19"
+        android:scrollbars="none" />
+
+    <ImageView
+        android:id="@+id/fold_img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_titlebar"
+        android:background="@mipmap/fold_img_bga"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/iv_fold_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:layout_below="@id/rl_titlebar"
+        android:layout_marginRight="@dimen/padding_2"
+        android:layout_marginLeft="@dimen/padding_2"
+        android:background="@drawable/image_resuls_shadow"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/cell_mengban"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.0"
+        android:background="@color/color_000000_70"
+        android:clickable="true"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_current_drug"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_titlebar"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingLeft="@dimen/padding_14"
+        android:paddingRight="@dimen/padding_14"
+        android:visibility="gone">
+
+        <com.lzyc.ybtappcal.view.MyFoldingCell
+            android:id="@+id/top_foldingcell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            folding-cell:additionalFlipsCount="4"
+            folding-cell:animationDuration="1500"
+            folding-cell:backSideColor="@color/cellBackSideviewCurrent"
+            folding-cell:cameraHeight="30">
+            <include layout="@layout/item_results_contentview_current" />
+            <include layout="@layout/item_results_titleview_current" />
+        </com.lzyc.ybtappcal.view.MyFoldingCell>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_clickable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false" />
+
+</RelativeLayout>

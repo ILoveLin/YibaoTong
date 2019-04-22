@@ -1,0 +1,8 @@
+ybt123             ALIAS    YBT    ybt123
+
+
+应用签名：fcbfb0d16c484ce86292e86ffeb492c0     包名：com.lzyc.ybtappcal
+
+
+0F:B7:06:25:5D:A5:39:44:B9:3A:35:20:0B:C1:95:66:72:1C:68:27
+com.lzyc.ybtappcal

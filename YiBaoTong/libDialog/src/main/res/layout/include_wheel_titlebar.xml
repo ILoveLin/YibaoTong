@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="#F4f4f6">
+
+        <TextView
+            android:id="@+id/dialog_titlebar_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:paddingLeft="15dp"
+            android:text="@string/timepicker_title_default"
+            android:textColor="@drawable/selector_textview_titlebar"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/dialog_titlebar_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:paddingBottom="10dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="10dip"
+            android:text="@string/timepicker_finish"
+            android:textColor="@drawable/selector_textview_titlebar"
+            android:textSize="16sp"/>
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e5e5e5"
+        />
+</LinearLayout>

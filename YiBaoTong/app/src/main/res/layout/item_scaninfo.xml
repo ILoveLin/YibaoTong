@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    >
+
+    <ImageView
+        android:id="@+id/iv_scaninfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:clickable="true"
+        />
+
+    <Button
+        android:id="@+id/bt_scaninfo"
+        style="@style/Font_Big_White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_scaninfo"
+        android:layout_marginBottom="@dimen/padding_40"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_blue_5"
+        android:padding="@dimen/padding_10"
+        android:visibility="gone"
+        android:text="开始扫描" />
+
+
+
+</RelativeLayout>
+
+
+

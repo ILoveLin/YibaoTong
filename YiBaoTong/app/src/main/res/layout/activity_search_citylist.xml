@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_45"
+        android:background="@color/base_bg_titlebar2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.lzyc.ybtappcal.widget.ClearEditTextView
+            android:id="@+id/et_search"
+            android:layout_width="@dimen/padding_0"
+            android:layout_height="@dimen/padding_33"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginRight="@dimen/padding_10"
+            android:layout_weight="1"
+            android:background="@drawable/shape_bg_search_goods"
+            android:drawableLeft="@mipmap/icon_goods_search"
+            android:drawablePadding="@dimen/padding_10"
+            android:gravity="center_vertical"
+            android:hint="@string/title_activity_search_city"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:singleLine="true"
+            android:textColor="@color/color_464545"
+            android:textColorHint="@color/color_cbcbcb"
+            android:textCursorDrawable="@drawable/shape_edit_focus"
+            android:textSize="@dimen/text_font_14" />
+
+        <TextView
+            android:id="@+id/titlebar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:paddingBottom="5dp"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingTop="4.5dp"
+            android:text="@string/cancel"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/text_font_15" />
+    </LinearLayout>
+
+    <View android:id="@+id/line" style="@style/LineStyle" android:layout_below="@id/linear_search"/>
+
+    <RelativeLayout
+        android:id="@+id/rel_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line">
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/color_f1f1f3"
+            android:dividerHeight="@dimen/padding_0"
+            android:listSelector="@color/color_ffffff"
+            android:visibility="visible"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:layout_width="@dimen/padding_30"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/padding_60"
+            android:layout_marginTop="@dimen/padding_60"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_fangdajing"
+                android:layout_width="@dimen/padding_30"
+                android:layout_height="@dimen/padding_30"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_bar_search" />
+
+            <com.lzyc.ybtappcal.view.RightBar
+                android:id="@+id/right_bar"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_alphabet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/color_f1f1f3"
+            android:paddingBottom="@dimen/padding_10"
+            android:paddingLeft="@dimen/padding_15"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_10"
+            android:textColor="@color/color_43454e"
+            android:textSize="@dimen/text_font_15"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/listview_dim"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_f1f1f3"
+            android:divider="@color/color_ffffff"
+            android:dividerHeight="@dimen/padding_0"
+            android:listSelector="@null"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

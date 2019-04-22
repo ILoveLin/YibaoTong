@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f3">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/padding_25"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:layout_width="@dimen/padding_1"
+                android:layout_height="@dimen/padding_100"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:visibility="visible"
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:background="@drawable/bg_wode"/>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:background="@drawable/bg_wode"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_type"
+                style="@style/FontStyleGrey"
+                android:paddingTop="@dimen/padding_10"
+                android:text="@string/width_draw_canuse_balance"
+                android:textSize="@dimen/padding_12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:visibility="gone"
+                    style="@style/FontStyleBlack"
+                    android:text="@string/act_check_order_price_sign"
+                    android:textSize="@dimen/text_font_20" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:text="12.36"
+                    android:id="@+id/tv_return_balance_rise"
+                    style="@style/FontStyleBlack"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textSize="@dimen/text_font_30" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:text="12.36"
+                    android:id="@+id/tv_return_balance"
+                    style="@style/FontStyleBlack"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textSize="@dimen/text_font_30" />
+
+            </LinearLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:text="确认收货后可提现"
+                android:id="@+id/tv_return_notice"
+                style="@style/FontStyleRed"
+                android:textSize="@dimen/text_font_12"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

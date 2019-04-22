@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding_10"
+        android:paddingBottom="@dimen/padding_10">
+
+        <ImageView
+            android:id="@+id/item_reimbursement_photo"
+            android:layout_width="@dimen/padding_65"
+            android:layout_height="@dimen/padding_65"
+            android:background="@color/color_ffffff"
+            android:src="@mipmap/image_drugs_picture"
+            android:layout_marginLeft="@dimen/padding_10"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/padding_0"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/padding_10"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/item_reimbursement_name"
+                style="@style/Font_Middle_Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="希克劳" />
+
+            <TextView
+                android:id="@+id/item_reimbursement_after_reimbursement"
+                style="@style/Font_Small_Gray"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/padding_10"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_height="wrap_content"
+                android:text=""/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_b7b7b7"/>
+
+</LinearLayout>

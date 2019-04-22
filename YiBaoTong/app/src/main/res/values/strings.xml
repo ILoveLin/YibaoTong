@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">医保通</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="pwSubmit">确认</string>
+    <string name="q">确认</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hours">时</string>
+    <string name="minutes">分</string>
+    <string name="seconds">秒</string>
+    <string name="rmb_symbol">¥</string>
+    <string name="edit">编辑</string>
+    <string name="complete">完成</string>
+    <string name="delete">删除</string>
+    <string name="back">返回</string>
+    <string name="determine">确定</string>
+    <string name="determine2">确认</string>
+    <string name="search">搜索</string>
+    <string name="clear">清空</string>
+    <string name="contact_kefu">联系客服</string>
+    <!--关键字：转义符参考http://blog.csdn.net/rnclcl/article/details/16801779-->
+    <!--关键字：特殊字符参考http://dditblog.com/itshare_205.html-->
+    <!--behavior-->
+    <string name="behavior_detail">com.lzyc.ybtappcal.view.behavior.FlingBehavior</string>
+    <!-- MainActivity-->
+    <string name="main_tab_homepage">首页</string>
+    <string name="main_tab_yidi">报销查询</string>
+    <string name="main_tab_drug_search">药品查询</string>
+    <string name="main_tab_recomment">资讯</string>
+    <string name="main_tab_mine">我的</string>
+    <string name="main_tab_biyao">比药</string>
+    <string name="feedback">意见反馈</string>
+    <string name="help">帮助与反馈</string>
+    <string name="no_more_data">没有更多数据了</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载&#8230;</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="server_time_out">服务器连接超时</string>
+    <string name="connect_failed">网络连接失败</string>
+    <string name="connect_server_failed">服务器连接失败</string>
+    <string name="please_check_network">网络未连接</string>
+    <string name="title_activity_launch">LaunchActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_banner">BannerActivity</string>
+    <string name="title_activity_login">登陆</string>
+    <string name="title_activity_forget_password">忘记密码</string>
+    <string name="title_activity_register">注册</string>
+    <string name="title_activity_set_password">设置密码</string>
+    <string name="title_activity_term">使用条款</string>
+    <string name="title_activity_full_info">完善信息</string>
+    <string name="title_activity_drugs_search">药品搜索</string>
+    <string name="title_activity_hospital_search">医院搜索</string>
+    <string name="title_activity_reimbursement_utils_activity">报销详情</string>
+    <string name="title_activity_search">医保报销查询、比药</string>
+    <string name="title_activity_search_city">请输入城市名称</string>
+    <string name="title_setting">设置</string>
+    <string name="drugs_search_remove_history">清除搜索历史</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_feed_back">FeedBackActivity</string>
+    <string name="title_activity_change_password">ChangePasswordActivity</string>
+    <string name="title_activity_bind_phone">BindPhoneActivity</string>
+    <string name="title_activity_recommend">RecommendActivity</string>
+    <string name="title_activity_scan_result">ScanResultActivity</string>
+    <string name="title_activity_city">ctityActivity</string>
+    <string name="title_activity_drug_detail">DrugDetailActivity</string>
+    <string name="title_activity_hispital_list">HispitalListActivity</string>
+    <string name="title_activity_confirm">ConfirmActivity</string>
+    <string name="title_activity_factory_info">FactoryInfoActivity</string>
+    <string name="title_activity_hispital_detail">HispitalDetailActivity</string>
+    <string name="title_activity_instruction">InstructionActivity</string>
+    <string name="title_activity_plan_detail">PlanDetailActivity</string>
+    <string name="title_activity_hospital_loction">HospitalLoctionActivity</string>
+    <string name="title_activity_position">PositionActivity</string>
+    <string name="title_activity_city_list">CityListActivity</string>
+    <string name="title_activity_select_position">SelectPositionActivity</string>
+    <string name="title_activity_message_list">MessageListActivity</string>
+    <string name="title_activity_used">UsedActivity</string>
+    <string name="title_activity_message_detail">MessageDetailActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_personal_info">PersonalInfoActivity</string>
+    <string name="title_activity_health">HealthActivity</string>
+    <string name="title_activity_my_plan">MyPlanActivity</string>
+    <string name="title_activity_my_medicine">MyMedicineActivity</string>
+    <string name="title_activity_capture">扫码</string>
+    <string name="title_activity_scan_info">ScanInfoActivity</string>
+    <string name="title_activity_base_net_work">BaseNetWorkActivity</string>
+    <string name="title_activity_drug_no_detail">DrugNoDetailActivity</string>
+    <string name="title_activity_scancode_help">扫码帮助</string>
+    <string name="scancode_help_question1">为什么条形码扫描不出来?</string>
+    <string name="scancode_help_question2">如何解决?</string>
+    <string name="scancode_help_answer1">条形码被遮挡或者残缺可能导致识别失败哦!</string>
+    <string name="scancode_help_answer2">试试在下方的输入框内手动输入条形码。</string>
+    <string name="scancode_help_desc">请手动输入条形码</string>
+    <string name="scancode_help_input_hint">请输入20位电子监管码或13位条形码</string>
+    <string name="scanresult_price">价 格</string>
+    <string name="scanresult_distance">距 离</string>
+    <string name="drug_list_neibuyao_title">什么是内部制剂？</string>
+    <string name="drug_list_neibuyao_content">医疗机构根据单位临床需要经批准而配制、自用的固定处方制剂(只能凭处方在本医疗机构购买使用)</string>
+    <string name="sresult_hospital_name1">全部医院</string>
+    <string name="sresult_hospital_name2">(医院社区)</string>
+    <string name="sresult_hospital_item_name1">医保拿药</string>
+    <string name="sresult_hospital_item_name2">(无需定点医院和我的定点医院)</string>
+    <string name="citydatajson_search">region.json</string>
+    <string name="rnodata_nayao">0元拿药（注：社区开药）</string>
+    <string name="rnodata_zaisheng">再省50%（注：医保通用药险用户）</string>
+    <string name="test_yfyl">每日3次，每次一片.(测试数据)</string>
+    <string name="postage_ybt_desc">医保通药品全部包邮</string>
+    <!--检查订单-->
+    <string name="act_check_order_price_sign">¥</string>
+    <string name="act_check_order_ybt_return">医保通 【返现】 ¥</string>
+    <string name="act_check_order_add_address">点击添加收货地址</string>
+    <string name="act_check_order_product_price">商品金额</string>
+    <string name="act_check_order_yunfei">运费</string>
+    <string name="act_check_order_yuezhifu">余额支付</string>
+    <string name="act_check_order_confirm_pay">确认支付</string>
+    <string name="act_check_order_balance">账户余额</string>
+    <string name="act_check_order_payment">支付方式</string>
+    <string name="act_check_order_total">合计：</string>
+    <string name="act_check_order_submit_order">提交订单</string>
+    <string name="act_check_order_input_phone">请输入手机号，便于药师与您联系</string>
+    <string name="orderby_buy_success">恭喜您，需求提交成功</string>
+    <string name="orderby_buy_contact">德开大药房药师将尽快与您取得联系!</string>
+    <string name="orderby_buy_return_money">确认收货后，立即返现</string>
+    <string name="pay_zhifubao">支付宝</string>
+    <string name="pay_weixin">微信</string>
+    <string name="act_suc_back_to_home">返回首页</string>
+    <string name="act_suc_goto_order">查看订单</string>
+    <string name="order_check_pay_online">在线支付</string>
+    <string name="order_check_pay_onmoney">货到付款</string>
+    <string name="order_check_total">小计</string>
+    <string name="order_check_include_freight">(含运费)</string>
+
+    <!--余额提现-->
+    <string name="width_draw_canuse_balance">可用余额(元)</string>
+    <string name="width_draw_draw_balance">提现金额   </string>
+    <string name="width_draw_input_balance">请输入提现金额</string>
+    <string name="width_draw_zhifubao">支付宝账户</string>
+    <string name="width_draw_input_zhifubao">请输入您的支付宝账户</string>
+    <string name="width_draw_name">账户昵称  </string>
+    <string name="width_draw_input_name">请输入支付宝账户昵称</string>
+    <string name="width_draw_ask_widthdraw">申请提现</string>
+    <string name="width_draw_notice">温馨提示</string>
+    <string name="width_draw_notice1">1、提现账户昵称正确才能打款成功</string>
+    <string name="width_draw_notice2">2、申请将在1-5个工作日内完成</string>
+
+    <!--提现明细-->
+    <string name="with_draw_detail_draw_balance">提现金额</string>
+    <string name="withdraw_detail_alipay">支付宝账户</string>
+    <string name="with_draw_detail_draw_alipay_name">账户昵称</string>
+    <string name="with_draw_detail_draw_time">时间</string>
+    <string name="with_draw_detail_draw_remarks">备注</string>
+
+    <!--返现-->
+    <string name="with_draw_return_total">累计返现(元)</string>
+
+    <!--商品详情-->
+    <string name="orderby_buy_number">购买数量</string>
+    <string name="orderby_buy_notice">温馨提示</string>
+    <string name="orderby_buy_drug_information">药品详情</string>
+    <string name="orderby_buy_shiyingzheng">适应症</string>
+    <string name="orderby_buy_jinji">禁忌</string>
+    <string name="orderby_buy_yongfayongliang">用法用量</string>
+    <string name="orderby_buy_buliangfanying">不良反应</string>
+    <string name="orderby_buy_submit">立即购买</string>
+    <string name="orderby_buy_add_to_shop">加入购物车</string>
+    <string name="orderby_buy_shop_card">购物车</string>
+    <string name="orderby_buy_kefu">" 客服 "</string>
+    <!--首页 药品列表-->
+    <string name="home_return">返现</string>
+    <string name="home_return_info">【确认收货后，返现至个人账户】</string>
+    <string name="home_scan">扫药盒</string>
+    <!--比药-->
+    <string name="biyao_desc1">查询一下，我的药品我是最好的吗?</string>
+    <string name="biyao_desc2">找药扫码最轻松</string>
+    <!--error  empty-->
+    <string name="empty_ordermine">您还没有相关订单哦!</string>
+    <string name="empty_error_net_server">数据加载失败，请返回重试!</string>
+    <string name="empty_shoping_cart">请添加药品到购物车哦!</string>
+    <string name="error_net">当前网络不可用，请检查您的网络设置</string>
+    <string name="empty_account_name">请填写收货人姓名</string>
+    <string name="empty_account">请填写联系方式</string>
+    <string name="empty_region">请选择所在地区</string>
+    <string name="error_address_detail">详细地址不少于5字</string>
+    <string name="empty_phone">手机号不能为空</string>
+    <string name="error_phone">手机号格式有误</string>
+    <string name="empty_browse_history_list_goods">您还没有买药浏览记录哦！</string>
+    <string name="empty_browse_history_list_drug">您还没有查药浏览记录哦！</string>
+    <!--地址相关-->
+    <string name="address_add">添加地址</string>
+    <!--物流信息-->
+    <string name="logistics_resource">物流公司：</string>
+    <string name="logistics_num">物流单号：</string>
+    <string name="logistics_prompt">复制单号去物流公司官网查看物流进度</string>
+    <string name="logistics_button">复制物流单号</string>
+    <!--结果页-->
+    <string name="results_zuihao"> 你太会用药了，大医院的专家都在用。</string>
+    <string name="results_tinghao">你很会用药啊，医院的专家都在用啊。</string>
+    <string name="results_yiban"> 这个药一般啊，医院的专家不怎么用啊。</string>
+    <string name="results_hencha"> 这个药医院的专家都不用，挺一般的。</string>
+    <string name="results_yongfayongliang_empty"> 亲，我们正在努力收集本药的用法用量相关信息。请期待更新。</string>
+    <string name="results_recomment_caina_you">家医院和社区采纳本药</string>
+    <string name="results_recomment_caina_wu">暂无医院/社区采纳</string>
+    <string name="drugdetail_info_adopt_no">甲类：全额纳入医保范围，乙类：部分的入医保范围，自费：医保不报销，以上为医保目录规定，是否报销以当地门诊规定为准</string>
+    <!--zbar start -->
+    <string name="scan">扫一扫</string>
+    <string name="scan_tip">请将条码放到取景框中,即可自动扫描</string>
+    <string name="torch_on">打开闪光灯</string>
+    <string name="torch_off">关闭闪光灯</string>
+    <string name="query_by_mail_number">请输入或扫描运单号</string>
+    <!--zbar end-->
+    <!--直辖市-->
+    <string-array name="direct_city_array">
+        <item>北京</item>
+        <item>天津</item>
+        <item>上海</item>
+        <item>重庆</item>
+    </string-array>
+    <string name="cart_invalid_group_desc">以下药品已失效</string>
+    <string name="cart_invalid_group_clear">清空失效药品</string>
+    <string name="cart_invalid_desc">失效</string>
+    <string name="cart_title">购物车</string>
+    <string name="cart_setttlement">去结算</string>
+    <!--我的订单-->
+    <string name="mine_order_title">我的订单</string>
+    <string name="mine_order_all">全部</string>
+    <string name="mine_order_pending_payment">待付款</string>
+    <string name="mine_order_pending_goods">待发货</string>
+    <string name="mine_order_pending_receipt">待收货</string>
+    <string-array name="order_mine_titles">
+        <item>全部</item>
+        <item>待付款</item>
+        <item>待发货</item>
+        <item>待收货</item>
+    </string-array>
+    <string-array name="browser_history_titles">
+        <item>买药浏览</item>
+        <item>查药浏览</item>
+    </string-array>
+    <string name="hint_edit_nickname">请输入昵称,最多8个字</string>
+    <string name="edit_limit">输入限制8个字符以内</string>
+    <string name="edit_title_nickname">昵称</string>
+    <string name="empty_nickname">昵称不能为空</string>
+    <string name="error_net_toast">网络不给力</string>
+    <string name="address_edit_account">收货人:&#160;&#160;&#160;&#160;</string>
+    <string name="address_edit_phone">联系方式:</string>
+    <string name="address_edit_region">所在区域</string>
+    <string name="address_edit_detail">详细地址:</string>
+    <string name="address_edit_title">编辑地址</string>
+    <string name="address_manager_title">地址管理</string>
+    <string name="address_manager_title1">选择收货地址</string>
+    <string name="back_prompt_edit_address">信息还未保存，确认现在返回吗?</string>
+    <string name="hint_address_edit_account">请输入收货人姓名</string>
+    <string name="hint_address_edit_phone">请输入收货人联系方式</string>
+    <string name="hint_address_region">点击选择收货地区</string>
+    <string name="hint_address_detail">请输入街道、楼牌号</string>
+    <string name="hint_search_goods">搜索商品</string>
+    <string-array name="goods_array">
+        <item>感冒清热颗粒</item>
+        <item>云南白药膏</item>
+        <item>速效救心丸</item>
+        <item>蒙脱石散</item>
+        <item>藿香正气水</item>
+        <item>血脂康胶囊</item>
+        <item>万通筋骨贴</item>
+        <item>氯沙坦钾片</item>
+        <item>肾宝合剂</item>
+        <item>复方硫酸软骨素滴眼液</item>
+        <item>麝香痔疮栓</item>
+        <item>复方聚维酮碘搽剂</item>
+    </string-array>
+    <string name="search_history_desc">历史搜索</string>
+    <string name="biyao_history_desc">查询历史</string>
+    <string name="history_empty_desc">您还没有历史记录哦!</string>
+    <string name="title_scan_results">扫码结果</string>
+    <string name="title_designated_choose">选择医院</string>
+    <string name="title_designated">定点医院</string>
+    <string name="empty_drug_list">抱歉,暂时还没有相关药品哦!</string>
+    <string name="empty_message_list">您还未收到消息哦!</string>
+    <string name="empty_designated_list">您还没有添加定点医院哦!\n点击右上角添加按钮添加</string>
+    <string name="empty_hisptital_detail">暂时还没有此医院的详情哦!</string>
+
+    <!--浏览记录-->
+    <string name="tilte_name_browse_history">浏览记录</string>
+    <string name="tilte_name_drug_add">添加用药</string>
+    <string name="tab_history_drug_buy">买药浏览</string>
+    <string name="tab_history_drug_inspect">查药浏览</string>
+    <string name="drug_add_search_hint">输入药品名称</string>
+    <string name="kefu_help">010&#173;53394297</string>
+    <string name="kefu_time_desc">客服服务时间为法定工作日&#160;&#160;9:30-17:30</string>
+    <string name="title_about_mine">关于我们</string>
+    <string name="about_email">邮箱: yibaotong_app@163.com</string>
+    <string name="about_conent">医保通是一款帮助用户在购药过程中没有门诊报销，或门诊不能报销的药品提供高达50%的报销服务；帮助患者查询药品是否在基本医疗保险目录内，方便患者异地就医；并帮助用户在购药过程中识别药品优劣的的专业性APP。</string>
+    <string name="about_wechat_public">微信公众号: 医保通</string>
+    <string name="about_company">北京医保通科技发展有限公司</string>
+    <string name="about_website">www.yibaotongapp.com</string>
+    <string name="title_message_detail">消息详情</string>
+    <string name="title_message">消息通知</string>
+    <string name="title_persion_info">个人资料</string>
+    <string name="title_term">使用条款</string>
+    <string name="title_bind_phone">绑定新手机号</string>
+    <string name="title_forget_pwd">忘记密码</string>
+    <string name="title_update_pwd">修改密码</string>
+    <string name="title_feedback">意见反馈</string>
+    <string name="title_plan">我的方案</string>
+    <string name="title_hispital_detail">医院详情</string>
+    <string name="title_hispital_list">医院列表</string>
+    <string name="title_hispital_location">医院位置</string>
+    <string name="title_plan_detail">方案详情</string>
+    <string name="title_recommed">相关推荐</string>
+    <string name="term_url">http://new.yibaotongapp.com/view/protocol.html</string>
+    <string name="email">yibaotong_app@163.com</string>
+    <string name="email_prompt">邮箱已经复制到剪切板了</string>
+    <string name="wechat_public">医保通</string>
+    <string name="wechat_public_prompt">微信公众号已经复制到剪切板了</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="prompt_confirm_goods">亲，请耐心等待，待系统确认您已签收货物后本功能即可使用。</string>
+    <string name="prompt_dingwei_fail">定位失败，请点击重试</string>
+    <string name="prompt_dingweing">定位中...</string>
+    <string name="empty_city">抱歉,您查找的城市暂未开通</string>
+</resources>
+

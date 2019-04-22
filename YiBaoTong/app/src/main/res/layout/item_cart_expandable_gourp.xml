@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <View
+        android:visibility="gone"
+        android:id="@+id/line_view_top"
+        style="@style/LineItemStyleE0E0E0" />
+    <!--有效药品-->
+    <LinearLayout
+        android:id="@+id/cart_group_linear_effective"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/cart_group_selected_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding_11"
+            android:paddingBottom="@dimen/padding_11"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:src="@drawable/selector_shopping_selected" />
+
+        <ImageView
+            android:id="@+id/res_merchant_logo"
+            android:layout_width="@dimen/padding_26"
+            android:layout_height="@dimen/padding_26"
+            android:layout_marginLeft="@dimen/padding_10" />
+
+        <TextView
+            android:id="@+id/res_merchant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_5"
+            android:textColor="@color/color_0077fd"
+            android:textSize="@dimen/text_font_15"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/cart_group_invalid_line"
+        android:layout_marginTop="@dimen/padding_5"
+        style="@style/LineItemStyleE0E0E0"/>
+
+    <!--无效药品-->
+    <LinearLayout
+        android:id="@+id/cart_group_linear_invalid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding_15"
+        android:paddingLeft="@dimen/padding_10"
+        android:paddingRight="@dimen/padding_10"
+        android:paddingTop="@dimen/padding_15"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.9"
+            android:text="@string/cart_invalid_group_desc"
+            android:textColor="@color/color_000000"
+            android:textSize="@dimen/text_font_15" />
+
+        <View
+            android:layout_width="@dimen/padding_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/cart_group_invalid_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.9"
+            android:drawableLeft="@mipmap/icon_cart_invalid_clear"
+            android:drawablePadding="@dimen/padding_5"
+            android:text="@string/cart_invalid_group_clear"
+            android:textColor="@color/color_000000"
+            android:textSize="@dimen/padding_12" />
+    </LinearLayout>
+    <View style="@style/LineItemStyleE0E0E0" />
+</LinearLayout>

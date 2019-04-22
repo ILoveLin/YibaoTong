@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item_confirm"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_item_ffffff"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/padding_2"
+    android:paddingLeft="@dimen/padding_7"
+    android:paddingRight="@dimen/padding_7"
+    android:paddingTop="@dimen/padding_2">
+
+    <RelativeLayout
+
+        android:layout_width="86dp"
+        android:layout_height="95dp">
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_image_drug1">
+
+            <RelativeLayout
+                android:layout_width="77dp"
+                android:layout_height="77dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_image_drug">
+
+                <ImageView
+                    android:id="@+id/iv_item_confirm"
+                    android:layout_width="@dimen/padding_65"
+                    android:layout_height="@dimen/padding_65"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/image_drugs_picture" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_current_druge"
+                android:layout_width="80dp"
+                android:layout_height="18dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="1.5dp"
+                android:layout_marginLeft="1.5dp"
+                android:layout_marginRight="1.5dp"
+                android:background="@drawable/shape_bg_currentdruge"
+                android:gravity="center"
+                android:text="当前药品"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/text_font_12"
+                android:visibility="invisible" />
+
+            <!--  <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@mipmap/icon_confirm_first" />-->
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_icon_item_confirm_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_confirm_first"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="@dimen/padding_0"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_10"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding_1">
+
+            <TextView
+                android:id="@+id/tv_item_confirm_goodsName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="6"
+                android:minEms="0"
+                android:singleLine="true"
+                android:text="感康"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_font_15" />
+
+            <TextView
+                android:id="@+id/tv_item_confirm_name"
+                style="@style/Font_Small_Gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:ellipsize="end"
+                android:maxEms="8"
+                android:minEms="0"
+                android:singleLine="true"
+                android:text="感康复方氨芬烷片" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_item_confirm_spec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_3"
+            android:ellipsize="end"
+            android:maxEms="14"
+            android:minEms="0"
+            android:singleLine="true"
+            android:text="0.25g（每片量）*100/盒"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/text_font_12" />
+
+        <TextView
+            android:id="@+id/tv_item_confirm_factory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_3"
+            android:ellipsize="end"
+            android:maxEms="12"
+            android:minEms="0"
+            android:singleLine="true"
+            android:text="邯郸制药厂有限公司"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/text_font_12" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/padding_7">
+
+            <TextView
+                android:id="@+id/tv_item_confirm_price"
+                style="@style/Font_Small_Shallow_Gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥2.20"
+                android:textColor="@color/color_e25949" />
+
+            <TextView
+                android:id="@+id/tv_item_confirm_oprice"
+                style="@style/Font_Small_Shallow_Gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_20"
+                android:text="¥12.00" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_item_confirm_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/padding_15"
+        android:paddingBottom="@dimen/padding_25"
+        android:paddingLeft="@dimen/padding_25"
+        android:paddingTop="@dimen/padding_25"
+        android:text=" 66 "
+        android:textStyle="bold"
+        android:textColor="@color/color_37b586"
+        android:textSize="@dimen/text_font_16" />
+</LinearLayout>

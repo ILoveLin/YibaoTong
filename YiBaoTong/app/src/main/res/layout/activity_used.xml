@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_used"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f8f8f8"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lv_used"
+        style="@style/Style_lv"
+        android:layout_marginTop="@dimen/padding_10" />
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/rl_add_emptyview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_addressempty"
+            style="@style/Font_Middle_Shallow_Gray_DrugDeatilEmptyUnder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="你还没有预设地址" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_addressempty"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:src="@mipmap/icon_address_empty" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rel_all"
+    android:background="@color/color_f2f2f3"
+    >
+
+    <!--标题栏-->
+    <RelativeLayout
+        android:id="@+id/rel_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_50"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/ib_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:onClick="onBtnClick"
+            android:padding="@dimen/padding_10"
+            android:src="@drawable/selector_titlebar_left"
+            android:textColor="@color/color_ffffff" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingRight="@dimen/padding_5"
+            android:singleLine="true"
+            android:onClick="onBtnClick"
+            android:clickable="true"
+            android:text="在职职工"
+            android:textColor="@color/color_3970be"
+            android:textSize="@dimen/text_font_15"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:onClick="onBtnClick"
+            android:clickable="true"
+            android:layout_toRightOf="@id/tv_content"
+            android:src="@mipmap/icon_titlebar_center_sresult_bottom" />
+
+        <ImageButton
+            android:id="@+id/ib_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:clickable="true"
+            android:onClick="onBtnClick"
+            android:padding="@dimen/padding_10"
+            android:visibility="visible"
+            android:src="@drawable/selector_titlebar_right_sresult" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff">
+
+                <ImageView
+                    android:src="@mipmap/test"
+                    android:id="@+id/img_drug"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/padding_150"
+                    android:paddingBottom="@dimen/padding_15"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jieguo_jialei"
+                    android:id="@+id/img_drug_type"
+                    style="@style/FontStyleWhite"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/padding_10"
+                    android:padding="@dimen/padding_4"
+                    android:textSize="@dimen/text_font_10" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_drug"
+                    android:background="@drawable/bg_buy_shadow" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/padding_20"
+                android:layout_marginTop="-8dp"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10">
+
+                <TextView
+                    android:id="@+id/tv_drug_name"
+                    style="@style/FontStyleBlack"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="-13dp"
+                    android:background="@color/rise_number_text_color_white"
+                    android:textSize="@dimen/text_font_16" />
+
+                <TextView
+                    android:id="@+id/tv_drug_specifications"
+                    style="@style/FontStyleGrey"
+                    android:textSize="@dimen/text_font_13" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10">
+
+                <TextView
+                    style="@style/FontStyleRed"
+                    android:layout_gravity="bottom"
+                    android:text="@string/act_check_order_price_sign" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    style="@style/FontStyleRed"
+                    android:layout_gravity="bottom"
+                    android:textSize="@dimen/padding_19" />
+
+                <TextView
+                    style="@style/FontStyleGrey"
+                    android:background="@drawable/shape_bg_kongxin"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/padding_5"
+                    android:paddingBottom="@dimen/padding_1"
+                    android:paddingLeft="@dimen/padding_3"
+                    android:paddingRight="@dimen/padding_3"
+                    android:paddingTop="@dimen/padding_1"
+                    android:text="医院售价"
+                    android:textSize="@dimen/text_font_10" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_vender"
+                style="@style/FontStyleBlack"
+                android:textColor="@color/color_000000_70"
+                android:layout_width="match_parent"
+                android:background="@color/color_ffffff"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingBottom="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_6"
+                android:textSize="@dimen/text_font_14" />
+
+            <!--报销详情-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_5"
+                android:paddingBottom="@dimen/padding_5"
+                android:background="@color/color_ffffff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_baoxiao"
+                    style="@style/FontStyleBlack"
+                    android:drawableLeft="@drawable/shape_bg_0077fd"
+                    android:drawablePadding="@dimen/padding_5"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/padding_10"
+                    android:paddingTop="@dimen/padding_10"
+                    android:paddingBottom="@dimen/padding_10"
+                    android:text="报销详情" />
+
+                <ImageView
+                    android:id="@+id/img_zifei"
+                    android:layout_marginLeft="@dimen/padding_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_10"
+                    />
+
+                <!--医院-->
+                <LinearLayout
+                    android:visibility="visible"
+                    android:id="@+id/lin_hosptial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_5"
+                    android:layout_marginRight="@dimen/padding_5"
+                    android:background="@drawable/bg_jieguo_baoxiao"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_15">
+
+                    <ImageView
+                        android:id="@+id/img_yy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_3"
+                        android:layout_marginRight="@dimen/padding_3"
+                        android:src="@mipmap/icon_word_hospital" />
+
+                    <!--报销结果1  医院-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="@dimen/padding_10"
+                        android:layout_marginLeft="@dimen/padding_3"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_balance_old_yy"
+                            android:text="$21"
+                            style="@style/FontStyleBlack"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                        <ImageView
+                            android:id="@+id/round_left_yy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/padding_20"
+                            android:src="@mipmap/icon_baoxiao_circle" />
+
+                        <TextView
+                            style="@style/FontStyleBlack"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/padding_12"
+                            android:text="原价" />
+
+                        <TextView
+                            android:id="@+id/tv_balance_new_yy"
+                            android:text="¥ 11"
+                            style="@style/FontStyleBlack"
+                            android:layout_alignParentRight="true"
+                            android:textSize="@dimen/text_font_19" />
+
+                        <ImageView
+                            android:id="@+id/round_right_yy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_20"
+                            android:src="@mipmap/icon_baoxiao_circle" />
+
+                        <TextView
+                            style="@style/FontStyleBlack"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/padding_12"
+                            android:textSize="@dimen/text_font_16"
+                            android:text="自付" />
+
+                        <View
+                            android:layout_width="@dimen/padding_60"
+                            android:layout_height="1px"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/padding_5"
+                            android:layout_marginRight="@dimen/padding_5"
+                            android:layout_toLeftOf="@+id/frame_yy"
+                            android:layout_toRightOf="@+id/round_left_yy"
+                            android:background="@color/color_66a5ff" />
+
+                        <View
+                            android:layout_width="@dimen/padding_60"
+                            android:layout_height="1px"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/padding_5"
+                            android:layout_marginRight="@dimen/padding_5"
+                            android:layout_toLeftOf="@+id/round_right_yy"
+                            android:layout_toRightOf="@+id/frame_yy"
+                            android:background="@color/color_66a5ff" />
+
+                        <FrameLayout
+                            android:id="@+id/frame_yy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <com.lzyc.ybtappcal.view.RingView
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center" />
+
+                            <com.lzyc.ybtappcal.view.WaveProgressView
+                                android:id="@+id/wave_hosiptal"
+                                android:layout_width="@dimen/padding_70"
+                                android:layout_height="@dimen/padding_70"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/biyao_circle" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <com.lzyc.ybtappcal.widget.RiseNumberTextView
+                                    android:id="@+id/tv_return_yy"
+                                    style="@style/FontStyleBlack" />
+
+                                <TextView
+                                    style="@style/FontStyleBlack"
+                                    android:textSize="@dimen/text_font_17"
+                                    android:layout_marginTop="-5dp"
+                                    android:text="报销"/>
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--社区-->
+                <LinearLayout
+                    android:visibility="visible"
+                    android:id="@+id/lin_shequ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_5"
+                    android:layout_marginRight="@dimen/padding_5"
+                    android:layout_marginTop="-2dp"
+                    android:background="@drawable/bg_jieguo_baoxiao"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_15">
+
+                    <ImageView
+                        android:id="@+id/img_sq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_3"
+                        android:layout_marginRight="@dimen/padding_3"
+                        android:src="@mipmap/icon_word_community" />
+
+                    <!--报销结果1  社区-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_10"
+                        android:layout_marginLeft="@dimen/padding_3">
+
+                        <TextView
+                            android:id="@+id/tv_balance_old_sq"
+                            style="@style/FontStyleBlack"
+                            android:text="¥ 36.43"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                        <ImageView
+                            android:id="@+id/round_left_sq"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/padding_20"
+                            android:src="@mipmap/icon_baoxiao_circle" />
+
+                        <TextView
+                            style="@style/FontStyleBlack"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/padding_12"
+                            android:text="原价" />
+
+                        <TextView
+                            android:id="@+id/tv_balance_new_sq"
+                            android:text="¥ 10"
+                            style="@style/FontStyleBlack"
+                            android:layout_alignParentRight="true"
+                            android:textSize="@dimen/text_font_19" />
+
+                        <ImageView
+                            android:id="@+id/round_right_sq"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_20"
+                            android:src="@mipmap/icon_baoxiao_circle" />
+
+                        <TextView
+                            style="@style/FontStyleBlack"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/padding_12"
+                            android:text="自付" />
+
+                        <View
+                            android:layout_width="@dimen/padding_60"
+                            android:layout_height="1px"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/padding_5"
+                            android:layout_marginRight="@dimen/padding_5"
+                            android:layout_toLeftOf="@+id/frame_sq"
+                            android:layout_toRightOf="@+id/round_left_sq"
+                            android:background="@color/color_66a5ff" />
+
+                        <View
+                            android:layout_width="@dimen/padding_60"
+                            android:layout_height="1px"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/padding_5"
+                            android:layout_marginRight="@dimen/padding_5"
+                            android:layout_toLeftOf="@+id/round_right_sq"
+                            android:layout_toRightOf="@+id/frame_sq"
+                            android:background="@color/color_66a5ff" />
+
+                        <FrameLayout
+                            android:id="@+id/frame_sq"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <com.lzyc.ybtappcal.view.RingView
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center" />
+
+                            <com.lzyc.ybtappcal.view.WaveProgressView
+                                android:id="@+id/wave_cummunity"
+                                android:layout_width="@dimen/padding_70"
+                                android:layout_height="@dimen/padding_70"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/biyao_circle" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <com.lzyc.ybtappcal.widget.RiseNumberTextView
+                                    android:id="@+id/tv_return_sq"
+                                    style="@style/FontStyleBlack" />
+
+                                <TextView
+                                    style="@style/FontStyleBlack"
+                                    android:layout_marginTop="-5dp"
+                                    android:text="报销"
+                                    android:textSize="@dimen/text_font_20" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--限制条件-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_5"
+                android:layout_marginBottom="@dimen/padding_10"
+                android:background="@color/color_ffffff"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_5"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_10"
+                >
+
+
+                <TextView
+                    style="@style/FontStyleBlack"
+                    android:drawableLeft="@drawable/shape_bg_0077fd"
+                    android:drawablePadding="@dimen/padding_5"
+                    android:layout_marginLeft="@dimen/padding_5"
+                    android:text="限制条件" />
+
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/tv_conditions_visibility"
+                    style="@style/FontStyleBlack"
+                    android:layout_marginTop="@dimen/padding_5"
+                    android:layout_marginLeft="@dimen/padding_5"
+                    android:layout_marginBottom="@dimen/padding_5"
+                    android:text="无" />
+
+                <LinearLayout
+                    android:visibility="visible"
+                    android:id="@+id/lin_conditions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_conditions"
+                        android:paddingTop="@dimen/padding_5"
+                        style="@style/FontStyleGrey"
+                        android:singleLine="true"
+                        android:layout_marginLeft="@dimen/padding_5"
+                        android:layout_marginBottom="@dimen/padding_5"
+                        />
+
+                    <TextView
+                        android:visibility="visible"
+                        android:id="@+id/tv_more"
+                        style="@style/FontStyleGrey"
+                        android:layout_marginTop="-5dp"
+                        android:textSize="@dimen/text_font_10"
+                        android:layout_gravity="right"
+                        android:drawableRight="@mipmap/icon_forword_down_little"
+                        android:layout_marginBottom="@dimen/padding_5"
+                        android:drawablePadding="@dimen/padding_3"
+                        android:onClick="onBtnClick"
+                        android:clickable="true"
+                        android:text="查看更多"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--查看医院和社区-->
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/tv_see_hospital"
+                style="@style/FontStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_10"
+                android:background="@color/color_ffffff"
+                android:layout_marginTop="-5dp"
+                android:clickable="true"
+                android:drawablePadding="@dimen/padding_10"
+                android:drawableRight="@mipmap/icon_forword_right0"
+                android:gravity="center|left"
+                android:onClick="onBtnClick"
+                android:padding="@dimen/padding_13"
+                android:text="查看拿药医院和社区" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linear_pop_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/padding_50"
+        android:background="@color/color_000000_80"
+        android:orientation="vertical"
+        android:visibility="gone" />
+</RelativeLayout>

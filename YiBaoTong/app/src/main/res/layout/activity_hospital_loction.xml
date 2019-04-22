@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_f8f8f8">
+
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mv_select_search"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_000000_80"
+        android:padding="@dimen/padding_10"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+        <!--确认地址-->
+        <TextView
+            android:id="@+id/tv_hospital"
+            android:layout_width="@dimen/padding_0"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            style="@style/Font_Big_White"
+            android:text="地址：北京市朝阳区"
+            android:padding="@dimen/padding_5"
+            />
+        <ImageButton
+            android:id="@+id/bt_hospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Font_Big_Blue"
+            android:layout_marginRight="@dimen/padding_10"
+            android:src="@mipmap/icon_navigation"
+            android:onClick="onBtnClick"
+            android:clickable="true"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:background="@color/color_ffffff_00"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

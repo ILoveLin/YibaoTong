@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/theme_bg_color"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_0"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="123dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_banner_insurance" />
+
+            <View style="@style/LineStyle" />
+
+            <View
+                style="@style/LineStyle"
+                android:layout_marginTop="@dimen/padding_10" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding_15"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_15">
+
+                <TextView
+                    android:layout_width="@dimen/padding_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="购买份数"
+                    android:textColor="@color/color_444444"
+                    android:textSize="@dimen/text_font_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_5"
+                    android:paddingRight="@dimen/padding_5"
+                    android:text="1"
+                    android:textColor="@color/color_ff1e1e"
+                    android:textSize="@dimen/text_font_17" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="份"
+                    android:textColor="@color/color_444444"
+                    android:textSize="@dimen/text_font_17" />
+
+            </LinearLayout>
+
+            <View style="@style/LineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding_15"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_15">
+
+                <TextView
+                    android:layout_width="@dimen/padding_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="你所需要交纳保费"
+                    android:textColor="@color/color_444444"
+                    android:textSize="@dimen/text_font_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_5"
+                    android:paddingRight="@dimen/padding_5"
+                    android:text="49"
+                    android:textColor="@color/color_ff1e1e"
+                    android:textSize="@dimen/text_font_17" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元"
+                    android:textColor="@color/color_444444"
+                    android:textSize="@dimen/text_font_17" />
+
+            </LinearLayout>
+
+            <View style="@style/LineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding_15"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_15">
+
+                <TextView
+                    android:layout_width="@dimen/padding_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="总保额"
+                    android:textColor="@color/color_444444"
+                    android:textSize="@dimen/text_font_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_5"
+                    android:paddingRight="@dimen/padding_5"
+                    android:text="50"
+                    android:textColor="@color/color_ff1e1e"
+                    android:textSize="@dimen/text_font_17" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元"
+                    android:textColor="@color/color_444444"
+                    android:textSize="@dimen/text_font_17" />
+
+            </LinearLayout>
+
+            <View style="@style/LineStyle" />
+
+            <View
+                style="@style/LineStyle"
+                android:layout_marginTop="@dimen/padding_10" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding_15"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_15">
+
+                <TextView
+                    android:layout_width="@dimen/padding_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="被保人为本人"
+                    android:textColor="@color/color_444444"
+                    android:textSize="@dimen/text_font_16" />
+
+                <com.lzyc.ybtappcal.view.SwitchButtom
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View style="@style/LineStyle" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/padding_15"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_15"
+                android:text="为谁投保"
+                android:textColor="@color/color_444444"
+                android:textSize="@dimen/text_font_16" />
+
+            <View style="@style/LineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/padding_15"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_10"
+                    android:text="配偶" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_10"
+                    android:text="父母" />
+            </LinearLayout>
+
+            <View style="@style/LineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding_15"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/padding_10"
+                    android:text="手机号"
+                    android:textColor="@color/color_444444"
+                    android:textSize="@dimen/text_font_16" />
+
+
+                <com.lzyc.ybtappcal.widget.ClearEditTextView
+                    android:layout_width="@dimen/padding_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="15313058170"
+                    android:textColor="@color/color_444444"
+                    android:textSize="@dimen/text_font_15" />
+
+            </LinearLayout>
+
+            <View style="@style/LineStyle" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        style="@style/LineStyle"
+        android:layout_marginTop="@dimen/padding_19" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_fd7b08"
+        android:gravity="center"
+        android:paddingBottom="@dimen/padding_15"
+        android:paddingTop="@dimen/padding_15"
+        android:text="立即投保"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_font_18" />
+</LinearLayout>

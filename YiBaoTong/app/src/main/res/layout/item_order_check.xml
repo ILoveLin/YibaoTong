@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_ffffff"
+    android:layout_marginTop="@dimen/padding_5"
+    android:layout_marginBottom="@dimen/padding_5">
+
+    <View
+        style="@style/LineStyleE5E5E5"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lin_pharmacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_10"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_pharmacy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_yaodian_logo_dekai"/>
+
+            <TextView
+                android:id="@+id/tv_pharmacy"
+                style="@style/FontStyle"
+                android:textColor="@color/color_1291ee"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:text="德开大药房"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_drugs"
+            android:layout_below="@+id/lin_pharmacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_5"/>
+
+        <ImageView
+            android:id="@+id/img_after"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/padding_10"
+            android:layout_marginRight="@dimen/padding_10"
+            android:src="@mipmap/icon_jianchadingdan_huodaofukuan"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding_5"
+        android:paddingLeft="@dimen/padding_10"
+        android:paddingRight="@dimen/padding_10"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/FontStyleGrey"
+            android:layout_width="@dimen/padding_0"
+            android:layout_weight="1"
+            android:text="@string/act_check_order_product_price"/>
+
+        <TextView
+            android:id="@+id/tv_drug_price"
+            style="@style/FontStyleBlack"
+            android:text="¥15.00"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_10"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/FontStyleGrey"
+            android:layout_width="@dimen/padding_0"
+            android:layout_weight="1"
+            android:text="@string/act_check_order_yunfei"/>
+
+        <TextView
+            android:id="@+id/tv_freight_price"
+            style="@style/FontStyleBlack"
+            android:text="¥0.00"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/LineStyleE5E5E5"/>
+
+</LinearLayout>

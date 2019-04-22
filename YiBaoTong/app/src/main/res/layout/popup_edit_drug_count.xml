@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/viewout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_0"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_30"
+        android:layout_marginRight="@dimen/padding_30"
+        android:background="@drawable/shape_ffffff_10">
+
+        <TextView
+            android:id="@+id/pop_edit_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/padding_20"
+            android:layout_marginBottom="@dimen/padding_20"
+            android:gravity="center"
+            android:text="修改购买数量"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/text_font_15" />
+
+        <LinearLayout
+            android:id="@+id/pop_edit_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/padding_30"
+            android:layout_below="@id/pop_edit_title"
+            android:background="@drawable/shape_edit_count"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/pop_edit_subtraction"
+                android:layout_width="@dimen/padding_30"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_margin="@dimen/padding_2"
+                android:background="@color/color_ffffff"
+                android:src="@mipmap/icon_operator_subtraction_black_pre1" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/color_cccccc" />
+
+            <EditText
+                android:id="@+id/pop_edit_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="195"
+                android:layout_gravity="center"
+                android:selectAllOnFocus="true"
+                android:minWidth="@dimen/padding_60"
+                android:maxWidth="@dimen/padding_60"
+                android:background="@null"
+                android:inputType="number"
+                android:paddingTop="@dimen/padding_2"
+                android:paddingBottom="@dimen/padding_2"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_font_20" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/color_cccccc" />
+
+            <ImageButton
+                android:id="@+id/pop_edit_addition"
+                android:layout_width="@dimen/padding_30"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_margin="@dimen/padding_2"
+                android:background="@color/color_ffffff"
+                android:src="@mipmap/icon_operator_addition_black1" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_line"
+            style="@style/LineItemStyleE0E0E0"
+            android:layout_marginTop="@dimen/padding_30"
+            android:layout_below="@id/pop_edit_linear" />
+        <LinearLayout
+            android:id="@+id/pop_edit_bottom"
+            android:layout_width="match_parent"
+            android:layout_below="@id/view_line"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/pop_edit_cancel"
+                android:layout_width="@dimen/padding_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="@dimen/padding_8"
+                android:paddingBottom="@dimen/padding_8"
+                android:text="取消"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_font_17" />
+
+            <TextView
+                android:id="@+id/pop_edit_ok"
+                android:layout_width="@dimen/padding_0"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_count_btn_right"
+                android:gravity="center"
+                android:paddingTop="@dimen/padding_8"
+                android:paddingBottom="@dimen/padding_8"
+                android:text="确定"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_font_17"
+                android:textColor="@color/color_ffffff" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_0"
+        android:layout_weight="1" />
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/address_manager_empty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone">
+    <TextView
+        android:id="@+id/tv_desc"
+        style="@style/Font15Style666666"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/padding_12"
+        android:text="请添加详细地址哦!" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/tv_desc"
+        android:layout_marginTop="@dimen/padding_19"
+        android:src="@mipmap/empty_address_manager" />
+
+
+</RelativeLayout>

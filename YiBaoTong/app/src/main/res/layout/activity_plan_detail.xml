@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_plan2_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/pop_lay_detail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <View style="@style/LineStyleE5E5E5" />
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/shape_bg_pop"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_plan_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:text="板蓝根"
+                android:singleLine="true"
+                android:ems="5"
+                android:ellipsize="end"
+                android:textColor="#3e6398"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/linear_plan_detail_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/padding_10"
+                android:drawablePadding="5dp"
+                android:text="原价 ¥ 12.00"
+                android:textColor="#3e6398" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_plan_detail_position"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:onClick="onBtnClick"
+            android:background="@drawable/shape_bg_pop"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:text="开药地址"
+                android:textColor="#3e6398"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tv_plan_detail_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/padding_10"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/icon_pop_forword"
+                android:ellipsize="end"
+                android:ems="13"
+                android:gravity="right"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:text="北京朝阳医院"
+                android:textColor="#666666" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_bg_pop"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:text="我的花费"
+                android:textColor="#3e6398"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tv_plan_detail_myprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/padding_10"
+                android:drawablePadding="5dp"
+                android:paddingRight="5dp"
+                android:text="¥ 5.00"
+                android:textColor="#e52020" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_bg_pop_style"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:text="当前报销形式"
+                    android:textColor="#3e6398"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+
+            <View style="@style/LineStyleE5E5E5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_hospitalname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/icon_pop_hospital"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="10dp"
+                    android:text="医院"
+                    android:textColor="#3e6398"></TextView>
+
+                <FrameLayout
+                    android:layout_width="150dp"
+                    android:layout_height="12dp"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/tv_popup_hospital_pay"
+                    android:layout_toRightOf="@id/tv_hospitalname">
+
+                    <View
+                        android:id="@+id/v_go_null"
+                        android:layout_width="185dp"
+                        android:layout_height="12dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/shape_pop_bar_null" />
+
+                    <View
+                        android:id="@+id/v_go_on"
+                        android:layout_width="185dp"
+                        android:layout_height="12dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/shape_pop_bar_on" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_popup_hospital_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding_10"
+                    android:drawablePadding="5dp"
+                    android:text="自付 ¥ 12.00"
+                    android:textColor="#3e6398" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_bg_pop"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/icon_pop_paymine"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="10dp"
+                    android:text="自费"
+                    android:textColor="#3e6398"
+                    android:textSize="15dp" />
+
+                <FrameLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/tv_popup_payon_you"
+                    android:layout_toRightOf="@id/tv_pay">
+
+                    <View
+                        android:id="@+id/mypay_go_null"
+                        android:layout_width="185dp"
+                        android:layout_height="12dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/shape_pop_bar_null" />
+
+                    <View
+                        android:id="@+id/mypay_go_on"
+                        android:layout_width="185dp"
+                        android:layout_height="12dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/shape_pop_bar_on" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_popup_payon_you"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding_10"
+                    android:drawablePadding="5dp"
+                    android:text="自付 ¥ 12.00"
+                    android:textColor="#3e6398" />
+
+            </RelativeLayout>
+
+            <View style="@style/LineStyleE5E5E5" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_pop_shequ"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/shequ_pop_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/icon_pop_comuminty"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="10dp"
+                    android:text="社区"
+                    android:textColor="#3e6398"
+                    android:textSize="15dp" />
+
+                <FrameLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/tv_popup_payon_shequ"
+                    android:layout_toRightOf="@id/shequ_pop_pay">
+
+                    <View
+                        android:id="@+id/shequ_go_null"
+                        android:layout_width="185dp"
+                        android:layout_height="12dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/shape_pop_bar_null" />
+
+                    <View
+                        android:id="@+id/shequ_go_on"
+                        android:layout_width="185dp"
+                        android:layout_height="12dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/shape_pop_bar_on" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_popup_payon_shequ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding_10"
+                    android:drawablePadding="5dp"
+                    android:text="自付 ¥ 12.00"
+                    android:textColor="#3e6398" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

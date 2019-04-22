@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_title_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_marginLeft="-19dp"
+        android:layout_marginRight="-19dp"
+        android:layout_marginTop="-25dp">
+        <!--阴影-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/image_resuls_shadow" />
+
+        <LinearLayout
+            android:id="@+id/linear_title_header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/padding_17"
+            android:layout_marginRight="@dimen/padding_15"
+            android:layout_marginBottom="@dimen/padding_10"
+            android:layout_marginTop="@dimen/padding_10"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linear_sort_renkedu_header"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:layout_marginLeft="@dimen/padding_14"
+                android:layout_marginRight="@dimen/padding_21"
+                android:background="@drawable/shape_top_results"
+                android:gravity="center"
+                android:orientation="horizontal"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/padding_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_results_item_right"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/padding_15"
+                android:paddingTop="@dimen/padding_15">
+
+                <TextView
+                    android:id="@+id/tv_title_drugname_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:paddingLeft="@dimen/padding_5"
+                    android:singleLine="true"
+                    android:text="安博维 厄贝沙坦片(薄膜衣)"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/padding_16" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/padding_0"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_title_vender_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:paddingLeft="@dimen/padding_5"
+                    android:text="(法国)赛诺菲-温斯洛普公司"
+                    android:textColor="@color/color_999ea1"
+                    android:paddingRight="@dimen/padding_10"
+                    android:textSize="@dimen/text_font_14" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

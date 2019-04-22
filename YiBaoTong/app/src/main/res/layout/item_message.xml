@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:padding="@dimen/padding_10"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_item_message_title"
+            android:layout_width="@dimen/padding_0"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="优惠活动"
+            android:singleLine="true"
+            android:ellipsize="end"
+            style="@style/Font_Big_Black" />
+
+        <TextView
+            android:id="@+id/tv_item_message_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-01-14"
+            android:layout_marginLeft="@dimen/padding_10"
+            style="@style/Font_Middle_Gray" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_item_message_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="美妙的日子从优惠活动开始"
+        android:layout_marginTop="@dimen/padding_10"
+        style="@style/Font_Middle_Gray" />
+
+
+</LinearLayout>
